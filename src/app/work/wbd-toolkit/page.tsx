@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "WBD Licensee Toolkit — Dynamic Brand Asset System",
+  title: "WBD Licensee Toolkit | Dynamic Brand Asset System",
   description:
     "Case study: Building a dynamic brand toolkit for Warner Bros. Discovery licensees in partnership with WBD Consumer Products and Amazon Retail.",
 };
@@ -32,7 +32,7 @@ export default function WBDToolkitPage() {
         {/* Header */}
         <div className="animate-in max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-muted">2023–2024</span>
+            <span className="text-xs font-mono text-muted">2023 - 2024</span>
             <span className="w-px h-3 bg-border" />
             <span className="text-xs font-mono text-muted">Design Lead</span>
           </div>
@@ -42,6 +42,19 @@ export default function WBDToolkitPage() {
           </h1>
           <p className="text-xl text-muted mb-12">
             Dynamic Brand Asset System for Warner Bros. Discovery
+          </p>
+        </div>
+
+        {/* Placeholder Hero Visual */}
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#1a1640] via-[#2d1b69] to-[#0f172a] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
+          <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
+            Warner Bros. Discovery
+          </p>
+          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
+            Licensee Toolkit
+          </p>
+          <p className="text-sm text-white/40 mt-4 font-mono">
+            Dynamic Brand Asset System
           </p>
         </div>
 
@@ -72,8 +85,8 @@ export default function WBDToolkitPage() {
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
                 Warner Bros. Discovery has one of the largest and most complex
-                brand portfolios in entertainment. Every licensee — from major
-                retail partners to smaller regional brands — needs access to
+                brand portfolios in entertainment. Every licensee, from major
+                retail partners to smaller regional brands, needs access to
                 accurate, up-to-date brand assets and guidelines. The existing
                 approach was fragmented: static toolkits that were outdated
                 before they shipped, inconsistent across brands, and a
@@ -103,7 +116,7 @@ export default function WBDToolkitPage() {
                 the board.
               </p>
               <p>
-                The key insight was making it agnostic — not tied to one brand,
+                The key insight was making it agnostic. Not tied to one brand,
                 one format, or one use case. The system needed to serve a
                 licensee working on Batman merchandise the same way it served
                 one working on Discovery Channel educational content. Different
@@ -159,7 +172,7 @@ export default function WBDToolkitPage() {
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
                 The most interesting part of this project wasn&apos;t the
-                initial build — it was the transformation. The original scope
+                initial build. It was the transformation. The original scope
                 was a static toolkit: here are the assets, here are the rules,
                 go make things. Standard.
               </p>
@@ -200,7 +213,7 @@ export default function WBDToolkitPage() {
               <p>
                 Most importantly, the system proved the model. What was built
                 for WBD&apos;s specific needs demonstrated a pattern that works
-                for any enterprise brand portfolio — a flexible, dynamic
+                for any enterprise brand portfolio. A flexible, dynamic
                 approach to licensee support that scales without scaling the
                 team.
               </p>

@@ -20,6 +20,15 @@ export default function AboutPage() {
             </h1>
           </div>
 
+          {/* Headshot - swap src when photo is available */}
+          <div className="animate-in-delay-1 mb-12">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden bg-gradient-to-br from-stone-300 to-stone-500 dark:from-stone-700 dark:to-stone-900 border border-border flex items-center justify-center">
+              <span className="text-5xl md:text-6xl font-semibold text-white/80">
+                JF
+              </span>
+            </div>
+          </div>
+
           <div className="animate-in-delay-1 space-y-6 text-lg text-muted leading-relaxed">
             <p>
               I&apos;m a design leader with 18 years of experience doing the
@@ -32,13 +41,13 @@ export default function AboutPage() {
               Right now, I lead a team of 15+ designers at D2E Labs, part of
               Market Defense. We handle design across multiple clients and
               verticals, and I spend a lot of my time making sure the team has
-              what they need to do great work — whether that&apos;s better
+              what they need to do great work. Whether that&apos;s better
               processes, better tools, or just getting out of the way.
             </p>
 
             <p>
               I&apos;ve been building AI-powered tools that actually solve
-              real problems — not just prototypes or proofs of concept, but
+              real problems. Not just prototypes or proofs of concept, but
               production systems that teams rely on daily. Design Intel,
               internal workflow automation, Claude-powered analysis tools.
               If it makes the team faster or gives leadership better
@@ -63,10 +72,10 @@ export default function AboutPage() {
                 any design brief ever could.
               </p>
               <p>
-                The combination of those experiences — military discipline,
+                The combination of those experiences. Military discipline,
                 creative industry hustle, and nearly two decades of design
-                leadership — is what makes my approach different. I don&apos;t
-                just make things look good. I make things work.
+                leadership. That&apos;s what makes my approach different. I
+                don&apos;t just make things look good. I make things work.
               </p>
             </div>
           </div>

@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Joshua Fulmer — Design Leadership & AI Solutions",
-    template: "%s — Joshua Fulmer",
+    default: "Joshua Fulmer | Design Leadership & AI Solutions",
+    template: "%s | Joshua Fulmer",
   },
   description:
     "Design leader with 18 years of experience building AI-powered tools and systems for design teams. Currently leading design ops at D2E Labs.",

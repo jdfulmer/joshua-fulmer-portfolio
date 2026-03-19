@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Design Intel — AI-Powered Design Ops Dashboard",
+  title: "Design Intel | AI-Powered Design Ops Dashboard",
   description:
     "Case study: Building an internal design operations tool that gives leadership real-time visibility into team workload and delivery metrics.",
 };
@@ -32,7 +32,7 @@ export default function DesignIntelPage() {
         {/* Header */}
         <div className="animate-in max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-muted">2024–Present</span>
+            <span className="text-xs font-mono text-muted">2024 - Present</span>
             <span className="w-px h-3 bg-border" />
             <span className="text-xs font-mono text-muted">
               Design Lead & Builder
@@ -44,6 +44,22 @@ export default function DesignIntelPage() {
           </h1>
           <p className="text-xl text-muted mb-12">
             AI-Powered Design Ops Dashboard
+          </p>
+        </div>
+
+        {/* Hero Visual - replace with screenshot when available */}
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#0c1222] via-[#162033] to-[#0a1628] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-3 h-3 rounded-full bg-emerald-400/60" />
+            <p className="text-xs font-mono text-white/40 tracking-widest uppercase">
+              Live Dashboard
+            </p>
+          </div>
+          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
+            Design Intel
+          </p>
+          <p className="text-sm text-white/40 mt-4 font-mono">
+            AI-Powered Design Ops
           </p>
         </div>
 
@@ -75,7 +91,7 @@ export default function DesignIntelPage() {
               <p>
                 Leading 15+ designers across multiple clients and verticals
                 means you need to know what&apos;s happening. Not in a
-                micromanagement way — in a &quot;someone&apos;s about to burn
+                micromanagement way. In a &quot;someone&apos;s about to burn
                 out and I need to see it before they tell me&quot; way.
               </p>
               <p>
@@ -100,7 +116,7 @@ export default function DesignIntelPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                I built Design Intel from the ground up — a single dashboard
+                I built Design Intel from the ground up. A single dashboard
                 that pulls from Figma, Asana, and internal data to give me
                 (and leadership) a real-time picture of team health, workload
                 distribution, and delivery velocity.
@@ -109,7 +125,7 @@ export default function DesignIntelPage() {
                 This wasn&apos;t a weekend project that got out of hand. It was
                 an intentional tool built to solve a specific operational gap.
                 The stack is Next.js, TypeScript, and Vercel, with Claude
-                handling the analysis layer — identifying patterns in workload
+                handling the analysis layer. Identifying patterns in workload
                 data that a human would miss until it was too late.
               </p>
               <p>
@@ -136,7 +152,7 @@ export default function DesignIntelPage() {
                 {
                   title: "Client Pressure Mapping",
                   description:
-                    "Tracks client-side demand signals — revision cycles, turnaround expectations, and scope creep patterns — before they become problems.",
+                    "Tracks client-side demand signals like revision cycles, turnaround expectations, and scope creep patterns before they become problems.",
                 },
                 {
                   title: "Delivery Metrics",
@@ -170,7 +186,7 @@ export default function DesignIntelPage() {
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
                 Design Intel eliminated 20+ hours of manual reporting per month.
-                But the real value isn&apos;t in the time saved — it&apos;s in
+                But the real value isn&apos;t in the time saved. It&apos;s in
                 the problems caught early. Workload imbalances that would have
                 led to burnout. Client delivery risks that would have surfaced
                 as emergencies. Capacity gaps that would have been invisible

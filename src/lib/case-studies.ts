@@ -16,7 +16,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Design Intel",
     subtitle: "AI-Powered Design Ops Dashboard",
     description:
-      "Built an internal design operations tool that gives leadership real-time visibility into team workload, client pressure, and delivery metrics across Figma and Asana. Not another dashboard — a system that actually tells you what's happening before it becomes a problem.",
+      "Built an internal design operations tool that gives leadership real-time visibility into team workload, client pressure, and delivery metrics across Figma and Asana. Not another dashboard. A system that actually tells you what's happening before it becomes a problem.",
     role: "Design Lead & Builder",
     year: "2024–Present",
     metrics: [
@@ -32,13 +32,13 @@ export const caseStudies: CaseStudy[] = [
     title: "WBD Licensee Toolkit",
     subtitle: "Dynamic Brand Asset System for Warner Bros. Discovery",
     description:
-      "What started as a straightforward toolkit build for Warner Bros. Discovery licensees turned into something bigger — a dynamic, flexible system serving the entire Consumer Products ecosystem. Partnered with WBD Consumer Products, Amazon Retail, and other major partners to create a platform that scales across all licensees without losing brand integrity.",
+      "What started as a straightforward toolkit build for Warner Bros. Discovery licensees turned into something bigger. A dynamic, flexible system serving the entire Consumer Products ecosystem. Partnered with WBD Consumer Products, Amazon Retail, and other major partners to create a platform that scales across all licensees without losing brand integrity.",
     role: "Design Lead",
     year: "2023–2024",
     metrics: [
       { label: "Licensees Supported", value: "All" },
       { label: "Partner Organizations", value: "3+" },
-      { label: "Toolkit Evolution", value: "Static → Dynamic" },
+      { label: "Toolkit Evolution", value: "Static to Dynamic" },
     ],
     tags: ["Brand Systems", "Design Systems", "Enterprise", "Consumer Products"],
     status: "published",
@@ -48,7 +48,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Adobe to Figma Migration",
     subtitle: "Leading a 15-Person Team Through Tool Transformation",
     description:
-      "Led the full transition of a 15-designer team from Adobe Creative Suite to Figma. Not just a tool swap — a fundamental shift in how the team collaborates, delivers, and thinks about design systems.",
+      "Led the full transition of a 15-designer team from Adobe Creative Suite to Figma. Not just a tool swap. A fundamental shift in how the team collaborates, delivers, and thinks about design systems.",
     role: "Design Lead",
     year: "2023",
     metrics: [

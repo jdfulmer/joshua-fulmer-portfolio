@@ -18,7 +18,7 @@ export default function Home() {
           <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
             18 years of translating strategy into results. Currently leading a
             team of 15+ designers and building AI-powered tooling that gives
-            leadership the visibility they actually need — not another dashboard
+            leadership the visibility they actually need. Not another dashboard
             nobody checks.
           </p>
           <div className="mt-10 flex gap-4">
@@ -118,7 +118,7 @@ export default function Home() {
               {
                 title: "AI-Powered Tooling",
                 description:
-                  "Building real tools with Claude, Figma APIs, and whatever else gets the job done. Not theoretical — in production, solving real problems.",
+                  "Building real tools with Claude, Figma APIs, and whatever else gets the job done. Not theoretical. In production, solving real problems.",
               },
               {
                 title: "Design Operations",
