@@ -1,65 +1,144 @@
-import Image from "next/image";
+import Link from "next/link";
+import { caseStudies } from "@/lib/case-studies";
 
 export default function Home() {
+  const featured = caseStudies.filter((c) => c.status === "published");
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="px-6 md:px-12 lg:px-24">
+      <div className="max-w-6xl mx-auto">
+        {/* Hero */}
+        <section className="py-24 md:py-32 lg:py-40 animate-in">
+          <p className="text-sm font-mono text-muted mb-6 tracking-wide uppercase">
+            Design Leadership / AI Solutions / Design Ops
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] max-w-3xl">
+            I build the systems that help design teams do their best work.
+          </h1>
+          <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
+            18 years of translating strategy into results. Currently leading a
+            team of 15+ designers and building AI-powered tooling that gives
+            leadership the visibility they actually need — not another dashboard
+            nobody checks.
+          </p>
+          <div className="mt-10 flex gap-4">
+            <Link
+              href="/work"
+              className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 text-sm font-medium rounded-full hover:opacity-90 transition-opacity"
+            >
+              View Work
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-full border border-border hover:border-foreground transition-colors"
+            >
+              About Me
+            </Link>
+          </div>
+        </section>
+
+        {/* Featured Work */}
+        <section className="pb-24 md:pb-32 animate-in-delay-2">
+          <div className="flex items-center justify-between mb-12">
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase">
+              Featured Work
+            </h2>
+            <Link
+              href="/work"
+              className="text-sm text-muted hover:text-foreground transition-colors"
+            >
+              View all &rarr;
+            </Link>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {featured.map((study) => (
+              <Link
+                key={study.slug}
+                href={`/work/${study.slug}`}
+                className="group block"
+              >
+                <article className="border border-border rounded-2xl p-8 md:p-10 hover:border-foreground/20 transition-all duration-300 h-full flex flex-col">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-xs font-mono text-muted">
+                      {study.year}
+                    </span>
+                    <span className="w-px h-3 bg-border" />
+                    <span className="text-xs font-mono text-muted">
+                      {study.role}
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
+                    {study.title}
+                  </h3>
+                  <p className="text-sm text-muted mb-6">{study.subtitle}</p>
+
+                  {/* Metrics */}
+                  <div className="mt-auto grid grid-cols-3 gap-4 pt-6 border-t border-border">
+                    {study.metrics.slice(0, 3).map((metric) => (
+                      <div key={metric.label}>
+                        <p className="text-lg md:text-xl font-semibold">
+                          {metric.value}
+                        </p>
+                        <p className="text-xs text-muted mt-1">
+                          {metric.label}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* What I Do */}
+        <section className="pb-24 md:pb-32 animate-in-delay-3">
+          <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-12">
+            What I Bring to the Table
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              {
+                title: "Design Leadership",
+                description:
+                  "Managing teams, setting direction, and making sure the work actually ships. 15+ designers across multiple clients and verticals.",
+              },
+              {
+                title: "AI-Powered Tooling",
+                description:
+                  "Building real tools with Claude, Figma APIs, and whatever else gets the job done. Not theoretical — in production, solving real problems.",
+              },
+              {
+                title: "Design Operations",
+                description:
+                  "The systems behind the systems. Workflows, processes, and visibility tools that let teams move fast without breaking things.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="border border-border rounded-2xl p-8"
+              >
+                <h3 className="font-semibold mb-3">{item.title}</h3>
+                <p className="text-sm text-muted leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

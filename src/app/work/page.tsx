@@ -1,0 +1,106 @@
+import Link from "next/link";
+import { caseStudies } from "@/lib/case-studies";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Work",
+  description:
+    "Case studies in design leadership, AI-powered tooling, and design operations.",
+};
+
+export default function WorkPage() {
+  return (
+    <div className="px-6 md:px-12 lg:px-24">
+      <div className="max-w-6xl mx-auto py-24 md:py-32">
+        <div className="animate-in">
+          <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
+            Work
+          </p>
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+            Selected Case Studies
+          </h1>
+          <p className="text-lg text-muted max-w-2xl mb-16">
+            Real problems, real solutions, real impact. Each project represents a
+            different facet of leading design at scale.
+          </p>
+        </div>
+
+        <div className="space-y-6 animate-in-delay-1">
+          {caseStudies.map((study) => (
+            <Link
+              key={study.slug}
+              href={
+                study.status === "coming-soon" ? "#" : `/work/${study.slug}`
+              }
+              className={`group block ${
+                study.status === "coming-soon"
+                  ? "pointer-events-none opacity-50"
+                  : ""
+              }`}
+            >
+              <article className="border border-border rounded-2xl p-8 md:p-10 hover:border-foreground/20 transition-all duration-300">
+                <div className="md:flex md:items-start md:justify-between md:gap-8">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      {study.year && (
+                        <>
+                          <span className="text-xs font-mono text-muted">
+                            {study.year}
+                          </span>
+                          <span className="w-px h-3 bg-border" />
+                        </>
+                      )}
+                      {study.role && (
+                        <span className="text-xs font-mono text-muted">
+                          {study.role}
+                        </span>
+                      )}
+                      {study.status === "coming-soon" && (
+                        <span className="text-xs font-mono bg-surface border border-border px-2 py-0.5 rounded-full text-muted">
+                          Coming Soon
+                        </span>
+                      )}
+                    </div>
+
+                    <h2 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
+                      {study.title}
+                    </h2>
+                    <p className="text-muted mb-4">{study.subtitle}</p>
+
+                    {study.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {study.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-xs font-mono bg-surface border border-border px-3 py-1 rounded-full text-muted"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {study.metrics.length > 0 && (
+                    <div className="mt-6 md:mt-0 flex gap-8 md:gap-6 md:text-right">
+                      {study.metrics.slice(0, 2).map((metric) => (
+                        <div key={metric.label}>
+                          <p className="text-xl font-semibold">
+                            {metric.value}
+                          </p>
+                          <p className="text-xs text-muted mt-1">
+                            {metric.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
