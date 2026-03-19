@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Design Intel | AI-Powered Design Ops Dashboard",
   description:
-    "How a design lead built an AI-powered ops dashboard that eliminated 20+ hours of manual reporting per month and gave leadership real-time visibility into a 15-designer team.",
+    "How a design lead built an AI-powered ops dashboard that eliminated 20+ hours of manual reporting per month and gave leadership real-time visibility into a 12-designer team across 60+ brands.",
 };
 
 export default function DesignIntelPage() {
@@ -64,7 +64,7 @@ export default function DesignIntelPage() {
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
             { value: "20+hrs/mo", label: "Manual Reporting Eliminated" },
-            { value: "15+", label: "Designers Protected" },
+            { value: "12", label: "Designers Protected" },
             { value: "4", label: "Systems Unified" },
             { value: "Zero", label: "Self-Reporting Required" },
           ].map((metric) => (
@@ -98,7 +98,7 @@ export default function DesignIntelPage() {
                 spreadsheet couldn&apos;t tell me that.
               </p>
               <p>
-                I lead 15+ designers across multiple clients and verticals. My
+                I lead 12 designers across 60+ brands. My
                 job is to see the problems coming before they land. But the tools
                 we had made me blind until it was too late. Five-plus hours a
                 week, just to build a snapshot that was stale before I finished it.

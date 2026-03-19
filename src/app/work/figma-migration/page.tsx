@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Adobe to Figma Migration",
   description:
-    "Case study: Leading a 15-person design team through a full platform migration from Adobe to Figma.",
+    "Case study: Leading a 12-person design team through a full platform migration from Adobe to Figma.",
 };
 
 export default function FigmaMigrationPage() {
@@ -43,7 +43,7 @@ export default function FigmaMigrationPage() {
             Adobe to Figma Migration
           </h1>
           <p className="text-xl text-muted mb-12">
-            Leading a 15-Person Team Through Tool Transformation
+            Leading a 12-Person Team Through Tool Transformation
           </p>
 
           <div className="border border-dashed border-border rounded-2xl p-12 flex flex-col items-center justify-center text-center">

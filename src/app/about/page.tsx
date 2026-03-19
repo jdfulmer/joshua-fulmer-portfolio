@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "18 years of design leadership, from the Marines to managing 15+ designers at D2E Labs.",
+    "18 years of design leadership, from the Marines to managing 12 designers across 60+ brands at D2E Labs.",
 };
 
 export default function AboutPage() {
@@ -38,7 +38,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Right now, I lead a team of 15+ designers at D2E Labs, part of
+              Right now, I lead a team of 12 designers across 60+ brands at D2E Labs, part of
               Market Defense. We handle design across multiple clients and
               verticals, and I spend a lot of my time making sure the team has
               what they need to do great work. Whether that&apos;s better

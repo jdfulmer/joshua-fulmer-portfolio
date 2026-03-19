@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
           <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
             18 years of translating strategy into results. Currently leading a
-            team of 15+ designers and building AI-powered tooling that gives
+            team of 12 designers across 60+ brands and building AI-powered tooling that gives
             leadership the visibility they actually need. Not another dashboard
             nobody checks.
           </p>
@@ -132,7 +132,7 @@ export default function Home() {
               {
                 title: "Design Leadership",
                 description:
-                  "15+ designers across multiple clients and verticals. I set the direction, protect the team from overload, and make sure the work ships on time. Not by hovering. By building the systems that make it possible.",
+                  "12 designers across 60+ brands. I set the direction, protect the team from overload, and make sure the work ships on time. Not by hovering. By building the systems that make it possible.",
               },
               {
                 title: "AI-Powered Tooling",

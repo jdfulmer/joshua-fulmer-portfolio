@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2024\u2013Present",
     metrics: [
       { label: "Reporting Eliminated", value: "20+hrs/mo" },
-      { label: "Designers Supported", value: "15+" },
+      { label: "Designers Supported", value: "12" },
       { label: "Systems Unified", value: "4" },
     ],
     tags: ["Design Ops", "AI", "Figma API", "Next.js", "Claude"],
@@ -48,13 +48,13 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "figma-migration",
     title: "Adobe to Figma Migration",
-    subtitle: "Leading a 15-Person Team Through Tool Transformation",
+    subtitle: "Leading a 12-Person Team Through Tool Transformation",
     description:
-      "Led the full transition of a 15-designer team from Adobe Creative Suite to Figma. Not just a tool swap. A fundamental shift in how the team collaborates, delivers, and thinks about design systems.",
+      "Led the full transition of a 12-designer team from Adobe Creative Suite to Figma. Not just a tool swap. A fundamental shift in how the team collaborates, delivers, and thinks about design systems.",
     role: "Design Lead",
     year: "2023",
     metrics: [
-      { label: "Team Size", value: "15" },
+      { label: "Team Size", value: "12" },
       { label: "Status", value: "Case study in progress" },
     ],
     tags: ["Figma", "Change Management", "Design Ops", "Team Leadership"],
