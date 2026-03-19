@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -47,20 +48,16 @@ export default function DesignIntelPage() {
           </p>
         </div>
 
-        {/* Hero Visual - replace with screenshot when available */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#0c1222] via-[#162033] to-[#0a1628] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-3 h-3 rounded-full bg-emerald-400/60" />
-            <p className="text-xs font-mono text-white/40 tracking-widest uppercase">
-              Live Dashboard
-            </p>
-          </div>
-          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
-            Design Intel
-          </p>
-          <p className="text-sm text-white/40 mt-4 font-mono">
-            AI-Powered Design Ops
-          </p>
+        {/* Hero Screenshot */}
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/images/design-intel-activity.png"
+            alt="Design Intel Activity Dashboard showing team workload, designer scores, client list, and active tasks"
+            width={1920}
+            height={1080}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Impact Metrics */}
