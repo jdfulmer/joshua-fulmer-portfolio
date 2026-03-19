@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { caseStudies } from "@/lib/case-studies";
 
 export default function Home() {
@@ -68,34 +69,52 @@ export default function Home() {
                 href={`/work/${study.slug}`}
                 className="group block"
               >
-                <article className="border border-border rounded-2xl p-8 md:p-10 hover:border-foreground/20 transition-all duration-300 h-full flex flex-col">
-                  <div className="flex items-center gap-3 mb-6">
-                    <span className="text-xs font-mono text-muted">
-                      {study.year}
-                    </span>
-                    <span className="w-px h-3 bg-border" />
-                    <span className="text-xs font-mono text-muted">
-                      {study.role}
-                    </span>
-                  </div>
+                <article className="border border-border rounded-2xl overflow-hidden hover:border-foreground/20 transition-all duration-300 h-full flex flex-col">
+                  {/* Thumbnail */}
+                  {study.image ? (
+                    <div className="relative w-full aspect-[16/9] bg-surface">
+                      <Image
+                        src={study.image}
+                        alt={study.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-full aspect-[16/9] bg-gradient-to-br from-[#1a1640] via-[#2d1b69] to-[#0f172a] flex items-center justify-center">
+                      <p className="text-lg font-semibold text-white/60">{study.title}</p>
+                    </div>
+                  )}
 
-                  <h3 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
-                    {study.title}
-                  </h3>
-                  <p className="text-sm text-muted mb-6">{study.subtitle}</p>
+                  <div className="p-8 md:p-10 flex flex-col flex-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="text-xs font-mono text-muted">
+                        {study.year}
+                      </span>
+                      <span className="w-px h-3 bg-border" />
+                      <span className="text-xs font-mono text-muted">
+                        {study.role}
+                      </span>
+                    </div>
 
-                  {/* Metrics */}
-                  <div className="mt-auto grid grid-cols-3 gap-4 pt-6 border-t border-border">
-                    {study.metrics.slice(0, 3).map((metric) => (
-                      <div key={metric.label}>
-                        <p className="text-lg md:text-xl font-semibold">
-                          {metric.value}
-                        </p>
-                        <p className="text-xs text-muted mt-1">
-                          {metric.label}
-                        </p>
-                      </div>
-                    ))}
+                    <h3 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
+                      {study.title}
+                    </h3>
+                    <p className="text-sm text-muted mb-6">{study.subtitle}</p>
+
+                    {/* Metrics */}
+                    <div className="mt-auto grid grid-cols-3 gap-4 pt-6 border-t border-border">
+                      {study.metrics.slice(0, 3).map((metric) => (
+                        <div key={metric.label}>
+                          <p className="text-lg md:text-xl font-semibold">
+                            {metric.value}
+                          </p>
+                          <p className="text-xs text-muted mt-1">
+                            {metric.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </article>
               </Link>

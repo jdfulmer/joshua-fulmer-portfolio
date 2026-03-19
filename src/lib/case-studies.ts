@@ -8,6 +8,7 @@ export interface CaseStudy {
   metrics: { label: string; value: string }[];
   tags: string[];
   status: "published" | "coming-soon";
+  image?: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -26,6 +27,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     tags: ["Design Ops", "AI", "Figma API", "Next.js", "Claude"],
     status: "published",
+    image: "/images/design-intel-activity.png",
   },
   {
     slug: "wbd-toolkit",
