@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "WBD Licensee Toolkit | Dynamic Brand Asset System",
   description:
-    "Case study: Building a dynamic brand toolkit for Warner Bros. Discovery licensees in partnership with WBD Consumer Products and Amazon Retail.",
+    "How we replaced Warner Bros. Discovery's static brand toolkits with a dynamic system serving all licensees across the Consumer Products ecosystem, cutting compliance issues and eliminating repetitive asset requests.",
 };
 
 export default function WBDToolkitPage() {
@@ -41,7 +41,7 @@ export default function WBDToolkitPage() {
             WBD Licensee Toolkit
           </h1>
           <p className="text-xl text-muted mb-12">
-            Dynamic Brand Asset System for Warner Bros. Discovery
+            Turning a static PDF nightmare into a live system serving every WBD licensee
           </p>
         </div>
 
@@ -61,10 +61,10 @@ export default function WBDToolkitPage() {
         {/* Impact Metrics */}
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
-            { value: "All", label: "Licensees Supported" },
-            { value: "3+", label: "Partner Organizations" },
-            { value: "Dynamic", label: "From Static Toolkit" },
-            { value: "Agnostic", label: "Brand Coverage" },
+            { value: "100%", label: "Licensee Coverage" },
+            { value: "3+", label: "Enterprise Partners" },
+            { value: "Static to Dynamic", label: "Toolkit Transformation" },
+            { value: "Brand-Agnostic", label: "Architecture" },
           ].map((metric) => (
             <div key={metric.label}>
               <p className="text-2xl md:text-3xl font-semibold">
@@ -84,19 +84,30 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                Warner Bros. Discovery has one of the largest and most complex
-                brand portfolios in entertainment. Every licensee, from major
-                retail partners to smaller regional brands, needs access to
-                accurate, up-to-date brand assets and guidelines. The existing
-                approach was fragmented: static toolkits that were outdated
-                before they shipped, inconsistent across brands, and a
-                bottleneck for everyone involved.
+                Warner Bros. Discovery owns one of the biggest brand portfolios
+                in entertainment. Batman. Harry Potter. Discovery Channel. HBO.
+                Hundreds of licensees need accurate assets and guidelines for
+                every one of them.
               </p>
               <p>
-                The initial brief was straightforward: build a toolkit that
-                supports all licensees. But the real challenge was building
-                something flexible enough to scale across the entire Consumer
-                Products ecosystem without creating a maintenance nightmare.
+                The existing system was static PDFs. A brand team would finalize
+                guidelines, export a toolkit, and distribute it. By the time it
+                reached licensees, something had already changed. New logo
+                lockups. Updated color specs. Revised usage rules. The PDF was
+                wrong before the ink was dry.
+              </p>
+              <p>
+                Licensees didn&apos;t know they were working from outdated files.
+                They&apos;d build an entire product line around the wrong assets
+                and find out during compliance review. The brand team spent hours
+                every week answering the same question over and over:
+                &quot;Is this still the right logo?&quot;
+              </p>
+              <p>
+                The brief said &quot;build a toolkit that supports all
+                licensees.&quot; The real problem was that a static toolkit could
+                never support all licensees. Not when guidelines change weekly
+                and the brand portfolio spans dozens of properties.
               </p>
             </div>
           </section>
@@ -108,25 +119,32 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                What started as a requested build evolved into something
-                significantly more ambitious. Working directly with the WBD
-                Consumer Products team, Amazon Retail, and other key partners,
-                we designed a dynamic toolkit system that could adapt to any
-                licensee&apos;s needs while maintaining brand integrity across
-                the board.
+                We started where the brief pointed us, but we didn&apos;t stay
+                there.
               </p>
               <p>
-                The key insight was making it agnostic. Not tied to one brand,
-                one format, or one use case. The system needed to serve a
-                licensee working on Batman merchandise the same way it served
-                one working on Discovery Channel educational content. Different
-                brands, different guidelines, same level of support.
+                Working directly with WBD Consumer Products, Amazon Retail, and
+                regional licensee partners, we mapped the actual workflow. What
+                we found killed the original plan. Guidelines updated too
+                frequently for static delivery. New partners onboarded
+                constantly. Asset format requirements varied by distribution
+                channel, retail partner, and product category. A single PDF
+                couldn&apos;t hold all of that, and maintaining fifty separate
+                ones wasn&apos;t an option.
               </p>
               <p>
-                This meant designing a flexible architecture that separated
-                brand-specific content from the toolkit infrastructure itself.
-                Guidelines, assets, specifications, and usage rules could all
-                be updated independently without rebuilding the entire system.
+                So we designed a dynamic system. The core decision was to make
+                the architecture brand-agnostic. Separate the toolkit
+                infrastructure from the brand-specific content. Batman
+                merchandise and Discovery Channel educational materials use the
+                same system. Different guidelines, different assets, same level
+                of support.
+              </p>
+              <p>
+                Guidelines, assets, specifications, and usage rules update
+                independently. No rebuilding the entire system when one brand
+                changes a color value. No re-exporting and redistributing PDFs.
+                Licensees always see the current state.
               </p>
             </div>
           </section>
@@ -140,15 +158,15 @@ export default function WBDToolkitPage() {
               {[
                 {
                   name: "WBD Consumer Products",
-                  role: "Primary stakeholder and brand governance partner. Defined brand requirements and approval workflows.",
+                  role: "Primary stakeholder. Owned brand governance, defined compliance requirements, and set the approval workflows the system needed to support.",
                 },
                 {
                   name: "Amazon Retail",
-                  role: "Key distribution partner. Provided retail-specific requirements for asset formats and listing guidelines.",
+                  role: "Largest distribution partner. Drove the requirements for retail-specific asset formats, listing specifications, and channel-specific guidelines.",
                 },
                 {
                   name: "Additional Partners",
-                  role: "Regional licensees and specialty partners with unique format and compliance requirements.",
+                  role: "Regional licensees and specialty manufacturers. Each one brought format and compliance requirements that stress-tested the system's flexibility.",
                 },
               ].map((partner) => (
                 <div
@@ -171,27 +189,29 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                The most interesting part of this project wasn&apos;t the
-                initial build. It was the transformation. The original scope
-                was a static toolkit: here are the assets, here are the rules,
-                go make things. Standard.
+                The original scope was a static toolkit. Here are the assets.
+                Here are the rules. Standard deliverable.
               </p>
               <p>
-                But as we dug into the actual licensee workflow, it became
-                clear that static wasn&apos;t going to cut it. Brands updated
-                guidelines frequently. New partners came onboard regularly.
-                Asset formats varied wildly based on the distribution channel.
-                A PDF guide that was accurate on Monday might be wrong by
-                Friday.
+                Two weeks into the actual licensee research, we knew that
+                wasn&apos;t going to work. We watched a licensee pull a PDF from
+                three months ago, build a product mockup with the wrong logo
+                treatment, submit it for review, get rejected, and start over.
+                That entire cycle took two weeks. It happened constantly.
               </p>
               <p>
-                The pivot to a dynamic system meant licensees always had access
-                to the current state of any brand&apos;s requirements, not a
-                snapshot from whenever the last PDF was exported. It reduced
-                back-and-forth with the brand team, minimized compliance issues,
-                and let the Consumer Products team focus on brand strategy
-                instead of fielding &quot;is this still the right logo?&quot;
-                emails all day.
+                The pivot to dynamic changed everything. Licensees stopped
+                working from snapshots and started working from the source. When
+                a brand team updated guidelines on Tuesday, every licensee saw
+                the change on Tuesday. Not six weeks later when someone
+                remembered to re-export the PDF.
+              </p>
+              <p>
+                The compliance back-and-forth dropped immediately. The brand team
+                stopped fielding repetitive questions and started spending that
+                time on actual brand strategy. And every new licensee that
+                onboarded got the same quality of support without anyone building
+                them a custom toolkit.
               </p>
             </div>
           </section>
@@ -203,19 +223,27 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                The dynamic toolkit now supports all WBD licensees across the
-                Consumer Products ecosystem. Brand compliance issues dropped
-                significantly because licensees are working from live guidelines
-                rather than static documents. The WBD brand team reclaimed
-                hours previously spent on repetitive asset and guideline
-                requests.
+                The dynamic toolkit now serves every WBD licensee across the
+                entire Consumer Products ecosystem. That&apos;s full coverage,
+                where before there were gaps, workarounds, and outdated files
+                floating around.
               </p>
               <p>
-                Most importantly, the system proved the model. What was built
-                for WBD&apos;s specific needs demonstrated a pattern that works
-                for any enterprise brand portfolio. A flexible, dynamic
-                approach to licensee support that scales without scaling the
-                team.
+                Brand compliance issues dropped because the root cause
+                disappeared. Licensees aren&apos;t working from stale documents
+                anymore. They&apos;re working from live guidelines that update
+                the moment the brand team makes a change.
+              </p>
+              <p>
+                The WBD brand team reclaimed the hours they used to spend on
+                repetitive asset requests and guideline clarifications. That time
+                now goes toward brand strategy instead of answering emails.
+              </p>
+              <p>
+                What matters most is that the system proved a model. What we
+                built for WBD works for any enterprise brand portfolio. A
+                flexible, dynamic approach to licensee support that scales the
+                coverage without scaling the team.
               </p>
             </div>
           </section>

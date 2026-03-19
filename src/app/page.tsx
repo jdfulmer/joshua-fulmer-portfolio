@@ -132,17 +132,17 @@ export default function Home() {
               {
                 title: "Design Leadership",
                 description:
-                  "Managing teams, setting direction, and making sure the work actually ships. 15+ designers across multiple clients and verticals.",
+                  "15+ designers across multiple clients and verticals. I set the direction, protect the team from overload, and make sure the work ships on time. Not by hovering. By building the systems that make it possible.",
               },
               {
                 title: "AI-Powered Tooling",
                 description:
-                  "Building real tools with Claude, Figma APIs, and whatever else gets the job done. Not theoretical. In production, solving real problems.",
+                  "Production tools built with Claude, Figma APIs, and Next.js. Already saving 20+ hours of manual reporting per month. Not demos. Not prototypes. Tools my team relies on every day.",
               },
               {
                 title: "Design Operations",
                 description:
-                  "The systems behind the systems. Workflows, processes, and visibility tools that let teams move fast without breaking things.",
+                  "The infrastructure that makes a design team actually function. Workflows, capacity planning, visibility tooling, and delivery tracking. The stuff nobody sees until it's missing.",
               },
             ].map((item) => (
               <div

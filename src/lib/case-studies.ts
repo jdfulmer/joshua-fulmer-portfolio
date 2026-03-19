@@ -15,15 +15,15 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "design-intel",
     title: "Design Intel",
-    subtitle: "AI-Powered Design Ops Dashboard",
+    subtitle: "How I eliminated 20+ hours of manual reporting and caught burnout before it happened",
     description:
-      "Built an internal design operations tool that gives leadership real-time visibility into team workload, client pressure, and delivery metrics across Figma and Asana. Not another dashboard. A system that actually tells you what's happening before it becomes a problem.",
+      "I was spending 5+ hours a week stitching together Figma, Asana, and spreadsheets just to answer one question: is anyone about to break? So I built the answer. A single AI-powered dashboard that cut 20+ hours of monthly reporting and catches workload problems before they become resignations.",
     role: "Design Lead & Builder",
-    year: "2024–Present",
+    year: "2024\u2013Present",
     metrics: [
+      { label: "Reporting Eliminated", value: "20+hrs/mo" },
       { label: "Designers Supported", value: "15+" },
-      { label: "Data Sources Integrated", value: "4" },
-      { label: "Manual Reporting Hours Saved", value: "20+/mo" },
+      { label: "Systems Unified", value: "4" },
     ],
     tags: ["Design Ops", "AI", "Figma API", "Next.js", "Claude"],
     status: "published",
@@ -32,15 +32,15 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "wbd-toolkit",
     title: "WBD Licensee Toolkit",
-    subtitle: "Dynamic Brand Asset System for Warner Bros. Discovery",
+    subtitle: "Turning a static PDF nightmare into a live system serving every WBD licensee",
     description:
-      "What started as a straightforward toolkit build for Warner Bros. Discovery licensees turned into something bigger. A dynamic, flexible system serving the entire Consumer Products ecosystem. Partnered with WBD Consumer Products, Amazon Retail, and other major partners to create a platform that scales across all licensees without losing brand integrity.",
+      "WBD's brand guidelines were outdated before the PDFs finished downloading. Licensees worked from wrong assets. The brand team spent their days answering 'is this still the right logo?' We replaced the static toolkit with a dynamic system that now serves every licensee across the Consumer Products ecosystem, with live guidelines that stay current without manual updates.",
     role: "Design Lead",
-    year: "2023–2024",
+    year: "2023\u20132024",
     metrics: [
-      { label: "Licensees Supported", value: "All" },
-      { label: "Partner Organizations", value: "3+" },
-      { label: "Toolkit Evolution", value: "Static to Dynamic" },
+      { label: "Licensee Coverage", value: "100%" },
+      { label: "Enterprise Partners", value: "3+" },
+      { label: "Toolkit Transformation", value: "Static to Dynamic" },
     ],
     tags: ["Brand Systems", "Design Systems", "Enterprise", "Consumer Products"],
     status: "published",

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Design Intel | AI-Powered Design Ops Dashboard",
   description:
-    "Case study: Building an internal design operations tool that gives leadership real-time visibility into team workload and delivery metrics.",
+    "How a design lead built an AI-powered ops dashboard that eliminated 20+ hours of manual reporting per month and gave leadership real-time visibility into a 15-designer team.",
 };
 
 export default function DesignIntelPage() {
@@ -44,7 +44,7 @@ export default function DesignIntelPage() {
             Design Intel
           </h1>
           <p className="text-xl text-muted mb-12">
-            AI-Powered Design Ops Dashboard
+            How I eliminated 20+ hours of manual reporting and caught burnout before it happened
           </p>
         </div>
 
@@ -63,10 +63,10 @@ export default function DesignIntelPage() {
         {/* Impact Metrics */}
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
-            { value: "15+", label: "Designers Supported" },
-            { value: "4", label: "Data Sources Integrated" },
-            { value: "20+/mo", label: "Manual Hours Saved" },
-            { value: "Real-time", label: "Visibility for Leadership" },
+            { value: "20+hrs/mo", label: "Manual Reporting Eliminated" },
+            { value: "15+", label: "Designers Protected" },
+            { value: "4", label: "Systems Unified" },
+            { value: "Zero", label: "Self-Reporting Required" },
           ].map((metric) => (
             <div key={metric.label}>
               <p className="text-2xl md:text-3xl font-semibold">
@@ -86,22 +86,27 @@ export default function DesignIntelPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                Leading 15+ designers across multiple clients and verticals
-                means you need to know what&apos;s happening. Not in a
-                micromanagement way. In a &quot;someone&apos;s about to burn
-                out and I need to see it before they tell me&quot; way.
+                Every Monday I spent two hours pulling data from four different
+                places. Figma for the work. Asana for the tickets. Spreadsheets
+                for capacity. Slack for the fires nobody logged anywhere.
               </p>
               <p>
-                The data existed in pieces: Figma had the work, Asana had the
-                tickets, spreadsheets had the capacity plans, and Slack had the
-                fires. None of it talked to each other, and by the time I
-                manually compiled a picture of where the team stood, it was
-                already outdated.
+                By the time I stitched it all together, the picture was already
+                wrong. Someone picked up a rush project. A client added three
+                rounds of revisions to a scope that was supposed to be final. A
+                designer who looked fine on paper was drowning, and the
+                spreadsheet couldn&apos;t tell me that.
               </p>
               <p>
-                Leadership needed visibility. The team needed protection from
-                overload. And I needed something that didn&apos;t require me to
-                spend 5+ hours a week just figuring out what was happening.
+                I lead 15+ designers across multiple clients and verticals. My
+                job is to see the problems coming before they land. But the tools
+                we had made me blind until it was too late. Five-plus hours a
+                week, just to build a snapshot that was stale before I finished it.
+              </p>
+              <p>
+                Leadership wanted visibility. The team needed someone watching
+                out for overload. And I needed to stop being the bottleneck
+                between the data and the decisions.
               </p>
             </div>
           </section>
@@ -113,23 +118,28 @@ export default function DesignIntelPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                I built Design Intel from the ground up. A single dashboard
-                that pulls from Figma, Asana, and internal data to give me
-                (and leadership) a real-time picture of team health, workload
-                distribution, and delivery velocity.
+                I stopped trying to fix the reporting process and built a new one.
               </p>
               <p>
-                This wasn&apos;t a weekend project that got out of hand. It was
-                an intentional tool built to solve a specific operational gap.
-                The stack is Next.js, TypeScript, and Vercel, with Claude
-                handling the analysis layer. Identifying patterns in workload
-                data that a human would miss until it was too late.
+                Design Intel is a single dashboard that pulls live data from
+                Figma, Asana, and internal systems. It shows me who&apos;s
+                overloaded, which clients are generating the most pressure, and
+                where delivery timelines are at risk. All of it updates in real
+                time.
               </p>
               <p>
-                The key design decision: make it feel like a tool designers
-                would actually want to use, not another admin panel. If it
-                doesn&apos;t feel like working in Figma, nobody&apos;s going to
-                check it.
+                The stack is Next.js, TypeScript, and Vercel. Claude handles the
+                analysis layer, finding patterns in the workload data that a
+                human would miss. Things like a designer whose revision count
+                tripled in two weeks, or a client whose scope creep pattern
+                matches one that caused a missed deadline last quarter.
+              </p>
+              <p>
+                This wasn&apos;t a side project that grew legs. It was an
+                intentional tool built for a specific gap. I designed it to feel
+                like something designers would actually open. Not another admin
+                panel with charts nobody reads. If it doesn&apos;t feel as clean
+                as working in Figma, nobody&apos;s going to use it.
               </p>
             </div>
           </section>
@@ -144,22 +154,22 @@ export default function DesignIntelPage() {
                 {
                   title: "Workload Visibility",
                   description:
-                    "Real-time view of who's working on what, how much capacity each designer has, and where the pressure points are across the team.",
+                    "Shows exactly who's at capacity, who has room, and who's been quietly absorbing work that isn't on their plate. No more guessing from Asana ticket counts.",
                 },
                 {
                   title: "Client Pressure Mapping",
                   description:
-                    "Tracks client-side demand signals like revision cycles, turnaround expectations, and scope creep patterns before they become problems.",
+                    "Tracks the signals that predict problems. Revision cycles speeding up. Turnaround windows shrinking. Scope expanding without timeline adjustments. You see it building before it breaks.",
                 },
                 {
                   title: "Delivery Metrics",
                   description:
-                    "Actual output tracking tied to Figma activity and Asana completion rates, giving leadership the numbers they need without designers self-reporting.",
+                    "Output tracking pulled directly from Figma activity and Asana completion data. Leadership gets the numbers without designers filling out status reports.",
                 },
                 {
                   title: "AI-Powered Analysis",
                   description:
-                    "Claude analyzes patterns across all data sources to flag potential issues: approaching burnout, uneven workload distribution, delivery risks.",
+                    "Claude runs pattern analysis across all four data sources and flags what's coming. Burnout trajectories. Lopsided workload distribution. Delivery risks that aren't obvious yet.",
                 },
               ].map((feature) => (
                 <div
@@ -182,19 +192,23 @@ export default function DesignIntelPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                Design Intel eliminated 20+ hours of manual reporting per month.
-                But the real value isn&apos;t in the time saved. It&apos;s in
-                the problems caught early. Workload imbalances that would have
-                led to burnout. Client delivery risks that would have surfaced
-                as emergencies. Capacity gaps that would have been invisible
-                until they weren&apos;t.
+                Twenty-plus hours of manual reporting, gone. Every month. That
+                alone would justify the build.
               </p>
               <p>
-                It changed how leadership engages with the design team. Instead
-                of asking &quot;how&apos;s everyone doing?&quot; and getting a
-                polite &quot;fine,&quot; they can see the real picture and have
-                informed conversations about resourcing, priorities, and
-                tradeoffs.
+                But the real value is in what didn&apos;t happen. The burnout
+                that got caught at the overload stage. The client escalation that
+                got flagged as a pattern before it became an emergency. The
+                capacity gap that showed up in the data three weeks before anyone
+                would have noticed it in a standup.
+              </p>
+              <p>
+                The biggest shift was in how leadership talks to the design team.
+                They stopped asking &quot;how&apos;s everyone doing?&quot; and
+                getting a polite &quot;fine.&quot; Now they open Design Intel,
+                see the real picture, and come to the conversation with specific
+                questions about resourcing and tradeoffs. That&apos;s the
+                difference between managing a team and actually leading one.
               </p>
             </div>
           </section>
