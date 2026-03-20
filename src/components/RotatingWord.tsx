@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 
 const words = [
-  "Solutions",
-  "Designs",
-  "Processes",
-  "Systems",
-  "Teams",
-  "Tools",
-  "Strategies",
+  "solutions",
+  "designs",
+  "processes",
+  "systems",
+  "teams",
+  "tools",
+  "strategies",
 ];
 
 export function RotatingWord() {
@@ -22,17 +22,17 @@ export function RotatingWord() {
       setTimeout(() => {
         setIndex((prev) => (prev + 1) % words.length);
         setIsVisible(true);
-      }, 300);
-    }, 2400);
+      }, 500);
+    }, 3200);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <span
-      className="inline-block transition-all duration-300 ease-in-out text-muted"
+      className="inline-block transition-all duration-700 ease-in-out text-muted"
       style={{
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? "translateY(0)" : "translateY(8px)",
+        transform: isVisible ? "translateY(0)" : "translateY(4px)",
       }}
     >
       {words[index]}
