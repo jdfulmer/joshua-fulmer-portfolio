@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { caseStudies } from "@/lib/case-studies";
 import type { Metadata } from "next";
 
@@ -38,7 +39,18 @@ export default function WorkPage() {
                   : ""
               }`}
             >
-              <article className="border border-border rounded-2xl p-8 md:p-10 hover:border-foreground/20 transition-all duration-300">
+              <article className="border border-border rounded-2xl overflow-hidden hover:border-foreground/20 transition-all duration-300">
+                {study.image && (
+                  <div className="relative w-full aspect-[16/9] bg-surface">
+                    <Image
+                      src={study.image}
+                      alt={study.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-8 md:p-10">
                 <div className="md:flex md:items-start md:justify-between md:gap-8">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-4">
@@ -95,6 +107,7 @@ export default function WorkPage() {
                       ))}
                     </div>
                   )}
+                </div>
                 </div>
               </article>
             </Link>
