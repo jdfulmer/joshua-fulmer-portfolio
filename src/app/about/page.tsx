@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,12 +21,16 @@ export default function AboutPage() {
             </h1>
           </div>
 
-          {/* Headshot - swap src when photo is available */}
+          {/* Headshot */}
           <div className="animate-in-delay-1 mb-12">
-            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden bg-gradient-to-br from-stone-300 to-stone-500 dark:from-stone-700 dark:to-stone-900 border border-border flex items-center justify-center">
-              <span className="text-5xl md:text-6xl font-semibold text-white/80">
-                JF
-              </span>
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-border">
+              <Image
+                src="/images/headshot.jpg"
+                alt="Joshua Fulmer"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
 
