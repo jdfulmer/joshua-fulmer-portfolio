@@ -38,8 +38,8 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Right now, I lead a team of 12 designers across 60+ brands at D2E Labs, part of
-              Market Defense. We handle design across multiple clients and
+              Right now, I lead a team of 12 designers across 60+ brands at D2E Labs.
+              Market Defense is part of D2E. We handle design across multiple clients and
               verticals, and I spend a lot of my time making sure the team has
               what they need to do great work. Whether that&apos;s better
               processes, better tools, or just getting out of the way.
