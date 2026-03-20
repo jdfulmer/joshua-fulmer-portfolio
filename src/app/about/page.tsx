@@ -132,8 +132,7 @@ export default function AboutPage() {
                 </p>
                 <div className="space-y-3 text-muted leading-relaxed">
                   <p>
-                    Earned my FAA Control Tower Operator Permit in 2012. Studied
-                    at Shoreline Community College. Air traffic control is the
+                    Earned my FAA Control Tower Operator Permit in 2012. Air traffic control is the
                     definition of high-stakes operational work. Zero room for
                     error. Clear communication. Constant situational awareness.
                     Those habits stuck.
