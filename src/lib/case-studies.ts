@@ -48,7 +48,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "figma-migration",
     title: "Adobe to Figma Migration",
-    subtitle: "How I moved 12 designers off Adobe and onto Figma without missing a deadline across 60+ brands",
+    subtitle: "How we turned a static file-passing workflow into real-time multiplayer design and cut revision cycles by 40%",
     description:
       "Migrated a 12-designer team from Adobe Creative Suite to Figma while keeping work shipping across 60+ brands. Transformed a sequential, file-based workflow into real-time multiplayer collaboration and rebuilt the entire vendor approval pipeline from email chains and PDF markups to in-context Figma comments.",
     role: "Design Lead",

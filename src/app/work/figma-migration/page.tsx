@@ -41,7 +41,7 @@ export default function FigmaMigrationPage() {
             Adobe to Figma Migration
           </h1>
           <p className="text-xl text-muted mb-12">
-            How I moved 12 designers off Adobe and onto Figma without missing a deadline across 60+ brands
+            How we turned a static file-passing workflow into real-time multiplayer design and cut revision cycles by 40%
           </p>
         </div>
 
