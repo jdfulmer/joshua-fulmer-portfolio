@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Send It Society | Mental Wellness Through Mountain Biking",
+  title: "Send It Society | Mental Health Through Mountain Biking",
   description:
-    "How a USMC veteran founded a mental wellness nonprofit that uses mountain biking to build community, with 85+ events organized since 2019.",
+    "How a USMC veteran founded a 501(c)(3) nonprofit that uses mountain biking to raise education, awareness, and action for mental health. 85+ events since 2019.",
 };
 
 export default function SendItSocietyPage() {
@@ -35,36 +35,38 @@ export default function SendItSocietyPage() {
             <span className="text-xs font-mono text-muted">2019 - Present</span>
             <span className="w-px h-3 bg-border" />
             <span className="text-xs font-mono text-muted">Founder</span>
+            <span className="w-px h-3 bg-border" />
+            <span className="text-xs font-mono text-muted">501(c)(3)</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             Send It Society
           </h1>
           <p className="text-xl text-muted mb-12">
-            A mental wellness nonprofit built on the simple idea that getting people outside and moving changes everything
+            A non-clinical healing environment that raises education, awareness, and action for mental health through mountain biking
           </p>
         </div>
 
         {/* Hero Visual */}
         <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#1a4d2e] via-[#2d5a3f] to-[#0f2d1a] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
           <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
-            Mental Wellness Nonprofit
+            501(c)(3) Nonprofit
           </p>
           <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
             Send It Society
           </p>
           <p className="text-sm text-white/40 mt-4 font-mono">
-            85+ Events. One Community. Get Outside.
+            Bellingham, WA. Galbraith Mountain. Every Saturday.
           </p>
         </div>
 
         {/* Impact Metrics */}
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
-            { value: "85+", label: "Events Organized" },
-            { value: "2019", label: "Founded" },
-            { value: "Active", label: "Community" },
-            { value: "Mental Wellness", label: "Focus" },
+            { value: "85+", label: "Events Since 2019" },
+            { value: "Weekly", label: "Saturday Rides" },
+            { value: "Monthly", label: "Extended Rides" },
+            { value: "4", label: "Local Partners" },
           ].map((metric) => (
             <div key={metric.label}>
               <p className="text-2xl md:text-3xl font-semibold">
@@ -84,98 +86,115 @@ export default function SendItSocietyPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                I served three deployments in the Marine Corps. Made Sergeant.
-                Came home and watched people I served with struggle in ways
-                that nobody was talking about. Not the dramatic version you see
-                in movies. The quiet kind. The kind where someone stops
-                answering the phone and you don&apos;t notice until it&apos;s
-                been three weeks.
+                My brother Matthew got me riding. After I came home from the
+                Marine Corps, he was the one who put me on a bike and kept me
+                moving. That was his thing. He knew what being outside and on
+                the trail did for your head. He knew it because he lived it.
               </p>
               <p>
-                Mental wellness isn&apos;t an abstract concept for me. I&apos;ve
-                seen what happens when people lose connection. When the
-                structure disappears and nothing replaces it. When you go from
-                being surrounded by people who would take a bullet for you to
-                sitting alone on a Tuesday with nothing on the calendar.
+                In early 2019, I lost Matthew to suicide.
               </p>
               <p>
-                I started riding mountain bikes because it was the one thing
-                that turned my brain off. You can&apos;t overthink when
-                you&apos;re trying not to hit a tree. And I noticed that
-                every time I got someone else on a bike, the same thing
-                happened. They stopped carrying whatever they walked in with.
-                Even if it was just for an hour.
+                That is not something you process and move past. It is
+                something you carry. And the question it left me with was
+                simple. What do I do with this. Not in a philosophical way. In
+                a practical way. What do I actually build.
               </p>
               <p>
-                So I built something around that.
+                Matthew showed me that riding was medicine. Not the clinical
+                kind. The kind where you are moving and breathing and too
+                focused on the trail to stay inside your own head. The kind
+                where conversations happen naturally because you are side by
+                side, not face to face in an office. I knew that worked. I had
+                lived it. So I built something around it.
               </p>
             </div>
           </section>
 
-          {/* The Approach */}
+          {/* The Structure */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
-              The Approach
+              The Structure
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                Send It Society is not a therapy program. It&apos;s not a
-                clinical intervention. It&apos;s a community that gets people
-                outside, moving, and around other people who give a damn.
-                Mountain biking is the vehicle. The actual work is showing up.
+                Send It Society is a 501(c)(3) nonprofit. The mission is
+                specific: provide a non-clinical healing environment to raise
+                education, awareness, and action for mental health through
+                mountain biking. Not therapy. Not a support group. A place
+                where people ride bikes and talk about the stuff that matters
+                when they are ready.
               </p>
               <p>
-                We organize group rides, trail days, and community events.
-                Low barrier to entry. You don&apos;t need to be a good rider.
-                You don&apos;t need to talk about your feelings. You just need
-                to show up and pedal. The conversations happen on their own
-                when people feel safe enough to have them.
+                Every Saturday at 11 AM we meet at Galbraith Mountain in
+                Bellingham, WA. The format is deliberate. We start with a
+                beginner-guided trail run so nobody gets left behind. Then we
+                split by skill level for group laps. Mental health
+                conversations are built into the ride structure. Not forced.
+                Not scheduled. Just built in. The trail does the work.
+              </p>
+              <p>
+                Last Saturday of each month is an extended group ride starting
+                at noon. Longer loops. More time together. Same ethos.
               </p>
               <p>
                 I run this the same way I run a design team. Clear structure.
-                Consistent cadence. People know when the next event is. They
-                know someone is going to be there. They know it&apos;s not
-                going to be weird. That reliability is the whole thing.
-                Community doesn&apos;t happen by accident. It happens because
-                someone keeps showing up and holding the space.
-              </p>
-              <p>
-                I incorporated it as a nonprofit in January 2019. Built a
-                board of directors. Set up the operations so it doesn&apos;t
-                depend on one person having a good week. The same systems
-                thinking that keeps a 12-designer team running across 60+
-                brands also keeps a nonprofit running 85+ events over
-                multiple years.
+                Consistent cadence. People know when the next ride is. They
+                know someone is going to be there. That reliability is the
+                whole thing. Community does not happen by accident. It happens
+                because someone keeps showing up and holding the space.
               </p>
             </div>
           </section>
 
-          {/* What It Builds */}
+          {/* The Team */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
-              What It Builds
+              The Team
+            </h2>
+            <div className="space-y-4 text-lg text-muted leading-relaxed">
+              <p>
+                This does not run on one person. Levi Hill and Mikel lead
+                rides. Brian &quot;Avocabro&quot; Doner is a team rider and
+                ride lead. These are people who showed up, kept showing up,
+                and took ownership. That is how you know it is real. When
+                other people carry it forward without being asked.
+              </p>
+              <p>
+                I set up the operations so it does not depend on me having a
+                good week. The same systems thinking that keeps a 12-designer
+                team running across 60+ brands also keeps a nonprofit running
+                85+ events over multiple years.
+              </p>
+            </div>
+          </section>
+
+          {/* The Community */}
+          <section>
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
+              The Community
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  title: "Connection",
+                  title: "Local Roots",
                   description:
-                    "People who were isolated find a crew. Not a support group. A crew. People who ride together, check in on each other, and actually mean it when they ask how you're doing.",
+                    "Postdoc Brewing, Whistle Workwear, Special Brews, and Crucible Brewing partner with us. This is a Bellingham thing. Local businesses backing a local mission. That is how community actually works.",
                 },
                 {
-                  title: "Routine",
+                  title: "Low Barrier",
                   description:
-                    "A regular reason to get outside and move. That sounds simple because it is. But for someone in a rough stretch, having one thing on the calendar that they look forward to can change the trajectory of a week.",
+                    "You do not need to be a good rider. You do not need to talk about your feelings. You just need to show up and pedal. The beginner-guided format means nobody gets dropped. The conversations happen on their own when people feel safe enough.",
                 },
                 {
-                  title: "Identity Beyond the Past",
+                  title: "Consistent Presence",
                   description:
-                    "For veterans especially, the transition out of service can feel like losing who you are. Riding gives people something to be good at, something to work toward, and a community that has nothing to do with rank or deployment history.",
+                    "Every Saturday since 2019. Weekly rides plus monthly extended rides. For someone in a rough stretch, having one thing on the calendar that they can count on changes the trajectory of a week.",
                 },
                 {
-                  title: "Mental Space",
+                  title: "Non-Clinical Space",
                   description:
-                    "An hour on a trail resets your head in a way that nothing else does. The focus required to ride pushes everything else out. You come back to the parking lot a different person than the one who got out of the car.",
+                    "The options were clinical treatment or nothing. Send It Society lives in the middle. Not therapy. Not pretending everything is fine. Just people riding bikes and looking out for each other. Sometimes that is enough.",
                 },
               ].map((feature) => (
                 <div
@@ -191,37 +210,32 @@ export default function SendItSocietyPage() {
             </div>
           </section>
 
-          {/* The Impact */}
+          {/* The Point */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
-              The Impact
+              The Point
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
                 Eighty-five events and counting. Each one is a few hours where
                 people put their phones away, ride bikes in the dirt, and
-                remember what it feels like to be part of something. There
-                is no metric that captures what that is worth.
+                remember what it feels like to be part of something. There is
+                no metric that captures what that is worth.
               </p>
               <p>
-                Some people came to one ride and never came back. That&apos;s
-                fine. Some people came to one ride and haven&apos;t missed
-                one since. That&apos;s the point. The door is always open.
-                There&apos;s no membership fee, no obligation, no pressure.
-                Just a group of people who show up because showing up matters.
+                Some people came to one ride and never came back. That is
+                fine. Some people came to one ride and have not missed one
+                since. That is the point. The door is always open. No
+                membership fee. No obligation. No pressure. Just a group of
+                people who show up because showing up matters.
               </p>
               <p>
-                I started this because I saw a gap. People were struggling and
-                the options were either clinical treatment or nothing. Send It
-                Society lives in the middle. It&apos;s not therapy. It&apos;s
-                not pretending everything is fine. It&apos;s just a bunch of
-                people riding bikes and looking out for each other. Sometimes
-                that&apos;s enough.
+                Matthew would have loved this. Not because of what it became.
+                Because of what it is. People on bikes, outside, taking care
+                of each other.
               </p>
               <p>
-                This is the most important thing I&apos;ve built. Not because
-                of the scale. Because of what it means to the people who
-                needed it.
+                This is the most important thing I have built.
               </p>
             </div>
           </section>
@@ -229,10 +243,11 @@ export default function SendItSocietyPage() {
           {/* Tags */}
           <div className="flex flex-wrap gap-2 pt-8 border-t border-border">
             {[
-              "Mental Wellness",
-              "Nonprofit",
-              "Community",
+              "501(c)(3) Nonprofit",
+              "Mental Health",
               "Mountain Biking",
+              "Community",
+              "Bellingham, WA",
               "Leadership",
             ].map((tag) => (
               <span

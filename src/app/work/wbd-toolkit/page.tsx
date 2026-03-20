@@ -118,7 +118,9 @@ export default function WBDToolkitPage() {
               <p>
                 We were asked to build a replacement from scratch. Not a patch.
                 Not a revision. A completely new toolkit purpose-built for one
-                thing: helping WBD licensees succeed on Amazon.
+                thing: helping WBD licensees succeed on Amazon. Getting
+                alignment meant working across WBD leadership, their retail
+                strategy team, and the licensees who would actually use it.
               </p>
               <p>
                 We worked with the WBD Consumer Products team, Amazon Retail,
@@ -248,6 +250,13 @@ export default function WBDToolkitPage() {
                 That keeps WBD IP represented correctly on the platform and
                 keeps licensee campaigns aligned with WBD&apos;s retail
                 strategy.
+              </p>
+              <p>
+                The bottom line is speed and compliance. When licensees execute
+                faster on Amazon and fewer campaigns get rejected for brand
+                misalignment, WBD&apos;s retail revenue benefits directly. The
+                toolkit shortens time-to-market for licensee campaigns and
+                reduces the back-and-forth that used to slow launches down.
               </p>
               <p>
                 This toolkit replaced something that wasn&apos;t working with

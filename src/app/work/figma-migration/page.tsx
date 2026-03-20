@@ -214,6 +214,12 @@ export default function FigmaMigrationPage() {
                 team can step in without friction.
               </p>
               <p>
+                The 40% reduction in revision cycles meant faster delivery to
+                clients and higher throughput across the board. That operational
+                shift let the team take on more brands without growing
+                headcount, turning a workflow change into a real capacity gain.
+              </p>
+              <p>
                 This wasn&apos;t a tool migration. It was an operational
                 transformation. We went from a sequential, file-based workflow
                 to a real-time, multiplayer one. The team is faster, more

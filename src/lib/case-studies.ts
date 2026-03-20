@@ -21,8 +21,8 @@ export const caseStudies: CaseStudy[] = [
     role: "Design Lead & Builder",
     year: "Jan 2025 - Present",
     metrics: [
-      { label: "Reporting Eliminated", value: "20+hrs/mo" },
-      { label: "Designers Supported", value: "12" },
+      { label: "Manual Reporting Eliminated", value: "20+hrs/mo" },
+      { label: "Designers Protected", value: "12" },
       { label: "Systems Unified", value: "4" },
     ],
     tags: ["Design Ops", "AI", "Figma API", "Next.js", "Claude"],
@@ -55,9 +55,9 @@ export const caseStudies: CaseStudy[] = [
     year: "Dec 2024 - Nov 2025",
     metrics: [
       { label: "Reduction in Revision Cycles", value: "40%" },
-      { label: "File Hosting", value: "Eliminated" },
-      { label: "Vendor Approvals", value: "In-Context" },
-      { label: "Collaboration", value: "Simultaneous" },
+      { label: "SharePoint/OneDrive File Hosting", value: "Eliminated" },
+      { label: "Vendor Approval Pipeline", value: "In-Context" },
+      { label: "Multi-Designer Collaboration", value: "Simultaneous" },
     ],
     tags: ["Figma", "Change Management", "Design Ops", "Team Leadership", "Vendor Collaboration", "Platform Migration"],
     status: "published",
@@ -65,16 +65,18 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "send-it-society",
     title: "Send It Society",
-    subtitle: "A mental wellness nonprofit built on mountain bikes, founded by a Marine who knew what disconnection costs",
+    subtitle: "A 501(c)(3) nonprofit built on mountain bikes and founded for my brother Matthew",
     description:
-      "I started Send It Society in 2019 because I watched people I served with disappear into isolation and the options were clinical treatment or nothing. So I built something in the middle. A nonprofit that uses mountain biking to get people outside, moving, and connected. 85+ events later, it's still going.",
+      "I founded Send It Society after losing my brother Matthew to suicide in 2019. He was the one who got me riding after the Marine Corps. The mission is specific: provide a non-clinical healing environment to raise education, awareness, and action for mental health through mountain biking. 85+ events at Galbraith Mountain in Bellingham, WA. Every Saturday since 2019.",
     role: "Founder",
     year: "2019 - Present",
     metrics: [
-      { label: "Events Organized", value: "85+" },
-      { label: "Founded", value: "2019" },
+      { label: "Events Since 2019", value: "85+" },
+      { label: "Saturday Rides", value: "Weekly" },
+      { label: "Extended Rides", value: "Monthly" },
+      { label: "Local Partners", value: "4" },
     ],
-    tags: ["Mental Wellness", "Nonprofit", "Community", "Mountain Biking", "Leadership"],
+    tags: ["501(c)(3) Nonprofit", "Mental Health", "Mountain Biking", "Community", "Bellingham, WA", "Leadership"],
     status: "published",
   },
 ];

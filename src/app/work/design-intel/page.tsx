@@ -135,6 +135,12 @@ export default function DesignIntelPage() {
                 matches one that caused a missed deadline last quarter.
               </p>
               <p>
+                I worked with leadership and project management to define what
+                visibility they actually needed and shaped the dashboard around
+                those conversations. The goal was a tool that served the people
+                making decisions, not just the people pulling data.
+              </p>
+              <p>
                 This wasn&apos;t a side project that grew legs. It was an
                 intentional tool built for a specific gap. I designed it to feel
                 like something designers would actually open. Not another admin
@@ -193,7 +199,9 @@ export default function DesignIntelPage() {
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
                 Twenty-plus hours of manual reporting, gone. Every month. That
-                alone would justify the build.
+                alone would justify the build. Those hours turned into capacity
+                the team could reinvest into actual design work, letting us
+                scale output across more brands without adding headcount.
               </p>
               <p>
                 But the real value is in what didn&apos;t happen. The burnout
