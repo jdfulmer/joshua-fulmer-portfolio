@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ export default function ProjectsPage() {
       description:
         "Plug-and-play Figma templates for Amazon sellers. Preview and refine your Brand Story, A+, and Store layouts before uploading. Everything I learned building enterprise Amazon tooling, packaged up and shared for free.",
       tags: ["Figma", "UX/UI Design", "E-Commerce"],
-      link: "/work",
+      link: "/projects/amazon-resources",
       completed: "September 2024",
     },
     {
@@ -22,7 +23,7 @@ export default function ProjectsPage() {
       description:
         "AI-generated cinematic assets for a D&D live stream called Roll 2 Role. Used ComfyAI with a custom LoRA database to build contextual scene imagery for the \"For Peace Through Death\" campaign. Not portraits. Full world-building. Got contracted for their next campaign.",
       tags: ["ComfyAI", "LoRA", "World-Building", "Narrative Design"],
-      link: "/work",
+      link: "/projects/roll-2-role",
       completed: "July 2022",
     },
     {
@@ -31,7 +32,7 @@ export default function ProjectsPage() {
       description:
         "Social media strategy and brand consulting for a craft brewery opening a second location in Bellingham, WA. Built the content engine from scratch. 900% organic social growth in two quarters with almost no ad spend.",
       tags: ["Brand Strategy", "Social Media", "Content", "Craft Beer"],
-      link: "/work",
+      link: "/projects/garden-path",
       completed: "July 2024",
     },
   ];
@@ -54,9 +55,10 @@ export default function ProjectsPage() {
 
         <div className="space-y-6 animate-in-delay-1">
           {projects.map((project) => (
-            <div
+            <Link
               key={project.title}
-              className="border border-border rounded-2xl p-8 md:p-10"
+              href={project.link}
+              className="group block border border-border rounded-2xl p-8 md:p-10 hover:border-foreground/20 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs font-mono bg-surface border border-border px-3 py-1 rounded-full text-muted">
@@ -68,7 +70,7 @@ export default function ProjectsPage() {
                   </span>
                 )}
               </div>
-              <h2 className="text-2xl font-semibold tracking-tight mb-2">
+              <h2 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
                 {project.title}
               </h2>
               <p className="text-muted mb-6 max-w-2xl">
@@ -84,7 +86,7 @@ export default function ProjectsPage() {
                   </span>
                 ))}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
