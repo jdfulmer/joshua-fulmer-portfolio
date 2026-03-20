@@ -54,7 +54,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Design Lead",
     year: "Dec 2024 - Nov 2025",
     metrics: [
-      { label: "Missed Deadlines", value: "Zero" },
+      { label: "Reduction in Revision Cycles", value: "40%" },
       { label: "File Hosting", value: "Eliminated" },
       { label: "Vendor Approvals", value: "In-Context" },
       { label: "Collaboration", value: "Simultaneous" },

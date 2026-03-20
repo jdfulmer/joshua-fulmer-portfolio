@@ -54,14 +54,14 @@ export default function FigmaMigrationPage() {
             Adobe to Figma
           </p>
           <p className="text-sm text-white/40 mt-4 font-mono">
-            12 Designers. 60+ Brands. Zero Downtime.
+            12 Designers. 60+ Brands. 40% Fewer Revision Cycles.
           </p>
         </div>
 
         {/* Impact Metrics */}
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
-            { value: "Zero", label: "Missed Deadlines During Migration" },
+            { value: "40%", label: "Reduction in Revision Cycles" },
             { value: "Eliminated", label: "SharePoint/OneDrive File Hosting" },
             { value: "In-Context", label: "Vendor Approval Pipeline" },
             { value: "Simultaneous", label: "Multi-Designer Collaboration" },
