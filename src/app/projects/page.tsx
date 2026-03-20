@@ -8,15 +8,6 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Design Intel",
-      type: "Internal Tool",
-      description:
-        "AI-powered design ops dashboard that connects Figma, Asana, and leadership visibility into one system. The thing I use to keep tabs on everything without bugging my team.",
-      tags: ["Figma API", "Claude", "Next.js", "Design Ops"],
-      link: "/work/design-intel",
-      completed: null,
-    },
-    {
       title: "Amazon Resources",
       type: "Figma Community",
       description:
