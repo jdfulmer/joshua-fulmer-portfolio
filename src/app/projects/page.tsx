@@ -54,10 +54,9 @@ export default function ProjectsPage() {
 
         <div className="space-y-6 animate-in-delay-1">
           {projects.map((project) => (
-            <a
+            <div
               key={project.title}
-              href={project.link}
-              className="group block border border-border rounded-2xl p-8 md:p-10 hover:border-foreground/20 transition-all duration-300"
+              className="border border-border rounded-2xl p-8 md:p-10"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs font-mono bg-surface border border-border px-3 py-1 rounded-full text-muted">
@@ -69,7 +68,7 @@ export default function ProjectsPage() {
                   </span>
                 )}
               </div>
-              <h2 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
+              <h2 className="text-2xl font-semibold tracking-tight mb-2">
                 {project.title}
               </h2>
               <p className="text-muted mb-6 max-w-2xl">
@@ -85,7 +84,7 @@ export default function ProjectsPage() {
                   </span>
                 ))}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
