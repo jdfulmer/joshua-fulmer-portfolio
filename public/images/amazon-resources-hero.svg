@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#0f0e0d"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="fgrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1c1917" stroke-width="0.3"/>
+    </pattern>
+    <linearGradient id="amzGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff9900" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#fgrid)" opacity="0.5"/>
+
+  <!-- Figma canvas frame -->
+  <rect x="160" y="60" width="1600" height="960" rx="16" fill="#1c1917" stroke="#292524" stroke-width="1.5"/>
+
+  <!-- Figma top bar -->
+  <rect x="160" y="60" width="1600" height="48" rx="16" fill="#292524"/>
+  <rect x="160" y="92" width="1600" height="16" fill="#292524"/>
+
+  <!-- Figma toolbar items -->
+  <rect x="192" y="76" width="24" height="16" rx="3" fill="#44403c"/>
+  <rect x="228" y="76" width="24" height="16" rx="3" fill="#44403c"/>
+  <rect x="264" y="76" width="24" height="16" rx="3" fill="#44403c"/>
+
+  <!-- File name -->
+  <text x="960" y="90" font-family="system-ui" font-size="13" fill="#78716c" text-anchor="middle">Amazon Resources — Community Template</text>
+
+  <!-- Share button -->
+  <rect x="1660" y="72" width="72" height="28" rx="6" fill="#0acf83"/>
+  <text x="1696" y="91" font-family="system-ui" font-size="12" fill="white" text-anchor="middle" font-weight="500">Share</text>
+
+  <!-- Left panel (layers/pages) -->
+  <rect x="160" y="108" width="260" height="912" fill="#1a1815"/>
+  <line x1="420" y1="108" x2="420" y2="1020" stroke="#292524" stroke-width="1"/>
+
+  <text x="184" y="140" font-family="system-ui" font-size="12" fill="#78716c" font-weight="600">Pages</text>
+
+  <!-- Page list -->
+  <rect x="176" y="152" width="228" height="28" rx="4" fill="#ff9900" opacity="0.15"/>
+  <text x="196" y="171" font-family="system-ui" font-size="12" fill="#ff9900">Brand Story</text>
+  <text x="196" y="199" font-family="system-ui" font-size="12" fill="#57534e">Enhanced A+</text>
+  <text x="196" y="223" font-family="system-ui" font-size="12" fill="#57534e">Premium A+</text>
+  <text x="196" y="247" font-family="system-ui" font-size="12" fill="#57534e">Brand Store</text>
+  <text x="196" y="271" font-family="system-ui" font-size="12" fill="#57534e">DSP</text>
+
+  <line x1="176" y1="292" x2="404" y2="292" stroke="#292524" stroke-width="0.5"/>
+
+  <text x="184" y="316" font-family="system-ui" font-size="12" fill="#78716c" font-weight="600">Layers</text>
+  <text x="196" y="340" font-family="system-ui" font-size="11" fill="#57534e">Module Preview</text>
+  <text x="196" y="360" font-family="system-ui" font-size="11" fill="#57534e">Flow Visualization</text>
+  <text x="196" y="380" font-family="system-ui" font-size="11" fill="#57534e">Character Counter</text>
+  <text x="196" y="400" font-family="system-ui" font-size="11" fill="#57534e">Specs Reference</text>
+
+  <!-- Main canvas area -->
+  <rect x="420" y="108" width="1100" height="912" fill="#0f0e0d"/>
+
+  <!-- Amazon orange accent glow -->
+  <rect x="420" y="108" width="1100" height="912" fill="url(#amzGrad)"/>
+
+  <!-- Brand Story module preview on canvas -->
+  <!-- Background image frame -->
+  <rect x="500" y="160" width="940" height="480" rx="8" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+
+  <!-- Top label -->
+  <text x="520" y="196" font-family="ui-monospace, monospace" font-size="11" fill="#ff9900" letter-spacing="0.08em" opacity="0.8">BRAND STORY MODULE PREVIEW</text>
+
+  <!-- Background image area -->
+  <rect x="520" y="216" width="900" height="260" rx="6" fill="#292524"/>
+  <text x="970" y="356" font-family="system-ui" font-size="16" fill="#44403c" text-anchor="middle">Background Image (1464 x 625)</text>
+  <!-- Dimension markers -->
+  <line x1="520" y1="490" x2="1420" y2="490" stroke="#ff9900" stroke-width="0.5" opacity="0.3"/>
+  <text x="970" y="504" font-family="ui-monospace, monospace" font-size="9" fill="#ff9900" text-anchor="middle" opacity="0.5">1464px</text>
+
+  <!-- Module cards -->
+  <g>
+    <rect x="520" y="500" width="216" height="120" rx="6" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="536" y="516" width="184" height="56" rx="4" fill="#1c1917"/>
+    <text x="628" y="548" font-family="system-ui" font-size="10" fill="#44403c" text-anchor="middle">362 x 453</text>
+    <rect x="536" y="582" width="120" height="6" rx="2" fill="#44403c"/>
+    <rect x="536" y="596" width="80" height="4" rx="2" fill="#292524"/>
+
+    <rect x="750" y="500" width="216" height="120" rx="6" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="766" y="516" width="184" height="56" rx="4" fill="#1c1917"/>
+    <text x="858" y="548" font-family="system-ui" font-size="10" fill="#44403c" text-anchor="middle">362 x 453</text>
+    <rect x="766" y="582" width="120" height="6" rx="2" fill="#44403c"/>
+    <rect x="766" y="596" width="80" height="4" rx="2" fill="#292524"/>
+
+    <rect x="980" y="500" width="216" height="120" rx="6" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="996" y="516" width="184" height="56" rx="4" fill="#1c1917"/>
+    <text x="1088" y="548" font-family="system-ui" font-size="10" fill="#44403c" text-anchor="middle">362 x 453</text>
+    <rect x="996" y="582" width="120" height="6" rx="2" fill="#44403c"/>
+    <rect x="996" y="596" width="80" height="4" rx="2" fill="#292524"/>
+
+    <rect x="1210" y="500" width="210" height="120" rx="6" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="1226" y="516" width="178" height="56" rx="4" fill="#1c1917"/>
+    <text x="1315" y="548" font-family="system-ui" font-size="10" fill="#44403c" text-anchor="middle">362 x 453</text>
+    <rect x="1226" y="582" width="120" height="6" rx="2" fill="#44403c"/>
+    <rect x="1226" y="596" width="80" height="4" rx="2" fill="#292524"/>
+  </g>
+
+  <!-- Flow visualization below -->
+  <rect x="500" y="680" width="940" height="160" rx="8" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+  <text x="520" y="712" font-family="ui-monospace, monospace" font-size="11" fill="#ff9900" letter-spacing="0.08em" opacity="0.8">MODULE FLOW</text>
+
+  <!-- Flow nodes -->
+  <rect x="540" y="730" width="120" height="44" rx="6" fill="#292524" stroke="#ff9900" stroke-width="0.5" opacity="0.6"/>
+  <text x="600" y="757" font-family="system-ui" font-size="11" fill="#a8a29e" text-anchor="middle">Header</text>
+  <path d="M660 752 L700 752" stroke="#44403c" stroke-width="1"/>
+  <polygon points="698,748 706,752 698,756" fill="#44403c"/>
+
+  <rect x="706" y="730" width="120" height="44" rx="6" fill="#292524" stroke="#44403c" stroke-width="0.5"/>
+  <text x="766" y="757" font-family="system-ui" font-size="11" fill="#78716c" text-anchor="middle">Image Left</text>
+  <path d="M826 752 L866 752" stroke="#44403c" stroke-width="1"/>
+  <polygon points="864,748 872,752 864,756" fill="#44403c"/>
+
+  <rect x="872" y="730" width="120" height="44" rx="6" fill="#292524" stroke="#44403c" stroke-width="0.5"/>
+  <text x="932" y="757" font-family="system-ui" font-size="11" fill="#78716c" text-anchor="middle">Comparison</text>
+  <path d="M992 752 L1032 752" stroke="#44403c" stroke-width="1"/>
+  <polygon points="1030,748 1038,752 1030,756" fill="#44403c"/>
+
+  <rect x="1038" y="730" width="120" height="44" rx="6" fill="#292524" stroke="#44403c" stroke-width="0.5"/>
+  <text x="1098" y="757" font-family="system-ui" font-size="11" fill="#78716c" text-anchor="middle">Banner</text>
+  <path d="M1158 752 L1198 752" stroke="#44403c" stroke-width="1"/>
+  <polygon points="1196,748 1204,752 1196,756" fill="#44403c"/>
+
+  <rect x="1204" y="730" width="120" height="44" rx="6" fill="#292524" stroke="#44403c" stroke-width="0.5"/>
+  <text x="1264" y="757" font-family="system-ui" font-size="11" fill="#78716c" text-anchor="middle">Footer</text>
+
+  <!-- Character counter widget -->
+  <rect x="540" y="792" width="300" height="36" rx="6" fill="#292524" stroke="#44403c" stroke-width="0.5"/>
+  <text x="556" y="815" font-family="ui-monospace, monospace" font-size="10" fill="#57534e">Character Count:</text>
+  <text x="680" y="815" font-family="ui-monospace, monospace" font-size="10" fill="#22c55e">87 / 100</text>
+  <rect x="780" y="804" width="48" height="14" rx="3" fill="#22c55e" opacity="0.15"/>
+  <text x="790" y="814" font-family="system-ui" font-size="9" fill="#22c55e">Valid</text>
+
+  <!-- Right panel (properties) -->
+  <rect x="1520" y="108" width="240" height="912" fill="#1a1815"/>
+  <line x1="1520" y1="108" x2="1520" y2="1020" stroke="#292524" stroke-width="1"/>
+
+  <text x="1544" y="140" font-family="system-ui" font-size="12" fill="#78716c" font-weight="600">Design</text>
+
+  <text x="1544" y="172" font-family="system-ui" font-size="11" fill="#57534e">Frame</text>
+  <text x="1544" y="196" font-family="ui-monospace, monospace" font-size="11" fill="#44403c">W 1464 H 625</text>
+
+  <line x1="1544" y1="216" x2="1736" y2="216" stroke="#292524" stroke-width="0.5"/>
+
+  <text x="1544" y="240" font-family="system-ui" font-size="11" fill="#57534e">Fill</text>
+  <rect x="1544" y="250" width="16" height="16" rx="2" fill="#ff9900" opacity="0.3"/>
+  <text x="1568" y="263" font-family="ui-monospace, monospace" font-size="11" fill="#44403c">#FF9900</text>
+
+  <!-- Zoom indicator -->
+  <rect x="1520" y="980" width="240" height="40" fill="#1a1815"/>
+  <text x="1640" y="1004" font-family="ui-monospace, monospace" font-size="11" fill="#44403c" text-anchor="middle">75%</text>
+
+  <!-- Figma community badge -->
+  <rect x="500" y="876" width="940" height="100" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="540" y="912" font-family="ui-monospace, monospace" font-size="10" fill="#57534e" letter-spacing="0.08em">FIGMA COMMUNITY</text>
+  <text x="540" y="940" font-family="system-ui" font-size="18" fill="#a8a29e" font-weight="500">Free template for Amazon sellers. 5 content types. Plug and play.</text>
+  <rect x="1300" y="900" width="120" height="36" rx="8" fill="#292524" stroke="#ff9900" stroke-width="1" opacity="0.5"/>
+  <text x="1360" y="924" font-family="system-ui" font-size="13" fill="#ff9900" text-anchor="middle" opacity="0.8">Duplicate</text>
+</svg>

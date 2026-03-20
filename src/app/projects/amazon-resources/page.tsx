@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,17 +46,16 @@ export default function AmazonResourcesPage() {
           </p>
         </div>
 
-        {/* Gradient Hero */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#ff9900] via-[#e47911] to-[#232f3e] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
-          <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
-            Figma Community
-          </p>
-          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
-            Amazon Resources
-          </p>
-          <p className="text-sm text-white/40 mt-4 font-mono">
-            Templates for Sellers
-          </p>
+        {/* Hero Visual */}
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/images/amazon-resources-hero.svg"
+            alt="Amazon Resources Figma template showing Brand Story module preview, flow visualization, and character counter"
+            width={1920}
+            height={1080}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Impact Metrics */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -48,16 +49,15 @@ export default function SendItSocietyPage() {
         </div>
 
         {/* Hero Visual */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#1a4d2e] via-[#2d5a3f] to-[#0f2d1a] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
-          <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
-            501(c)(3) Nonprofit
-          </p>
-          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
-            Send It Society
-          </p>
-          <p className="text-sm text-white/40 mt-4 font-mono">
-            Bellingham, WA. Galbraith Mountain. Every Saturday.
-          </p>
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/images/send-it-society-hero.svg"
+            alt="Send It Society illustration showing mountain bikers riding trails through Pacific Northwest forest at Galbraith Mountain"
+            width={1920}
+            height={1080}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Impact Metrics */}
