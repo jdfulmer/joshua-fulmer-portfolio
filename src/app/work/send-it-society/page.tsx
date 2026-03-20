@@ -86,7 +86,7 @@ export default function SendItSocietyPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                My brother Matthew got me riding. After I came home from the
+                My best friend Matthew got me riding. After I came home from the
                 Marine Corps, he was the one who put me on a bike and kept me
                 moving. That was his thing. He knew what being outside and on
                 the trail did for your head. He knew it because he lived it.

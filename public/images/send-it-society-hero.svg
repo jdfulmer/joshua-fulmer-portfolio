@@ -118,21 +118,6 @@
   <text x="180" y="268" font-family="system-ui, sans-serif" font-size="18" fill="#57534e">Galbraith Mountain, Bellingham, WA</text>
   <text x="180" y="300" font-family="system-ui, sans-serif" font-size="16" fill="#44403c">Every Saturday since 2019</text>
 
-  <!-- Info cards at bottom -->
-  <g>
-    <rect x="160" y="920" width="200" height="70" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1" opacity="0.8"/>
-    <text x="180" y="950" font-family="system-ui" font-size="24" fill="#a8a29e" font-weight="600">85+</text>
-    <text x="180" y="972" font-family="ui-monospace, monospace" font-size="10" fill="#57534e" letter-spacing="0.05em">Events</text>
-
-    <rect x="400" y="920" width="200" height="70" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1" opacity="0.8"/>
-    <text x="420" y="950" font-family="system-ui" font-size="24" fill="#a8a29e" font-weight="600">Weekly</text>
-    <text x="420" y="972" font-family="ui-monospace, monospace" font-size="10" fill="#57534e" letter-spacing="0.05em">Saturday Rides</text>
-
-    <rect x="640" y="920" width="200" height="70" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1" opacity="0.8"/>
-    <text x="660" y="950" font-family="system-ui" font-size="24" fill="#a8a29e" font-weight="600">4</text>
-    <text x="660" y="972" font-family="ui-monospace, monospace" font-size="10" fill="#57534e" letter-spacing="0.05em">Local Partners</text>
-  </g>
-
   <!-- Subtle "For Matthew" in corner -->
   <text x="1740" y="1040" font-family="system-ui, sans-serif" font-size="13" fill="#292524" font-style="italic">For Matthew</text>
 </svg>

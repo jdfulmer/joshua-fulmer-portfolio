@@ -67,9 +67,9 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "send-it-society",
     title: "Send It Society",
-    subtitle: "A 501(c)(3) nonprofit built on mountain bikes and founded for my brother Matthew",
+    subtitle: "A 501(c)(3) nonprofit built on mountain bikes and founded for my best friend Matthew",
     description:
-      "I founded Send It Society after losing my brother Matthew to suicide in 2019. He was the one who got me riding after the Marine Corps. The mission is specific: provide a non-clinical healing environment to raise education, awareness, and action for mental health through mountain biking. 85+ events at Galbraith Mountain in Bellingham, WA. Every Saturday since 2019.",
+      "I founded Send It Society after losing my best friend Matthew to suicide in 2019. He was the one who got me riding after the Marine Corps. The mission is specific: provide a non-clinical healing environment to raise education, awareness, and action for mental health through mountain biking. 85+ events at Galbraith Mountain in Bellingham, WA. Every Saturday since 2019.",
     role: "Founder",
     year: "2019 - Present",
     metrics: [

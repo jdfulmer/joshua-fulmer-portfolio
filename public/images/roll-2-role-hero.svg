@@ -116,52 +116,6 @@
   <!-- Mist layer -->
   <rect x="0" y="700" width="1920" height="200" fill="url(#mist)"/>
 
-  <!-- ComfyAI pipeline overlay (bottom) -->
-  <rect x="160" y="880" width="1600" height="140" rx="12" fill="#0c0a09" stroke="#292524" stroke-width="1"/>
-
-  <!-- Pipeline steps -->
-  <text x="200" y="916" font-family="ui-monospace, monospace" font-size="10" fill="#4a1942" letter-spacing="0.1em">COMFYAI PIPELINE</text>
-
-  <!-- Step 1: LoRA Stack -->
-  <rect x="200" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
-  <text x="220" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">LoRA Stack</text>
-  <text x="220" y="975" font-family="system-ui" font-size="10" fill="#57534e">Style + Character + Scene</text>
-
-  <path d="M420 962 L470 962" stroke="#44403c" stroke-width="1"/>
-  <polygon points="468,958 476,962 468,966" fill="#44403c"/>
-
-  <!-- Step 2: Prompt -->
-  <rect x="476" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
-  <text x="496" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Scene Prompt</text>
-  <text x="496" y="975" font-family="system-ui" font-size="10" fill="#57534e">Narrative context + mood</text>
-
-  <path d="M696 962 L746 962" stroke="#44403c" stroke-width="1"/>
-  <polygon points="744,958 752,962 744,966" fill="#44403c"/>
-
-  <!-- Step 3: Generate -->
-  <rect x="752" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#4a1942" stroke-width="1"/>
-  <text x="772" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Generate</text>
-  <text x="772" y="975" font-family="system-ui" font-size="10" fill="#57534e">Cinematic scene render</text>
-
-  <path d="M972 962 L1022 962" stroke="#44403c" stroke-width="1"/>
-  <polygon points="1020,958 1028,962 1020,966" fill="#44403c"/>
-
-  <!-- Step 4: Refine -->
-  <rect x="1028" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
-  <text x="1048" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Refine</text>
-  <text x="1048" y="975" font-family="system-ui" font-size="10" fill="#57534e">Consistency check + upscale</text>
-
-  <path d="M1248 962 L1298 962" stroke="#44403c" stroke-width="1"/>
-  <polygon points="1296,958 1304,962 1296,966" fill="#44403c"/>
-
-  <!-- Step 5: Deliver -->
-  <rect x="1304" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
-  <text x="1324" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Deliver</text>
-  <text x="1324" y="975" font-family="system-ui" font-size="10" fill="#57534e">Stream-ready asset</text>
-
-  <!-- Live indicator -->
-  <circle cx="1596" y="962" r="4" fill="#22c55e" opacity="0.6"/>
-
   <!-- Title overlay -->
   <text x="160" y="220" font-family="ui-monospace, monospace" font-size="12" fill="#4a1942" letter-spacing="0.15em">CREATIVE AI • D&amp;D LIVE STREAM</text>
   <text x="160" y="280" font-family="system-ui, sans-serif" font-size="52" fill="#a8a29e" font-weight="600" letter-spacing="-0.02em">For Peace Through Death</text>

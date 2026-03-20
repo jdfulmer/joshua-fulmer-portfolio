@@ -144,25 +144,4 @@
   <text x="1610" y="160" font-family="ui-monospace, monospace" font-size="12" fill="#a8a29e" letter-spacing="0.15em" text-anchor="middle">MULTIPLAYER</text>
   <rect x="1530" y="170" width="160" height="1" fill="#44403c"/>
 
-  <!-- Stats bar at bottom -->
-  <rect x="180" y="860" width="1560" height="100" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
-  <g>
-    <text x="280" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">REVISION CYCLES</text>
-    <text x="280" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">40% Reduction</text>
-  </g>
-  <line x1="600" y1="880" x2="600" y2="940" stroke="#292524" stroke-width="1"/>
-  <g>
-    <text x="680" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">DESIGNERS</text>
-    <text x="680" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">12</text>
-  </g>
-  <line x1="900" y1="880" x2="900" y2="940" stroke="#292524" stroke-width="1"/>
-  <g>
-    <text x="980" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">BRANDS</text>
-    <text x="980" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">60+</text>
-  </g>
-  <line x1="1200" y1="880" x2="1200" y2="940" stroke="#292524" stroke-width="1"/>
-  <g>
-    <text x="1280" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">SHAREPOINT</text>
-    <text x="1280" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">Eliminated</text>
-  </g>
 </svg>

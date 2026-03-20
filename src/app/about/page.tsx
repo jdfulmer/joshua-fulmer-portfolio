@@ -104,8 +104,9 @@ export default function AboutPage() {
                 <div className="space-y-3 text-muted leading-relaxed">
                   <p>
                     Infantry Assaultman (0351), then retrained across multiple
-                    specializations including Expeditionary Airfield Systems
-                    Technician (0933/0931) and Expeditionary Fire Rescue (7257/7252).
+                    specializations including Combat Marksmen Coach (0933) /
+                    Combat Marksmen Instructor Trainer (0931) and Air Traffic
+                    Control Specialist (7257/7252).
                     That range wasn&apos;t an accident. The Corps needed people
                     who could adapt and lead in unfamiliar territory. I was one
                     of those people.

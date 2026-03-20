@@ -156,10 +156,4 @@
   <rect x="1520" y="980" width="240" height="40" fill="#1a1815"/>
   <text x="1640" y="1004" font-family="ui-monospace, monospace" font-size="11" fill="#44403c" text-anchor="middle">75%</text>
 
-  <!-- Figma community badge -->
-  <rect x="500" y="876" width="940" height="100" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
-  <text x="540" y="912" font-family="ui-monospace, monospace" font-size="10" fill="#57534e" letter-spacing="0.08em">FIGMA COMMUNITY</text>
-  <text x="540" y="940" font-family="system-ui" font-size="18" fill="#a8a29e" font-weight="500">Free template for Amazon sellers. 5 content types. Plug and play.</text>
-  <rect x="1300" y="900" width="120" height="36" rx="8" fill="#292524" stroke="#ff9900" stroke-width="1" opacity="0.5"/>
-  <text x="1360" y="924" font-family="system-ui" font-size="13" fill="#ff9900" text-anchor="middle" opacity="0.8">Duplicate</text>
 </svg>
