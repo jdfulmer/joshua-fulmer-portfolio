@@ -14,6 +14,34 @@ export default function ProjectsPage() {
         "AI-powered design ops dashboard that connects Figma, Asana, and leadership visibility into one system. The thing I use to keep tabs on everything without bugging my team.",
       tags: ["Figma API", "Claude", "Next.js", "Design Ops"],
       link: "/work/design-intel",
+      completed: null,
+    },
+    {
+      title: "Amazon Resources",
+      type: "Figma Community",
+      description:
+        "Plug-and-play Figma templates for Amazon sellers. Preview and refine your Brand Story, A+, and Store layouts before uploading. Everything I learned building enterprise Amazon tooling, packaged up and shared for free.",
+      tags: ["Figma", "UX/UI Design", "E-Commerce"],
+      link: "/work",
+      completed: "September 2024",
+    },
+    {
+      title: "Roll 2 Role",
+      type: "Creative AI",
+      description:
+        "AI-generated cinematic assets for a D&D live stream called Roll 2 Role. Used ComfyAI with a custom LoRA database to build contextual scene imagery for the \"For Peace Through Death\" campaign. Not portraits. Full world-building. Got contracted for their next campaign.",
+      tags: ["ComfyAI", "LoRA", "World-Building", "Narrative Design"],
+      link: "/work",
+      completed: "July 2022",
+    },
+    {
+      title: "Garden Path Fermentation",
+      type: "Brand Consulting",
+      description:
+        "Social media strategy and brand consulting for a craft brewery opening a second location in Bellingham, WA. Built the content engine from scratch. 900% organic social growth in two quarters with almost no ad spend.",
+      tags: ["Brand Strategy", "Social Media", "Content", "Craft Beer"],
+      link: "/work",
+      completed: "July 2024",
     },
   ];
 
@@ -44,11 +72,18 @@ export default function ProjectsPage() {
                 <span className="text-xs font-mono bg-surface border border-border px-3 py-1 rounded-full text-muted">
                   {project.type}
                 </span>
+                {project.completed && (
+                  <span className="text-xs font-mono text-muted">
+                    {project.completed}
+                  </span>
+                )}
               </div>
               <h2 className="text-2xl font-semibold tracking-tight mb-2 group-hover:text-accent transition-colors">
                 {project.title}
               </h2>
-              <p className="text-muted mb-6 max-w-2xl">{project.description}</p>
+              <p className="text-muted mb-6 max-w-2xl">
+                {project.description}
+              </p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
@@ -60,18 +95,6 @@ export default function ProjectsPage() {
                 ))}
               </div>
             </a>
-          ))}
-
-          {/* Placeholder slots */}
-          {[1, 2].map((i) => (
-            <div
-              key={i}
-              className="border border-dashed border-border rounded-2xl p-8 md:p-10 flex items-center justify-center min-h-[200px]"
-            >
-              <p className="text-sm text-muted font-mono">
-                More projects coming soon
-              </p>
-            </div>
           ))}
         </div>
       </div>

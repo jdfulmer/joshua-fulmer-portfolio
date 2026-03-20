@@ -63,15 +63,18 @@ export const caseStudies: CaseStudy[] = [
     status: "published",
   },
   {
-    slug: "coming-soon",
-    title: "More Work Coming",
-    subtitle: "New case studies in development",
+    slug: "send-it-society",
+    title: "Send It Society",
+    subtitle: "A mental wellness nonprofit built on mountain bikes, founded by a Marine who knew what disconnection costs",
     description:
-      "Additional case studies are being developed. Check back soon.",
-    role: "",
-    year: "",
-    metrics: [],
-    tags: [],
-    status: "coming-soon",
+      "I started Send It Society in 2019 because I watched people I served with disappear into isolation and the options were clinical treatment or nothing. So I built something in the middle. A nonprofit that uses mountain biking to get people outside, moving, and connected. 85+ events later, it's still going.",
+    role: "Founder",
+    year: "2019 - Present",
+    metrics: [
+      { label: "Events Organized", value: "85+" },
+      { label: "Founded", value: "2019" },
+    ],
+    tags: ["Mental Wellness", "Nonprofit", "Community", "Mountain Biking", "Leadership"],
+    status: "published",
   },
 ];
