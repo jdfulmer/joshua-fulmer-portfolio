@@ -52,12 +52,12 @@ export const caseStudies: CaseStudy[] = [
     description:
       "Migrated a 12-designer team from Adobe Creative Suite to Figma while keeping work shipping across 60+ brands. Transformed a sequential, file-based workflow into real-time multiplayer collaboration and rebuilt the entire vendor approval pipeline from email chains and PDF markups to in-context Figma comments.",
     role: "Design Lead",
-    year: "2023",
+    year: "Dec 2024 - Nov 2025",
     metrics: [
-      { label: "Designers Migrated", value: "12" },
-      { label: "Brands Supported", value: "60+" },
-      { label: "Collaboration", value: "Real-Time" },
-      { label: "File-Passing", value: "Eliminated" },
+      { label: "Missed Deadlines", value: "Zero" },
+      { label: "File Hosting", value: "Eliminated" },
+      { label: "Vendor Approvals", value: "In-Context" },
+      { label: "Collaboration", value: "Simultaneous" },
     ],
     tags: ["Figma", "Change Management", "Design Ops", "Team Leadership", "Vendor Collaboration", "Platform Migration"],
     status: "published",

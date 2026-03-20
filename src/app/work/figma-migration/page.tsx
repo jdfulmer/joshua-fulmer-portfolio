@@ -32,7 +32,7 @@ export default function FigmaMigrationPage() {
         {/* Header */}
         <div className="animate-in max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-muted">2023</span>
+            <span className="text-xs font-mono text-muted">Dec 2024 - Nov 2025</span>
             <span className="w-px h-3 bg-border" />
             <span className="text-xs font-mono text-muted">Design Lead</span>
           </div>
@@ -61,10 +61,10 @@ export default function FigmaMigrationPage() {
         {/* Impact Metrics */}
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
-            { value: "12", label: "Designers Migrated" },
-            { value: "60+", label: "Brands Supported" },
-            { value: "Real-Time", label: "Multiplayer Collaboration" },
-            { value: "Eliminated", label: "File-Passing Workflow" },
+            { value: "Zero", label: "Missed Deadlines During Migration" },
+            { value: "Eliminated", label: "SharePoint/OneDrive File Hosting" },
+            { value: "In-Context", label: "Vendor Approval Pipeline" },
+            { value: "Simultaneous", label: "Multi-Designer Collaboration" },
           ].map((metric) => (
             <div key={metric.label}>
               <p className="text-2xl md:text-3xl font-semibold">
@@ -140,8 +140,11 @@ export default function FigmaMigrationPage() {
               <p>
                 I ran training sessions, built templates, created shared
                 libraries, and set up the team&apos;s Figma workspace to
-                mirror the way we actually work. Not how Figma thinks we
-                should work. How we actually work.
+                mirror the way we actually work. Ecomm design is a fringe
+                case. The default Figma setup doesn&apos;t account for the
+                volume, the vendor complexity, or the approval chains we
+                deal with daily. So we adjusted it to fit our workflow
+                instead of the other way around.
               </p>
             </div>
           </section>
