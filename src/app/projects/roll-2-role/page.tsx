@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,16 +47,15 @@ export default function Roll2RolePage() {
         </div>
 
         {/* Hero Visual */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#2d1b4e] via-[#4a1942] to-[#1a0a2e] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
-          <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
-            Creative AI
-          </p>
-          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
-            For Peace Through Death
-          </p>
-          <p className="text-sm text-white/40 mt-4 font-mono">
-            World-Building. Scene Imagery. Full Immersion.
-          </p>
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/images/roll-2-role-hero.svg"
+            alt="Roll 2 Role creative AI visualization showing a fantasy tavern scene with the ComfyAI pipeline for generating cinematic D&D assets"
+            width={1920}
+            height={1080}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Impact Metrics */}

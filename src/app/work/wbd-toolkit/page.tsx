@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,17 +46,16 @@ export default function WBDToolkitPage() {
           </p>
         </div>
 
-        {/* Placeholder Hero Visual */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#1a1640] via-[#2d1b69] to-[#0f172a] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
-          <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
-            Warner Bros. Discovery
-          </p>
-          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
-            Licensee Toolkit
-          </p>
-          <p className="text-sm text-white/40 mt-4 font-mono">
-            Amazon Retail Strategy Guide
-          </p>
+        {/* Hero Visual */}
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/images/wbd-toolkit-hero.svg"
+            alt="WBD Licensee Toolkit interface showing the 5-step progression pathway, content areas, and dynamic update system for Amazon retail"
+            width={1920}
+            height={1080}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Impact Metrics */}

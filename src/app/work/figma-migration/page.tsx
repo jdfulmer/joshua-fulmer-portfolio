@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,16 +47,15 @@ export default function FigmaMigrationPage() {
         </div>
 
         {/* Hero Visual */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-[#0c8ce9] via-[#a259ff] to-[#f24e1e] p-12 md:p-20 flex flex-col items-center justify-center min-h-[320px] md:min-h-[400px]">
-          <p className="text-xs font-mono text-white/40 tracking-widest uppercase mb-4">
-            Platform Migration
-          </p>
-          <p className="text-3xl md:text-4xl font-semibold text-white/90 text-center tracking-tight">
-            Adobe to Figma
-          </p>
-          <p className="text-sm text-white/40 mt-4 font-mono">
-            12 Designers. 60+ Brands. 40% Fewer Revision Cycles.
-          </p>
+        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/images/figma-migration-hero.svg"
+            alt="Figma Migration visualization showing the transition from sequential Adobe file-passing to multiplayer Figma collaboration"
+            width={1920}
+            height={1080}
+            className="w-full h-auto"
+            priority
+          />
         </div>
 
         {/* Impact Metrics */}

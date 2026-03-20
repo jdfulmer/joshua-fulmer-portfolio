@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <radialGradient id="magicGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#4a1942" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#1a0a2e" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0c0a09" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c0a09" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2d1b4e" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#0c0a09"/>
+  <rect width="1920" height="1080" fill="url(#magicGlow)"/>
+
+  <!-- Stars / particles -->
+  <g opacity="0.4">
+    <circle cx="200" cy="120" r="1" fill="#a8a29e"/>
+    <circle cx="450" cy="80" r="1.2" fill="#a8a29e"/>
+    <circle cx="700" cy="150" r="0.8" fill="#a8a29e"/>
+    <circle cx="900" cy="60" r="1" fill="#a8a29e"/>
+    <circle cx="1100" cy="130" r="1.4" fill="#a8a29e"/>
+    <circle cx="1350" cy="90" r="0.8" fill="#a8a29e"/>
+    <circle cx="1550" cy="170" r="1.1" fill="#a8a29e"/>
+    <circle cx="1750" cy="100" r="0.9" fill="#a8a29e"/>
+    <circle cx="300" cy="220" r="0.7" fill="#78716c"/>
+    <circle cx="600" cy="200" r="1.3" fill="#78716c"/>
+    <circle cx="1200" cy="50" r="1" fill="#78716c"/>
+    <circle cx="1650" cy="200" r="0.8" fill="#78716c"/>
+    <circle cx="960" cy="180" r="1.5" fill="#4a1942"/>
+    <circle cx="480" cy="300" r="0.6" fill="#a8a29e"/>
+    <circle cx="1400" cy="240" r="1" fill="#a8a29e"/>
+  </g>
+
+  <!-- Distant architecture / castle silhouette -->
+  <g opacity="0.25">
+    <rect x="700" y="320" width="60" height="180" fill="#1c1917"/>
+    <polygon points="700,320 730,260 760,320" fill="#1c1917"/>
+    <rect x="780" y="360" width="40" height="140" fill="#1c1917"/>
+    <rect x="840" y="300" width="80" height="200" fill="#1c1917"/>
+    <polygon points="840,300 880,240 920,300" fill="#1c1917"/>
+    <rect x="940" y="340" width="50" height="160" fill="#1c1917"/>
+    <polygon points="940,340 965,280 990,340" fill="#1c1917"/>
+    <rect x="1010" y="380" width="40" height="120" fill="#1c1917"/>
+    <rect x="1070" y="320" width="70" height="180" fill="#1c1917"/>
+    <polygon points="1070,320 1105,250 1140,320" fill="#1c1917"/>
+    <rect x="1160" y="360" width="50" height="140" fill="#1c1917"/>
+    <polygon points="1160,360 1185,300 1210,360" fill="#1c1917"/>
+  </g>
+
+  <!-- Landscape layers -->
+  <path d="M0,600 C200,560 400,580 600,550 C800,520 1000,560 1200,540 C1400,520 1600,550 1920,530 L1920,700 L0,700 Z" fill="#1c1917" opacity="0.5"/>
+  <path d="M0,660 C300,640 500,670 700,650 C900,630 1100,660 1300,640 C1500,620 1700,650 1920,630 L1920,760 L0,760 Z" fill="#1c1917" opacity="0.7"/>
+
+  <!-- Ground -->
+  <rect x="0" y="720" width="1920" height="360" fill="#1c1917"/>
+
+  <!-- Tavern scene (warm glow) -->
+  <rect x="600" y="600" width="720" height="260" rx="4" fill="#292524"/>
+
+  <!-- Tavern roof -->
+  <polygon points="560,600 960,480 1360,600" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <polygon points="620,600 960,510 1300,600" fill="#1c1917"/>
+
+  <!-- Windows with warm glow -->
+  <rect x="660" y="640" width="100" height="80" rx="4" fill="#4a1942" opacity="0.15"/>
+  <rect x="664" y="644" width="92" height="72" rx="2" fill="#0c0a09"/>
+  <rect x="664" y="644" width="92" height="72" rx="2" fill="#ff9900" opacity="0.06"/>
+  <line x1="710" y1="644" x2="710" y2="716" stroke="#44403c" stroke-width="1"/>
+  <line x1="664" y1="680" x2="756" y2="680" stroke="#44403c" stroke-width="1"/>
+
+  <rect x="810" y="640" width="100" height="80" rx="4" fill="#4a1942" opacity="0.15"/>
+  <rect x="814" y="644" width="92" height="72" rx="2" fill="#0c0a09"/>
+  <rect x="814" y="644" width="92" height="72" rx="2" fill="#ff9900" opacity="0.06"/>
+  <line x1="860" y1="644" x2="860" y2="716" stroke="#44403c" stroke-width="1"/>
+  <line x1="814" y1="680" x2="906" y2="680" stroke="#44403c" stroke-width="1"/>
+
+  <!-- Door (warm light spilling out) -->
+  <rect x="940" y="660" width="60" height="120" rx="2" fill="#4a1942" opacity="0.2"/>
+  <rect x="944" y="664" width="52" height="116" rx="1" fill="#0c0a09"/>
+  <rect x="944" y="664" width="52" height="116" rx="1" fill="#ff9900" opacity="0.08"/>
+
+  <!-- More windows -->
+  <rect x="1060" y="640" width="100" height="80" rx="4" fill="#4a1942" opacity="0.15"/>
+  <rect x="1064" y="644" width="92" height="72" rx="2" fill="#0c0a09"/>
+  <rect x="1064" y="644" width="92" height="72" rx="2" fill="#ff9900" opacity="0.06"/>
+  <line x1="1110" y1="644" x2="1110" y2="716" stroke="#44403c" stroke-width="1"/>
+  <line x1="1064" y1="680" x2="1156" y2="680" stroke="#44403c" stroke-width="1"/>
+
+  <!-- Tavern sign -->
+  <line x1="560" y1="600" x2="560" y2="660" stroke="#44403c" stroke-width="2"/>
+  <rect x="520" y="660" width="80" height="40" rx="4" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="560" y="685" font-family="system-ui" font-size="10" fill="#78716c" text-anchor="middle">Tavern</text>
+
+  <!-- Character silhouettes in scene -->
+  <!-- Figure at door -->
+  <g opacity="0.4">
+    <circle cx="970" cy="730" r="8" fill="#4a1942"/>
+    <rect x="962" y="740" width="16" height="24" rx="2" fill="#4a1942"/>
+    <!-- Staff/weapon -->
+    <line x1="984" y1="728" x2="992" y2="764" stroke="#4a1942" stroke-width="2"/>
+  </g>
+
+  <!-- Figures on road -->
+  <g opacity="0.3" transform="translate(500, 740)">
+    <circle cx="0" cy="0" r="7" fill="#78716c"/>
+    <rect x="-6" y="8" width="12" height="20" rx="2" fill="#78716c"/>
+  </g>
+  <g opacity="0.25" transform="translate(530, 742)">
+    <circle cx="0" cy="0" r="6" fill="#57534e"/>
+    <rect x="-5" y="7" width="10" height="18" rx="2" fill="#57534e"/>
+  </g>
+
+  <!-- Mist layer -->
+  <rect x="0" y="700" width="1920" height="200" fill="url(#mist)"/>
+
+  <!-- ComfyAI pipeline overlay (bottom) -->
+  <rect x="160" y="880" width="1600" height="140" rx="12" fill="#0c0a09" stroke="#292524" stroke-width="1"/>
+
+  <!-- Pipeline steps -->
+  <text x="200" y="916" font-family="ui-monospace, monospace" font-size="10" fill="#4a1942" letter-spacing="0.1em">COMFYAI PIPELINE</text>
+
+  <!-- Step 1: LoRA Stack -->
+  <rect x="200" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="220" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">LoRA Stack</text>
+  <text x="220" y="975" font-family="system-ui" font-size="10" fill="#57534e">Style + Character + Scene</text>
+
+  <path d="M420 962 L470 962" stroke="#44403c" stroke-width="1"/>
+  <polygon points="468,958 476,962 468,966" fill="#44403c"/>
+
+  <!-- Step 2: Prompt -->
+  <rect x="476" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="496" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Scene Prompt</text>
+  <text x="496" y="975" font-family="system-ui" font-size="10" fill="#57534e">Narrative context + mood</text>
+
+  <path d="M696 962 L746 962" stroke="#44403c" stroke-width="1"/>
+  <polygon points="744,958 752,962 744,966" fill="#44403c"/>
+
+  <!-- Step 3: Generate -->
+  <rect x="752" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#4a1942" stroke-width="1"/>
+  <text x="772" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Generate</text>
+  <text x="772" y="975" font-family="system-ui" font-size="10" fill="#57534e">Cinematic scene render</text>
+
+  <path d="M972 962 L1022 962" stroke="#44403c" stroke-width="1"/>
+  <polygon points="1020,958 1028,962 1020,966" fill="#44403c"/>
+
+  <!-- Step 4: Refine -->
+  <rect x="1028" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="1048" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Refine</text>
+  <text x="1048" y="975" font-family="system-ui" font-size="10" fill="#57534e">Consistency check + upscale</text>
+
+  <path d="M1248 962 L1298 962" stroke="#44403c" stroke-width="1"/>
+  <polygon points="1296,958 1304,962 1296,966" fill="#44403c"/>
+
+  <!-- Step 5: Deliver -->
+  <rect x="1304" y="932" width="220" height="60" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="1324" y="955" font-family="ui-monospace, monospace" font-size="10" fill="#a8a29e">Deliver</text>
+  <text x="1324" y="975" font-family="system-ui" font-size="10" fill="#57534e">Stream-ready asset</text>
+
+  <!-- Live indicator -->
+  <circle cx="1596" y="962" r="4" fill="#22c55e" opacity="0.6"/>
+
+  <!-- Title overlay -->
+  <text x="160" y="220" font-family="ui-monospace, monospace" font-size="12" fill="#4a1942" letter-spacing="0.15em">CREATIVE AI • D&amp;D LIVE STREAM</text>
+  <text x="160" y="280" font-family="system-ui, sans-serif" font-size="52" fill="#a8a29e" font-weight="600" letter-spacing="-0.02em">For Peace Through Death</text>
+  <text x="160" y="330" font-family="system-ui, sans-serif" font-size="18" fill="#57534e">AI-generated cinematic world-building for Roll 2 Role</text>
+  <text x="160" y="366" font-family="system-ui, sans-serif" font-size="15" fill="#44403c">ComfyAI + Custom LoRA Database • July 2022</text>
+</svg>

@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#0f0e0d"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1c1917" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Left side: Adobe (static/old world) -->
+  <!-- File stack representing sequential workflow -->
+  <g opacity="0.6">
+    <!-- Static file icons -->
+    <rect x="180" y="280" width="280" height="360" rx="8" fill="#1c1917" stroke="#292524" stroke-width="2"/>
+    <rect x="200" y="300" width="240" height="28" rx="4" fill="#292524"/>
+    <rect x="200" y="344" width="240" height="180" rx="4" fill="#1a1615"/>
+    <!-- File content lines -->
+    <rect x="220" y="364" width="160" height="6" rx="2" fill="#44403c"/>
+    <rect x="220" y="382" width="120" height="6" rx="2" fill="#44403c"/>
+    <rect x="220" y="400" width="180" height="6" rx="2" fill="#44403c"/>
+    <rect x="220" y="418" width="100" height="6" rx="2" fill="#44403c"/>
+    <rect x="220" y="450" width="200" height="40" rx="4" fill="#292524"/>
+    <rect x="220" y="500" width="140" height="6" rx="2" fill="#44403c"/>
+
+    <!-- Stacked files behind (sequential) -->
+    <rect x="196" y="274" width="280" height="360" rx="8" fill="none" stroke="#292524" stroke-width="1" opacity="0.5"/>
+    <rect x="212" y="268" width="280" height="360" rx="8" fill="none" stroke="#292524" stroke-width="1" opacity="0.3"/>
+
+    <!-- Adobe red accent -->
+    <rect x="200" y="304" width="8" height="20" rx="2" fill="#e8453c" opacity="0.8"/>
+    <text x="218" y="320" font-family="system-ui" font-size="13" fill="#78716c" letter-spacing="0.05em">design_final_v3_FINAL.psd</text>
+
+    <!-- Lock icon -->
+    <rect x="380" y="550" width="40" height="40" rx="6" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="392" y="558" width="16" height="12" rx="2" fill="none" stroke="#78716c" stroke-width="1.5"/>
+    <rect x="390" y="568" width="20" height="14" rx="2" fill="#78716c" opacity="0.5"/>
+  </g>
+
+  <!-- "BEFORE" label -->
+  <text x="320" y="230" font-family="ui-monospace, monospace" font-size="12" fill="#78716c" letter-spacing="0.15em" text-anchor="middle">SEQUENTIAL</text>
+  <rect x="240" y="240" width="160" height="1" fill="#292524"/>
+
+  <!-- Email chain / approval mess -->
+  <g opacity="0.4">
+    <rect x="180" y="680" width="280" height="80" rx="6" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+    <rect x="200" y="696" width="60" height="6" rx="2" fill="#44403c"/>
+    <rect x="200" y="710" width="200" height="4" rx="2" fill="#292524"/>
+    <rect x="200" y="722" width="160" height="4" rx="2" fill="#292524"/>
+    <rect x="200" y="734" width="100" height="4" rx="2" fill="#292524"/>
+    <!-- Reply arrow -->
+    <path d="M430 720 L460 720 L460 700" stroke="#44403c" stroke-width="1" fill="none"/>
+    <text x="200" y="694" font-family="ui-monospace, monospace" font-size="9" fill="#57534e">RE: RE: RE: Final review markup</text>
+  </g>
+
+  <!-- Center: Transition arrow -->
+  <g>
+    <!-- Gradient line -->
+    <defs>
+      <linearGradient id="transitionGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#e8453c" stop-opacity="0.6"/>
+        <stop offset="50%" stop-color="#a8a29e" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#a259ff" stop-opacity="0.6"/>
+      </linearGradient>
+    </defs>
+    <line x1="560" y1="540" x2="1360" y2="540" stroke="url(#transitionGrad)" stroke-width="2"/>
+
+    <!-- Arrow head -->
+    <polygon points="1360,530 1380,540 1360,550" fill="#a259ff" opacity="0.6"/>
+
+    <!-- Center label -->
+    <rect x="880" y="516" width="160" height="48" rx="24" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+    <text x="960" y="545" font-family="ui-monospace, monospace" font-size="13" fill="#a8a29e" text-anchor="middle" letter-spacing="0.1em">MIGRATION</text>
+  </g>
+
+  <!-- Right side: Figma (multiplayer/live) -->
+  <!-- Figma canvas -->
+  <g>
+    <rect x="1440" y="200" width="340" height="480" rx="12" fill="#1c1917" stroke="#44403c" stroke-width="1.5"/>
+
+    <!-- Figma top bar -->
+    <rect x="1440" y="200" width="340" height="40" rx="12" fill="#292524"/>
+    <rect x="1440" y="228" width="340" height="12" fill="#292524"/>
+    <!-- Figma logo hint -->
+    <circle cx="1466" cy="220" r="6" fill="#a259ff" opacity="0.7"/>
+    <circle cx="1480" cy="220" r="6" fill="#0acf83" opacity="0.7"/>
+    <circle cx="1494" cy="220" r="6" fill="#f24e1e" opacity="0.7"/>
+
+    <!-- Live design canvas area -->
+    <rect x="1460" y="260" width="300" height="320" rx="4" fill="#0f0e0d"/>
+
+    <!-- Design elements on canvas -->
+    <rect x="1480" y="280" width="140" height="80" rx="4" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="1490" y="290" width="80" height="8" rx="2" fill="#78716c"/>
+    <rect x="1490" y="306" width="110" height="4" rx="2" fill="#44403c"/>
+    <rect x="1490" y="316" width="90" height="4" rx="2" fill="#44403c"/>
+    <rect x="1490" y="336" width="60" height="16" rx="3" fill="#a259ff" opacity="0.3"/>
+
+    <rect x="1640" y="300" width="100" height="120" rx="4" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="1652" y="312" width="76" height="60" rx="2" fill="#1c1917"/>
+    <rect x="1652" y="380" width="60" height="4" rx="2" fill="#44403c"/>
+    <rect x="1652" y="392" width="40" height="4" rx="2" fill="#44403c"/>
+
+    <rect x="1480" y="390" width="260" height="60" rx="4" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <rect x="1496" y="406" width="120" height="6" rx="2" fill="#78716c"/>
+    <rect x="1496" y="420" width="200" height="4" rx="2" fill="#44403c"/>
+    <rect x="1496" y="432" width="160" height="4" rx="2" fill="#44403c"/>
+
+    <!-- Live cursors (multiplayer!) -->
+    <!-- Cursor 1 - purple -->
+    <g>
+      <path d="M1590 330 L1590 350 L1598 344 L1606 356 L1612 352 L1604 340 L1614 340 Z" fill="#a259ff"/>
+      <rect x="1590" y="356" width="50" height="18" rx="4" fill="#a259ff"/>
+      <text x="1598" y="369" font-family="system-ui" font-size="10" fill="white">Sarah</text>
+    </g>
+
+    <!-- Cursor 2 - green -->
+    <g>
+      <path d="M1700 380 L1700 400 L1708 394 L1716 406 L1722 402 L1714 390 L1724 390 Z" fill="#0acf83"/>
+      <rect x="1700" y="406" width="40" height="18" rx="4" fill="#0acf83"/>
+      <text x="1708" y="419" font-family="system-ui" font-size="10" fill="white">Mike</text>
+    </g>
+
+    <!-- Cursor 3 - orange -->
+    <g>
+      <path d="M1520 460 L1520 480 L1528 474 L1536 486 L1542 482 L1534 470 L1544 470 Z" fill="#f24e1e"/>
+      <rect x="1520" y="486" width="34" height="18" rx="4" fill="#f24e1e"/>
+      <text x="1527" y="499" font-family="system-ui" font-size="10" fill="white">You</text>
+    </g>
+
+    <!-- Comment thread -->
+    <rect x="1460" y="596" width="300" height="70" rx="8" fill="#292524" stroke="#44403c" stroke-width="1"/>
+    <circle cx="1484" cy="620" r="10" fill="#0acf83" opacity="0.5"/>
+    <text x="1500" y="616" font-family="system-ui" font-size="10" fill="#a8a29e">Vendor Feedback</text>
+    <rect x="1500" y="624" width="200" height="4" rx="2" fill="#44403c"/>
+    <rect x="1500" y="634" width="140" height="4" rx="2" fill="#44403c"/>
+    <circle cx="1740" cy="620" r="8" fill="#0acf83" opacity="0.3"/>
+    <path d="M1736 620 L1739 623 L1744 617" stroke="#0acf83" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- "AFTER" label -->
+  <text x="1610" y="160" font-family="ui-monospace, monospace" font-size="12" fill="#a8a29e" letter-spacing="0.15em" text-anchor="middle">MULTIPLAYER</text>
+  <rect x="1530" y="170" width="160" height="1" fill="#44403c"/>
+
+  <!-- Stats bar at bottom -->
+  <rect x="180" y="860" width="1560" height="100" rx="8" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <g>
+    <text x="280" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">REVISION CYCLES</text>
+    <text x="280" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">40% Reduction</text>
+  </g>
+  <line x1="600" y1="880" x2="600" y2="940" stroke="#292524" stroke-width="1"/>
+  <g>
+    <text x="680" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">DESIGNERS</text>
+    <text x="680" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">12</text>
+  </g>
+  <line x1="900" y1="880" x2="900" y2="940" stroke="#292524" stroke-width="1"/>
+  <g>
+    <text x="980" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">BRANDS</text>
+    <text x="980" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">60+</text>
+  </g>
+  <line x1="1200" y1="880" x2="1200" y2="940" stroke="#292524" stroke-width="1"/>
+  <g>
+    <text x="1280" y="900" font-family="ui-monospace, monospace" font-size="11" fill="#57534e" letter-spacing="0.08em">SHAREPOINT</text>
+    <text x="1280" y="930" font-family="system-ui" font-size="28" fill="#a8a29e" font-weight="600">Eliminated</text>
+  </g>
+</svg>

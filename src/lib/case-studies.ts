@@ -44,6 +44,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     tags: ["Amazon Retail", "Licensee Enablement", "Consumer Products", "Dynamic Content"],
     status: "published",
+    image: "/images/wbd-toolkit-hero.svg",
   },
   {
     slug: "figma-migration",
@@ -61,6 +62,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     tags: ["Figma", "Change Management", "Design Ops", "Team Leadership", "Vendor Collaboration", "Platform Migration"],
     status: "published",
+    image: "/images/figma-migration-hero.svg",
   },
   {
     slug: "send-it-society",
@@ -78,5 +80,6 @@ export const caseStudies: CaseStudy[] = [
     ],
     tags: ["501(c)(3) Nonprofit", "Mental Health", "Mountain Biking", "Community", "Bellingham, WA", "Leadership"],
     status: "published",
+    image: "/images/send-it-society-hero.svg",
   },
 ];
