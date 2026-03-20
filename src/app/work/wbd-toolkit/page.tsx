@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function WBDToolkitPage() {
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-24 md:py-32">
+      <div className="max-w-6xl mx-auto py-16 md:py-20">
         {/* Back link */}
         <Link
           href="/work"
-          className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground transition-colors mb-12"
+          className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground transition-colors mb-8"
         >
           <svg
             width="16"
@@ -41,13 +41,13 @@ export default function WBDToolkitPage() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             WBD Licensee Toolkit
           </h1>
-          <p className="text-xl text-muted mb-12">
+          <p className="text-xl text-muted mb-8">
             A from-scratch Amazon resource guide that keeps Hasbro, Mattel, LEGO, and every other WBD licensee selling smarter on Amazon
           </p>
         </div>
 
         {/* Hero Visual */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+        <div className="animate-in-delay-1 mb-10 rounded-2xl overflow-hidden border border-border">
           <Image
             src="/images/wbd-toolkit-hero.svg"
             alt="WBD Licensee Toolkit interface showing the 5-step progression pathway, content areas, and dynamic update system for Amazon retail"
@@ -59,7 +59,7 @@ export default function WBDToolkitPage() {
         </div>
 
         {/* Impact Metrics */}
-        <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
+        <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-10">
           {[
             { value: "6", label: "Core Content Areas" },
             { value: "5-Step", label: "Progression Pathway" },
@@ -76,7 +76,7 @@ export default function WBDToolkitPage() {
         </div>
 
         {/* Content */}
-        <div className="animate-in-delay-2 max-w-3xl space-y-16">
+        <div className="animate-in-delay-2 max-w-3xl space-y-12">
           {/* The Problem */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">

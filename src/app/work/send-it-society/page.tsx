@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function SendItSocietyPage() {
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-24 md:py-32">
+      <div className="max-w-6xl mx-auto py-16 md:py-20">
         {/* Back link */}
         <Link
           href="/work"
-          className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground transition-colors mb-12"
+          className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground transition-colors mb-8"
         >
           <svg
             width="16"
@@ -43,13 +43,13 @@ export default function SendItSocietyPage() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             Send It Society
           </h1>
-          <p className="text-xl text-muted mb-12">
+          <p className="text-xl text-muted mb-8">
             A non-clinical healing environment that raises education, awareness, and action for mental health through mountain biking
           </p>
         </div>
 
         {/* Hero Visual */}
-        <div className="animate-in-delay-1 mb-16 rounded-2xl overflow-hidden border border-border">
+        <div className="animate-in-delay-1 mb-10 rounded-2xl overflow-hidden border border-border">
           <Image
             src="/images/send-it-society-hero.svg"
             alt="Send It Society illustration showing mountain bikers riding trails through Pacific Northwest forest at Galbraith Mountain"
@@ -61,7 +61,7 @@ export default function SendItSocietyPage() {
         </div>
 
         {/* Impact Metrics */}
-        <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
+        <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-10">
           {[
             { value: "85+", label: "Events Since 2019" },
             { value: "Weekly", label: "Saturday Rides" },
@@ -78,7 +78,7 @@ export default function SendItSocietyPage() {
         </div>
 
         {/* Content */}
-        <div className="animate-in-delay-2 max-w-3xl space-y-16">
+        <div className="animate-in-delay-2 max-w-3xl space-y-12">
           {/* The Why */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">

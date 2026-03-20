@@ -39,7 +39,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-24 md:py-32">
+      <div className="max-w-6xl mx-auto py-16 md:py-20">
         <div className="animate-in">
           <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
             Side Projects
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
             Things I build because I can&apos;t help it.
           </h1>
-          <p className="text-lg text-muted max-w-2xl mb-16">
+          <p className="text-lg text-muted max-w-2xl mb-10">
             Tools, experiments, and the occasional rabbit hole that turns into
             something useful.
           </p>

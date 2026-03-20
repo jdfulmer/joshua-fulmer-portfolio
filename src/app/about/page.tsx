@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-24 md:py-32">
+      <div className="max-w-6xl mx-auto py-16 md:py-20">
         <div className="max-w-3xl">
           <div className="animate-in">
             <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
@@ -22,7 +22,7 @@ export default function AboutPage() {
           </div>
 
           {/* Headshot */}
-          <div className="animate-in-delay-1 mb-12">
+          <div className="animate-in-delay-1 mb-8">
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-border">
               <Image
                 src="/images/headshot.jpg"
@@ -61,8 +61,8 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="animate-in-delay-2 mt-16">
-            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-8">
+          <div className="animate-in-delay-2 mt-12">
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
               Before All This
             </h2>
             <div className="space-y-6 text-lg text-muted leading-relaxed">
@@ -88,11 +88,11 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="animate-in-delay-2 mt-16">
-            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-8">
+          <div className="animate-in-delay-2 mt-12">
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
               Career Timeline
             </h2>
-            <div className="space-y-10">
+            <div className="space-y-8">
               {/* USMC */}
               <div className="border-l-2 border-border pl-6">
                 <p className="text-sm font-mono text-muted tracking-wide uppercase mb-2">
@@ -186,8 +186,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="animate-in-delay-3 mt-16">
-            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-8">
+          <div className="animate-in-delay-3 mt-12">
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
               Design Philosophy
             </h2>
             <div className="space-y-6 text-lg text-muted leading-relaxed">
@@ -220,8 +220,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="animate-in-delay-3 mt-16">
-            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-8">
+          <div className="animate-in-delay-3 mt-12">
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
               What I Work With
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

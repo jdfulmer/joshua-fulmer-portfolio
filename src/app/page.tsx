@@ -10,7 +10,7 @@ export default function Home() {
     <div className="px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto">
         {/* Hero */}
-        <section className="py-24 md:py-32 lg:py-40 animate-in">
+        <section className="py-16 md:py-20 lg:py-24 animate-in">
           <p className="text-sm font-mono text-muted mb-6 tracking-wide uppercase">
             Design Leadership / AI Solutions / Design Ops
           </p>
@@ -50,8 +50,8 @@ export default function Home() {
         </section>
 
         {/* Featured Work */}
-        <section className="pb-24 md:pb-32 animate-in-delay-2">
-          <div className="flex items-center justify-between mb-12">
+        <section className="pb-16 md:pb-20 animate-in-delay-2">
+          <div className="flex items-center justify-between mb-8">
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase">
               Featured Work
             </h2>
@@ -63,7 +63,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             {featured.map((study) => (
               <Link
                 key={study.slug}
@@ -124,11 +124,11 @@ export default function Home() {
         </section>
 
         {/* What I Do */}
-        <section className="pb-24 md:pb-32 animate-in-delay-3">
-          <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-12">
+        <section className="pb-16 md:pb-20 animate-in-delay-3">
+          <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-8">
             What I Bring to the Table
           </h2>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-3">
             {[
               {
                 title: "Design Leadership",

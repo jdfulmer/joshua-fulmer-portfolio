@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-24 md:py-32">
+      <div className="max-w-6xl mx-auto py-16 md:py-20">
         <div className="max-w-2xl animate-in">
           <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
             Contact
@@ -16,7 +16,7 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
             Let&apos;s talk.
           </h1>
-          <p className="text-lg text-muted leading-relaxed mb-12">
+          <p className="text-lg text-muted leading-relaxed mb-8">
             Whether it&apos;s about design leadership, AI-powered tooling,
             or just a good conversation. I&apos;m always open to connecting
             with people who are building something worth building.

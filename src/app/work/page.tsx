@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function WorkPage() {
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-24 md:py-32">
+      <div className="max-w-6xl mx-auto py-16 md:py-20">
         <div className="animate-in">
           <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
             Work
@@ -20,7 +20,7 @@ export default function WorkPage() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
             Selected Case Studies
           </h1>
-          <p className="text-lg text-muted max-w-2xl mb-16">
+          <p className="text-lg text-muted max-w-2xl mb-10">
             Real problems, real solutions, real impact. Each project represents a
             different facet of leading design at scale.
           </p>
