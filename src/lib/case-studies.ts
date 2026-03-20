@@ -48,17 +48,19 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "figma-migration",
     title: "Adobe to Figma Migration",
-    subtitle: "Leading a 12-Person Team Through Tool Transformation",
+    subtitle: "How I moved 12 designers off Adobe and onto Figma without missing a deadline across 60+ brands",
     description:
-      "Led the full transition of a 12-designer team from Adobe Creative Suite to Figma. Not just a tool swap. A fundamental shift in how the team collaborates, delivers, and thinks about design systems.",
+      "Migrated a 12-designer team from Adobe Creative Suite to Figma while keeping work shipping across 60+ brands. Transformed a sequential, file-based workflow into real-time multiplayer collaboration and rebuilt the entire vendor approval pipeline from email chains and PDF markups to in-context Figma comments.",
     role: "Design Lead",
     year: "2023",
     metrics: [
-      { label: "Team Size", value: "12" },
-      { label: "Status", value: "Case study in progress" },
+      { label: "Designers Migrated", value: "12" },
+      { label: "Brands Supported", value: "60+" },
+      { label: "Collaboration", value: "Real-Time" },
+      { label: "File-Passing", value: "Eliminated" },
     ],
-    tags: ["Figma", "Change Management", "Design Ops", "Team Leadership"],
-    status: "coming-soon",
+    tags: ["Figma", "Change Management", "Design Ops", "Team Leadership", "Vendor Collaboration", "Platform Migration"],
+    status: "published",
   },
   {
     slug: "coming-soon",
