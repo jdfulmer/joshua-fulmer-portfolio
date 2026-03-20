@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { caseStudies } from "@/lib/case-studies";
+import { RotatingWord } from "@/components/RotatingWord";
 
 export default function Home() {
   const featured = caseStudies.filter((c) => c.status === "published");
@@ -14,7 +15,7 @@ export default function Home() {
             Design Leadership / AI Solutions / Design Ops
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] max-w-3xl">
-            I build the systems that help design teams do their best work.
+            I Create <RotatingWord />
           </h1>
           <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
             18 years of translating strategy into results. Currently leading a
