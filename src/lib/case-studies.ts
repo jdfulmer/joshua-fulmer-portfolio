@@ -19,7 +19,7 @@ export const caseStudies: CaseStudy[] = [
     description:
       "I was spending 5+ hours a week stitching together Figma, Asana, and spreadsheets just to answer one question: is anyone about to break? So I built the answer. A single AI-powered dashboard that cut 20+ hours of monthly reporting and catches workload problems before they become resignations.",
     role: "Design Lead & Builder",
-    year: "2024\u2013Present",
+    year: "Jan 2025 - Present",
     metrics: [
       { label: "Reporting Eliminated", value: "20+hrs/mo" },
       { label: "Designers Supported", value: "12" },
@@ -32,17 +32,17 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "wbd-toolkit",
     title: "WBD Licensee Toolkit",
-    subtitle: "Turning a static PDF nightmare into a live system serving every WBD licensee",
+    subtitle: "A from-scratch Amazon resource guide that keeps Hasbro, Mattel, LEGO, and every other WBD licensee selling smarter",
     description:
-      "WBD's brand guidelines were outdated before the PDFs finished downloading. Licensees worked from wrong assets. The brand team spent their days answering 'is this still the right logo?' We replaced the static toolkit with a dynamic system that now serves every licensee across the Consumer Products ecosystem, with live guidelines that stay current without manual updates.",
+      "WBD's licensees were on their own when it came to Amazon. No single source of truth. No best practices. No alignment with WBD's retail strategy. We built a comprehensive, dynamic toolkit from scratch covering 6 core content areas with a 5-step progression pathway. It stays current automatically, cross-checking Amazon updates so licensees never work from outdated information.",
     role: "Design Lead",
-    year: "2023\u20132024",
+    year: "Jan 2025 - Present",
     metrics: [
-      { label: "Licensee Coverage", value: "100%" },
-      { label: "Enterprise Partners", value: "3+" },
-      { label: "Toolkit Transformation", value: "Static to Dynamic" },
+      { label: "Core Content Areas", value: "6" },
+      { label: "Progression Pathway", value: "5-Step" },
+      { label: "Dynamic Updates", value: "Live" },
     ],
-    tags: ["Brand Systems", "Design Systems", "Enterprise", "Consumer Products"],
+    tags: ["Amazon Retail", "Licensee Enablement", "Consumer Products", "Dynamic Content"],
     status: "published",
   },
   {

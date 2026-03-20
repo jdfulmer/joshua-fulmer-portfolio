@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "WBD Licensee Toolkit | Dynamic Brand Asset System",
+  title: "WBD Licensee Toolkit | Amazon Retail Strategy for Licensed Sellers",
   description:
-    "How we replaced Warner Bros. Discovery's static brand toolkits with a dynamic system serving all licensees across the Consumer Products ecosystem, cutting compliance issues and eliminating repetitive asset requests.",
+    "How we built a dynamic Amazon toolkit from scratch for Warner Bros. Discovery's licensees, giving companies like Hasbro, Mattel, and LEGO always-current best practices for selling WBD IP on Amazon.",
 };
 
 export default function WBDToolkitPage() {
@@ -32,7 +32,7 @@ export default function WBDToolkitPage() {
         {/* Header */}
         <div className="animate-in max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-muted">2023 - 2024</span>
+            <span className="text-xs font-mono text-muted">Jan 2025 - Present</span>
             <span className="w-px h-3 bg-border" />
             <span className="text-xs font-mono text-muted">Design Lead</span>
           </div>
@@ -41,7 +41,7 @@ export default function WBDToolkitPage() {
             WBD Licensee Toolkit
           </h1>
           <p className="text-xl text-muted mb-12">
-            Turning a static PDF nightmare into a live system serving every WBD licensee
+            A from-scratch Amazon resource guide that keeps Hasbro, Mattel, LEGO, and every other WBD licensee selling smarter on Amazon
           </p>
         </div>
 
@@ -54,17 +54,17 @@ export default function WBDToolkitPage() {
             Licensee Toolkit
           </p>
           <p className="text-sm text-white/40 mt-4 font-mono">
-            Dynamic Brand Asset System
+            Amazon Retail Strategy Guide
           </p>
         </div>
 
         {/* Impact Metrics */}
         <div className="animate-in-delay-1 grid grid-cols-2 md:grid-cols-4 gap-6 border border-border rounded-2xl p-8 mb-16">
           {[
-            { value: "100%", label: "Licensee Coverage" },
-            { value: "3+", label: "Enterprise Partners" },
-            { value: "Static to Dynamic", label: "Toolkit Transformation" },
-            { value: "Brand-Agnostic", label: "Architecture" },
+            { value: "6", label: "Core Content Areas" },
+            { value: "5-Step", label: "Progression Pathway" },
+            { value: "Live", label: "Dynamic Updates" },
+            { value: "Amazon-First", label: "Retail Focus" },
           ].map((metric) => (
             <div key={metric.label}>
               <p className="text-2xl md:text-3xl font-semibold">
@@ -84,30 +84,27 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                Warner Bros. Discovery owns one of the biggest brand portfolios
-                in entertainment. Batman. Harry Potter. Discovery Channel. HBO.
-                Hundreds of licensees need accurate assets and guidelines for
-                every one of them.
+                Warner Bros. Discovery licenses its IP to some of the biggest
+                names in consumer products. Hasbro. Mattel. LEGO. These
+                companies sell WBD-licensed products on Amazon, and Amazon has
+                its own playbook. Brand Registry. A+ Content. Sponsored
+                Products. DSP. Algorithm changes. It moves fast and the rules
+                shift constantly.
               </p>
               <p>
-                The existing system was static PDFs. A brand team would finalize
-                guidelines, export a toolkit, and distribute it. By the time it
-                reached licensees, something had already changed. New logo
-                lockups. Updated color specs. Revised usage rules. The PDF was
-                wrong before the ink was dry.
+                There was something before we got involved. It wasn&apos;t
+                working. Licensees were left figuring out Amazon on their own,
+                piecing together outdated info, missing opportunities to align
+                with WBD&apos;s retail strategy. There was no single source of
+                truth for how to sell WBD IP effectively on the platform.
               </p>
               <p>
-                Licensees didn&apos;t know they were working from outdated files.
-                They&apos;d build an entire product line around the wrong assets
-                and find out during compliance review. The brand team spent hours
-                every week answering the same question over and over:
-                &quot;Is this still the right logo?&quot;
-              </p>
-              <p>
-                The brief said &quot;build a toolkit that supports all
-                licensees.&quot; The real problem was that a static toolkit could
-                never support all licensees. Not when guidelines change weekly
-                and the brand portfolio spans dozens of properties.
+                When your licensees underperform on Amazon, it&apos;s not just
+                their problem. It&apos;s your IP showing up with weak listings,
+                bad storefronts, and missed advertising windows around your
+                biggest tentpole moments. WBD needed their partners operating
+                at a higher standard. The previous approach couldn&apos;t get
+                them there.
               </p>
             </div>
           </section>
@@ -119,99 +116,109 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                We started where the brief pointed us, but we didn&apos;t stay
-                there.
+                We were asked to build a replacement from scratch. Not a patch.
+                Not a revision. A completely new toolkit purpose-built for one
+                thing: helping WBD licensees succeed on Amazon.
               </p>
               <p>
-                Working directly with WBD Consumer Products, Amazon Retail, and
-                regional licensee partners, we mapped the actual workflow. What
-                we found killed the original plan. Guidelines updated too
-                frequently for static delivery. New partners onboarded
-                constantly. Asset format requirements varied by distribution
-                channel, retail partner, and product category. A single PDF
-                couldn&apos;t hold all of that, and maintaining fifty separate
-                ones wasn&apos;t an option.
+                We worked with the WBD Consumer Products team, Amazon Retail,
+                and the licensees themselves to understand what they actually
+                needed. The answer was clear. Licensees needed a centralized
+                resource guide covering Amazon best practices, organized in a
+                way that met them where they were. Whether they were just
+                getting Brand Registry set up or running advanced DSP campaigns,
+                the toolkit had to support the full range.
               </p>
               <p>
-                So we designed a dynamic system. The core decision was to make
-                the architecture brand-agnostic. Separate the toolkit
-                infrastructure from the brand-specific content. Batman
-                merchandise and Discovery Channel educational materials use the
-                same system. Different guidelines, different assets, same level
-                of support.
-              </p>
-              <p>
-                Guidelines, assets, specifications, and usage rules update
-                independently. No rebuilding the entire system when one brand
-                changes a color value. No re-exporting and redistributing PDFs.
-                Licensees always see the current state.
+                So we designed a 5-step progression pathway. Start with
+                foundation building. End with optimization. Each step
+                builds on the last. The toolkit features dark and light
+                mode, keyboard-driven search with Ctrl+K, sidebar navigation,
+                and step-numbered guidance so licensees always know where they
+                are and what comes next. It references the Star Labs portal for
+                brand assets and approvals, keeping everything connected.
               </p>
             </div>
           </section>
 
-          {/* Key Partners */}
+          {/* What It Covers */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
-              Partners & Collaboration
+              What It Covers
             </h2>
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  name: "WBD Consumer Products",
-                  role: "Primary stakeholder. Owned brand governance, defined compliance requirements, and set the approval workflows the system needed to support.",
+                  name: "Brand Building & Content Creation",
+                  detail: "Brand Registry setup, Amazon storefront design, and A+ Content creation. The foundation every licensee needs before anything else works.",
                 },
                 {
-                  name: "Amazon Retail",
-                  role: "Largest distribution partner. Drove the requirements for retail-specific asset formats, listing specifications, and channel-specific guidelines.",
+                  name: "Product Listings",
+                  detail: "Titles, images, descriptions, and keyword strategy. The basics that most licensees were getting wrong because no one told them the right way.",
                 },
                 {
-                  name: "Additional Partners",
-                  role: "Regional licensees and specialty manufacturers. Each one brought format and compliance requirements that stress-tested the system's flexibility.",
+                  name: "Advertising",
+                  detail: "Sponsored Products, Sponsored Brands, Sponsored Display, and Amazon DSP. From first campaign to full-funnel strategy.",
                 },
-              ].map((partner) => (
+                {
+                  name: "Algorithm & AI Discovery",
+                  detail: "Amazon's COSMO algorithm and Rufus AI. How products get discovered is changing. The toolkit keeps licensees ahead of it.",
+                },
+                {
+                  name: "Fulfillment & Fees",
+                  detail: "FBA logistics, inventory management, and cost-saving strategies. Operational fundamentals that protect margins.",
+                },
+                {
+                  name: "Seasonal Planning",
+                  detail: "Aligning licensee campaigns with WBD tentpole moments. Movie launches, series premieres, franchise anniversaries. Timing is everything.",
+                },
+              ].map((area) => (
                 <div
-                  key={partner.name}
+                  key={area.name}
                   className="border border-border rounded-xl p-6"
                 >
-                  <h3 className="font-semibold mb-2">{partner.name}</h3>
+                  <h3 className="font-semibold mb-2">{area.name}</h3>
                   <p className="text-sm text-muted leading-relaxed">
-                    {partner.role}
+                    {area.detail}
                   </p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* The Evolution */}
+          {/* The Dynamic Advantage */}
           <section>
             <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
-              The Evolution
+              The Dynamic Advantage
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                The original scope was a static toolkit. Here are the assets.
-                Here are the rules. Standard deliverable.
+                The initial build was strong on its own. A comprehensive,
+                well-organized Amazon resource guide for WBD licensees. That
+                alone was a significant upgrade from what existed before. But
+                the even bigger win was making it dynamic.
               </p>
               <p>
-                Two weeks into the actual licensee research, we knew that
-                wasn&apos;t going to work. We watched a licensee pull a PDF from
-                three months ago, build a product mockup with the wrong logo
-                treatment, submit it for review, get rejected, and start over.
-                That entire cycle took two weeks. It happened constantly.
+                Amazon changes constantly. Advertising features update. Algorithm
+                logic shifts. Fee structures get revised. A static guide goes
+                stale the moment you publish it. So we built the toolkit to
+                stay current. Content updates are visible live, immediately.
+                The system cross-checks information against Amazon updates.
+                When Amazon changes something, the toolkit reflects it.
               </p>
               <p>
-                The pivot to dynamic changed everything. Licensees stopped
-                working from snapshots and started working from the source. When
-                a brand team updated guidelines on Tuesday, every licensee saw
-                the change on Tuesday. Not six weeks later when someone
-                remembered to re-export the PDF.
+                That means a licensee opening the toolkit today sees
+                today&apos;s reality. Not last quarter&apos;s. Not last
+                month&apos;s. The current state of Amazon best practices,
+                verified and up to date. No one is building campaigns around
+                outdated ad specs or deprecated listing features.
               </p>
               <p>
-                The compliance back-and-forth dropped immediately. The brand team
-                stopped fielding repetitive questions and started spending that
-                time on actual brand strategy. And every new licensee that
-                onboarded got the same quality of support without anyone building
-                them a custom toolkit.
+                For WBD, this is the difference between a one-time deliverable
+                and a living resource. The toolkit keeps working long after the
+                initial build. It keeps every licensee aligned with the latest
+                Amazon landscape without anyone having to manually chase
+                updates.
               </p>
             </div>
           </section>
@@ -223,27 +230,31 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                The dynamic toolkit now serves every WBD licensee across the
-                entire Consumer Products ecosystem. That&apos;s full coverage,
-                where before there were gaps, workarounds, and outdated files
-                floating around.
+                WBD&apos;s licensees now have one place to go for everything
+                Amazon. Hasbro, Mattel, LEGO, and every other licensed seller
+                in the ecosystem can open the toolkit, find exactly what they
+                need, and trust that the information is current.
               </p>
               <p>
-                Brand compliance issues dropped because the root cause
-                disappeared. Licensees aren&apos;t working from stale documents
-                anymore. They&apos;re working from live guidelines that update
-                the moment the brand team makes a change.
+                The 5-step progression pathway means licensees at every level
+                of Amazon maturity get value. A new partner setting up their
+                first storefront and an established seller optimizing DSP
+                campaigns use the same toolkit. Different starting points, same
+                quality of guidance.
               </p>
               <p>
-                The WBD brand team reclaimed the hours they used to spend on
-                repetitive asset requests and guideline clarifications. That time
-                now goes toward brand strategy instead of answering emails.
+                The dynamic updating eliminated the biggest risk in the old
+                approach. Licensees are never working from outdated information.
+                That keeps WBD IP represented correctly on the platform and
+                keeps licensee campaigns aligned with WBD&apos;s retail
+                strategy.
               </p>
               <p>
-                What matters most is that the system proved a model. What we
-                built for WBD works for any enterprise brand portfolio. A
-                flexible, dynamic approach to licensee support that scales the
-                coverage without scaling the team.
+                This toolkit replaced something that wasn&apos;t working with
+                something that keeps getting better. It&apos;s not a document
+                someone built once. It&apos;s a living system that evolves with
+                Amazon, with WBD&apos;s priorities, and with what licensees
+                actually need to win.
               </p>
             </div>
           </section>
@@ -251,12 +262,12 @@ export default function WBDToolkitPage() {
           {/* Tags */}
           <div className="flex flex-wrap gap-2 pt-8 border-t border-border">
             {[
-              "Brand Systems",
-              "Design Systems",
-              "Enterprise",
-              "Consumer Products",
-              "Warner Bros. Discovery",
               "Amazon Retail",
+              "Licensee Enablement",
+              "Consumer Products",
+              "Dynamic Content",
+              "Warner Bros. Discovery",
+              "Retail Strategy",
             ].map((tag) => (
               <span
                 key={tag}

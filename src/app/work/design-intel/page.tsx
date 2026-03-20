@@ -33,7 +33,7 @@ export default function DesignIntelPage() {
         {/* Header */}
         <div className="animate-in max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-mono text-muted">2024 - Present</span>
+            <span className="text-xs font-mono text-muted">Jan 2025 - Present</span>
             <span className="w-px h-3 bg-border" />
             <span className="text-xs font-mono text-muted">
               Design Lead & Builder
