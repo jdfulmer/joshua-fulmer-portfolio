@@ -252,9 +252,8 @@ export default function AboutPage() {
           {/* CTA */}
           <div className="animate-in-delay-3 mt-16 pt-8 border-t border-border">
             <p className="text-lg text-muted mb-6">
-              I&apos;m currently exploring design leadership roles. If you&apos;re
-              building a team that needs operational infrastructure to scale,
-              I&apos;d love to talk.
+              Interested in talking about design leadership, ops tooling, or
+              how to scale a design team? I&apos;d love to connect.
             </p>
             <div className="flex gap-4">
               <Link

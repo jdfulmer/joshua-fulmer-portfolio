@@ -63,13 +63,15 @@ export default function Home() {
           <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted">
             {[
               "Warner Bros. Discovery",
+              "Tatcha",
               "Hasbro",
+              "Laneige",
               "Mattel",
+              "Drybar",
               "LEGO",
+              "Phlur",
+              "Sulwhasoo",
               "Amazon",
-              "DC Comics",
-              "Harry Potter",
-              "Looney Tunes",
             ].map((brand) => (
               <span key={brand} className="whitespace-nowrap">
                 {brand}

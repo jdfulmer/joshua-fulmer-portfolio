@@ -18,14 +18,10 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
             Let&apos;s talk.
           </h1>
-          <p className="text-lg text-muted leading-relaxed mb-4">
-            I&apos;m exploring design leadership roles where I can build
-            operational infrastructure for scaling design teams. If that
-            sounds like what you&apos;re hiring for, I&apos;d love to connect.
-          </p>
           <p className="text-lg text-muted leading-relaxed mb-12">
-            Also happy to talk about design ops, AI-powered tooling, or
-            anything else worth building.
+            Whether it&apos;s about design leadership, AI-powered tooling,
+            or just a good conversation — I&apos;m always open to connecting
+            with people who are building something worth building.
           </p>
 
           <div className="space-y-6 animate-in-delay-1">
