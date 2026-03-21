@@ -4,10 +4,11 @@
   --background: #fafaf9;
   --foreground: #1c1917;
   --muted: #78716c;
-  --accent: #292524;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
   --border: #e7e5e4;
   --surface: #ffffff;
-  --highlight: #d6d3d1;
+  --highlight: #c7d2fe;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,10 +16,11 @@
     --background: #0c0a09;
     --foreground: #fafaf9;
     --muted: #a8a29e;
-    --accent: #e7e5e4;
+    --accent: #818cf8;
+    --accent-hover: #6366f1;
     --border: #292524;
     --surface: #1c1917;
-    --highlight: #44403c;
+    --highlight: #312e81;
   }
 }
 
@@ -27,6 +29,7 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-border: var(--border);
   --color-surface: var(--surface);
   --color-highlight: var(--highlight);
@@ -41,6 +44,7 @@ body {
 
 ::selection {
   background: var(--highlight);
+  color: var(--foreground);
 }
 
 /* Smooth page transitions */

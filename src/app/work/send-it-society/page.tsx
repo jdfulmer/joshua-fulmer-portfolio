@@ -69,7 +69,7 @@ export default function SendItSocietyPage() {
             { value: "4", label: "Local Partners" },
           ].map((metric) => (
             <div key={metric.label}>
-              <p className="text-2xl md:text-3xl font-semibold">
+              <p className="text-2xl md:text-3xl font-semibold text-accent">
                 {metric.value}
               </p>
               <p className="text-sm text-muted mt-1">{metric.label}</p>
@@ -194,7 +194,7 @@ export default function SendItSocietyPage() {
                 {
                   title: "Non-Clinical Space",
                   description:
-                    "The options were clinical treatment or nothing. Send It Society lives in the middle. Not therapy. Not pretending everything is fine. Just people riding bikes and looking out for each other. Sometimes that is enough.",
+                    "The options were clinical treatment or nothing. Send It Society lives in the middle. A space where people ride bikes and look out for each other. Sometimes that's enough.",
                 },
               ].map((feature) => (
                 <div
@@ -257,6 +257,22 @@ export default function SendItSocietyPage() {
                 {tag}
               </span>
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p className="text-muted">
+              Want to learn more about Send It Society or get involved?
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium rounded-full hover:bg-accent-hover transition-colors shrink-0"
+            >
+              Get in touch
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>

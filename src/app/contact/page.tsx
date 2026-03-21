@@ -1,8 +1,10 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Joshua Fulmer.",
+  description:
+    "Contact Joshua Fulmer about design leadership, AI-powered design ops, or team leadership roles. Based in Bellingham, WA.",
 };
 
 export default function ContactPage() {
@@ -10,22 +12,26 @@ export default function ContactPage() {
     <div className="px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto py-16 md:py-20">
         <div className="max-w-2xl animate-in">
-          <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
+          <p className="text-sm font-mono text-accent mb-4 tracking-wide uppercase">
             Contact
           </p>
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
             Let&apos;s talk.
           </h1>
-          <p className="text-lg text-muted leading-relaxed mb-8">
-            Whether it&apos;s about design leadership, AI-powered tooling,
-            or just a good conversation. I&apos;m always open to connecting
-            with people who are building something worth building.
+          <p className="text-lg text-muted leading-relaxed mb-4">
+            I&apos;m exploring design leadership roles where I can build
+            operational infrastructure for scaling design teams. If that
+            sounds like what you&apos;re hiring for, I&apos;d love to connect.
+          </p>
+          <p className="text-lg text-muted leading-relaxed mb-12">
+            Also happy to talk about design ops, AI-powered tooling, or
+            anything else worth building.
           </p>
 
           <div className="space-y-6 animate-in-delay-1">
             <a
               href="mailto:hello@joshuafulmer.com"
-              className="group flex items-center justify-between border border-border rounded-2xl p-6 hover:border-foreground/20 transition-all duration-300"
+              className="group flex items-center justify-between border border-border rounded-2xl p-6 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
             >
               <div>
                 <p className="font-medium mb-1">Email</p>
@@ -38,7 +44,7 @@ export default function ContactPage() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.5"
-                className="text-muted group-hover:text-foreground group-hover:translate-x-1 transition-all"
+                className="text-muted group-hover:text-accent group-hover:translate-x-1 transition-all"
               >
                 <path d="M4 10h12M12 6l4 4-4 4" />
               </svg>
@@ -48,11 +54,11 @@ export default function ContactPage() {
               href="https://www.linkedin.com/in/joshuafulmer"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between border border-border rounded-2xl p-6 hover:border-foreground/20 transition-all duration-300"
+              className="group flex items-center justify-between border border-border rounded-2xl p-6 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
             >
               <div>
                 <p className="font-medium mb-1">LinkedIn</p>
-                <p className="text-sm text-muted">Connect with me</p>
+                <p className="text-sm text-muted">Let&apos;s connect on LinkedIn</p>
               </div>
               <svg
                 width="20"
@@ -61,11 +67,20 @@ export default function ContactPage() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.5"
-                className="text-muted group-hover:text-foreground group-hover:translate-x-1 transition-all"
+                className="text-muted group-hover:text-accent group-hover:translate-x-1 transition-all"
               >
                 <path d="M4 10h12M12 6l4 4-4 4" />
               </svg>
             </a>
+          </div>
+
+          <div className="mt-12 animate-in-delay-2">
+            <Link
+              href="/work"
+              className="text-sm text-muted hover:text-accent transition-colors"
+            >
+              &larr; Back to work
+            </Link>
           </div>
         </div>
       </div>

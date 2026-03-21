@@ -69,7 +69,7 @@ export default function DesignIntelPage() {
             { value: "Zero", label: "Self-Reporting Required" },
           ].map((metric) => (
             <div key={metric.label}>
-              <p className="text-2xl md:text-3xl font-semibold">
+              <p className="text-2xl md:text-3xl font-semibold text-accent">
                 {metric.value}
               </p>
               <p className="text-sm text-muted mt-1">{metric.label}</p>
@@ -122,7 +122,7 @@ export default function DesignIntelPage() {
               </p>
               <p>
                 Design Intel is a single dashboard that pulls live data from
-                Figma, Asana, and internal systems. It shows me who&apos;s
+                Figma, Asana, and internal systems. It shows who&apos;s
                 overloaded, which clients are generating the most pressure, and
                 where delivery timelines are at risk. All of it updates in real
                 time.
@@ -135,17 +135,25 @@ export default function DesignIntelPage() {
                 matches one that caused a missed deadline last quarter.
               </p>
               <p>
-                I worked with leadership and project management to define what
-                visibility they actually needed and shaped the dashboard around
-                those conversations. The goal was a tool that served the people
-                making decisions, not just the people pulling data.
+                Getting buy-in was the first challenge. I pitched leadership
+                and project management on the concept and worked with them to
+                define what visibility they actually needed. The dashboard was
+                shaped around those conversations — a tool that served the
+                people making resourcing decisions, not just the person pulling
+                the data.
               </p>
               <p>
-                This wasn&apos;t a side project that grew legs. It was an
-                intentional tool built for a specific gap. I designed it to feel
-                like something designers would actually open. Not another admin
-                panel with charts nobody reads. If it doesn&apos;t feel as clean
-                as working in Figma, nobody&apos;s going to use it.
+                The harder conversation was with the design team. A dashboard
+                that tracks workload and flags burnout could easily feel like
+                surveillance. I was transparent about what it tracked, what it
+                didn&apos;t, and why. Designers see their own data. Nothing is
+                hidden. The tool exists to protect them, not monitor them. That
+                framing mattered — adoption came from trust, not mandate.
+              </p>
+              <p>
+                I designed it to feel like something designers would actually
+                open. If it doesn&apos;t feel as clean as working in Figma,
+                nobody&apos;s going to use it.
               </p>
             </div>
           </section>
@@ -239,6 +247,22 @@ export default function DesignIntelPage() {
                 {tag}
               </span>
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p className="text-muted">
+              Want to talk about design ops or AI-powered tooling?
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium rounded-full hover:bg-accent-hover transition-colors shrink-0"
+            >
+              Get in touch
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>

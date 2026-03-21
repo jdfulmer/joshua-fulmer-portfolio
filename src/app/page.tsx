@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { caseStudies } from "@/lib/case-studies";
-import { RotatingWord } from "@/components/RotatingWord";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Joshua Fulmer | Design Leadership & AI Solutions",
+  description:
+    "Design leader with 18 years of experience leading 12 designers across 60+ brands including work for Warner Bros. Discovery. Building AI-powered ops tooling that gives leadership real visibility.",
+};
 
 export default function Home() {
   const featured = caseStudies.filter((c) => c.status === "published");
@@ -11,22 +17,22 @@ export default function Home() {
       <div className="max-w-6xl mx-auto">
         {/* Hero */}
         <section className="py-16 md:py-20 lg:py-24 animate-in">
-          <p className="text-sm font-mono text-muted mb-6 tracking-wide uppercase">
-            Design Leadership / AI Solutions / Design Ops
+          <p className="text-sm font-mono text-accent mb-6 tracking-wide uppercase">
+            Design Leadership &middot; AI Solutions &middot; Design Ops
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] max-w-3xl">
-            I create <RotatingWord />
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] max-w-4xl">
+            I build the systems that let design teams{" "}
+            <span className="text-accent">scale.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
-            18 years of translating strategy into results. Currently leading a
-            team of 12 designers across 60+ brands and building AI-powered tooling that gives
-            leadership the visibility they actually need. Not another dashboard
-            nobody checks.
+            18 years of translating strategy into results. Currently leading
+            12 designers across 60+ brands and building AI-powered tooling that gives
+            leadership the visibility they actually need.
           </p>
           <div className="mt-10 flex gap-4">
             <Link
               href="/work"
-              className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 text-sm font-medium rounded-full hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium rounded-full hover:bg-accent-hover transition-colors"
             >
               View Work
               <svg
@@ -42,10 +48,34 @@ export default function Home() {
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-full border border-border hover:border-foreground transition-colors"
+              className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-full border border-border hover:border-accent hover:text-accent transition-colors"
             >
               About Me
             </Link>
+          </div>
+        </section>
+
+        {/* Credibility */}
+        <section className="pb-16 md:pb-20 animate-in-delay-1">
+          <p className="text-xs font-mono text-muted tracking-wide uppercase mb-6">
+            Brands I&apos;ve led design for
+          </p>
+          <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted">
+            {[
+              "Warner Bros. Discovery",
+              "Hasbro",
+              "Mattel",
+              "LEGO",
+              "Amazon",
+              "DC Comics",
+              "Harry Potter",
+              "Looney Tunes",
+            ].map((brand) => (
+              <span key={brand} className="whitespace-nowrap">
+                {brand}
+              </span>
+            ))}
+            <span className="text-muted/50">+ 50 more</span>
           </div>
         </section>
 
@@ -70,7 +100,7 @@ export default function Home() {
                 href={`/work/${study.slug}`}
                 className="group block"
               >
-                <article className="border border-border rounded-2xl overflow-hidden hover:border-foreground/20 transition-all duration-300 h-full flex flex-col">
+                <article className="border border-border rounded-2xl overflow-hidden hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 h-full flex flex-col">
                   {/* Thumbnail */}
                   {study.image ? (
                     <div className="relative w-full aspect-[16/9] bg-surface">
@@ -107,7 +137,7 @@ export default function Home() {
                     <div className="mt-auto grid grid-cols-3 gap-4 pt-6 border-t border-border">
                       {study.metrics.slice(0, 3).map((metric) => (
                         <div key={metric.label}>
-                          <p className="text-lg md:text-xl font-semibold">
+                          <p className="text-lg md:text-xl font-semibold text-accent">
                             {metric.value}
                           </p>
                           <p className="text-xs text-muted mt-1">
@@ -125,8 +155,8 @@ export default function Home() {
 
         {/* What I Do */}
         <section className="pb-16 md:pb-20 animate-in-delay-3">
-          <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-8">
-            What I Bring to the Table
+          <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-12">
+            How I Work
           </h2>
           <div className="grid gap-6 md:grid-cols-3">
             {[
@@ -138,7 +168,7 @@ export default function Home() {
               {
                 title: "AI-Powered Tooling",
                 description:
-                  "Production tools built with Claude, Figma APIs, and Next.js. Already saving 20+ hours of manual reporting per month. Not demos. Not prototypes. Tools my team relies on every day.",
+                  "Production tools built with Claude, Figma APIs, and Next.js. Already saving 20+ hours of manual reporting per month. These are tools my team relies on every day.",
               },
               {
                 title: "Design Operations",
@@ -148,7 +178,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="border border-border rounded-2xl p-8"
+                className="border border-border rounded-2xl p-8 hover:border-accent/30 hover:shadow-md hover:shadow-accent/5 transition-all duration-300"
               >
                 <h3 className="font-semibold mb-3">{item.title}</h3>
                 <p className="text-sm text-muted leading-relaxed">

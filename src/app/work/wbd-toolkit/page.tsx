@@ -67,7 +67,7 @@ export default function WBDToolkitPage() {
             { value: "Amazon-First", label: "Retail Focus" },
           ].map((metric) => (
             <div key={metric.label}>
-              <p className="text-2xl md:text-3xl font-semibold">
+              <p className="text-2xl md:text-3xl font-semibold text-accent">
                 {metric.value}
               </p>
               <p className="text-sm text-muted mt-1">{metric.label}</p>
@@ -116,29 +116,27 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                We were asked to build a replacement from scratch. Not a patch.
-                Not a revision. A completely new toolkit purpose-built for one
-                thing: helping WBD licensees succeed on Amazon. Getting
-                alignment meant working across WBD leadership, their retail
-                strategy team, and the licensees who would actually use it.
+                I led the strategy and design for a complete replacement —
+                a new toolkit purpose-built for one thing: helping WBD
+                licensees succeed on Amazon. I worked across WBD Consumer
+                Products leadership, their retail strategy team, and the
+                licensees themselves to define scope, align priorities, and
+                ensure the toolkit addressed real gaps rather than assumed ones.
               </p>
               <p>
-                We worked with the WBD Consumer Products team, Amazon Retail,
-                and the licensees themselves to understand what they actually
-                needed. The answer was clear. Licensees needed a centralized
-                resource guide covering Amazon best practices, organized in a
-                way that met them where they were. Whether they were just
-                getting Brand Registry set up or running advanced DSP campaigns,
-                the toolkit had to support the full range.
+                The discovery work surfaced a clear pattern. Licensees at
+                different stages of Amazon maturity needed different things.
+                A company setting up Brand Registry for the first time and an
+                established seller optimizing DSP campaigns had nothing in
+                common except the platform. The toolkit had to support both.
               </p>
               <p>
-                So we designed a 5-step progression pathway. Start with
-                foundation building. End with optimization. Each step
-                builds on the last. The toolkit features dark and light
-                mode, keyboard-driven search with Ctrl+K, sidebar navigation,
-                and step-numbered guidance so licensees always know where they
-                are and what comes next. It references the Star Labs portal for
-                brand assets and approvals, keeping everything connected.
+                I designed a 5-step progression pathway that meets licensees
+                where they are. Start with foundation building. End with
+                optimization. Each step builds on the last. The toolkit features
+                dark and light mode, keyboard-driven search with Ctrl+K,
+                sidebar navigation, and step-numbered guidance so licensees
+                always know where they are and what comes next.
               </p>
             </div>
           </section>
@@ -195,32 +193,15 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                The initial build was strong on its own. A comprehensive,
-                well-organized Amazon resource guide for WBD licensees. That
-                alone was a significant upgrade from what existed before. But
-                the even bigger win was making it dynamic.
-              </p>
-              <p>
-                Amazon changes constantly. Advertising features update. Algorithm
-                logic shifts. Fee structures get revised. A static guide goes
-                stale the moment you publish it. So we built the toolkit to
-                stay current. Content updates are visible live, immediately.
-                The system cross-checks information against Amazon updates.
-                When Amazon changes something, the toolkit reflects it.
-              </p>
-              <p>
-                That means a licensee opening the toolkit today sees
-                today&apos;s reality. Not last quarter&apos;s. Not last
-                month&apos;s. The current state of Amazon best practices,
-                verified and up to date. No one is building campaigns around
-                outdated ad specs or deprecated listing features.
-              </p>
-              <p>
-                For WBD, this is the difference between a one-time deliverable
-                and a living resource. The toolkit keeps working long after the
-                initial build. It keeps every licensee aligned with the latest
-                Amazon landscape without anyone having to manually chase
-                updates.
+                Amazon changes constantly — advertising features, algorithm
+                logic, fee structures. A static guide goes stale the moment
+                you publish it. I built the toolkit to stay current
+                automatically. The system cross-checks information against
+                Amazon updates and reflects changes live. A licensee opening
+                the toolkit today sees today&apos;s reality, not last
+                quarter&apos;s. For WBD, that turned a one-time deliverable
+                into a living resource that keeps working long after the
+                initial build.
               </p>
             </div>
           </section>
@@ -258,13 +239,6 @@ export default function WBDToolkitPage() {
                 toolkit shortens time-to-market for licensee campaigns and
                 reduces the back-and-forth that used to slow launches down.
               </p>
-              <p>
-                This toolkit replaced something that wasn&apos;t working with
-                something that keeps getting better. It&apos;s not a document
-                someone built once. It&apos;s a living system that evolves with
-                Amazon, with WBD&apos;s priorities, and with what licensees
-                actually need to win.
-              </p>
             </div>
           </section>
 
@@ -285,6 +259,22 @@ export default function WBDToolkitPage() {
                 {tag}
               </span>
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p className="text-muted">
+              Want to talk about retail strategy or licensee enablement?
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium rounded-full hover:bg-accent-hover transition-colors shrink-0"
+            >
+              Get in touch
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>

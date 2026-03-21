@@ -1,8 +1,9 @@
+import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About — Design Leader, USMC Veteran, Builder",
   description:
     "18 years of design leadership, from the Marines to managing 12 designers across 60+ brands at D2E Labs.",
 };
@@ -13,11 +14,11 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto py-16 md:py-20">
         <div className="max-w-3xl">
           <div className="animate-in">
-            <p className="text-sm font-mono text-muted mb-4 tracking-wide uppercase">
+            <p className="text-sm font-mono text-accent mb-4 tracking-wide uppercase">
               About
             </p>
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8">
-              The short version: I solve problems and build things that work.
+              I build the infrastructure that lets design teams do their best work at scale.
             </h1>
           </div>
 
@@ -35,29 +36,35 @@ export default function AboutPage() {
           </div>
 
           <div className="animate-in-delay-1 space-y-6 text-lg text-muted leading-relaxed">
+            {/* Elevator pitch */}
+            <p className="text-xl text-foreground leading-relaxed">
+              Design leader. 18 years of experience. Currently leading 12
+              designers across 60+ brands, building AI-powered ops tooling, and
+              creating the systems that let teams scale without burning out.
+            </p>
+
             <p>
-              I&apos;m a design leader with 18 years of experience doing the
-              kind of work that doesn&apos;t always fit neatly into a job title.
-              Strategy. Systems. Hiring and developing talent. Building tooling
-              that protects the team. Whatever the problem requires.
+              I&apos;m the kind of leader whose work doesn&apos;t always fit
+              neatly into a job title. Strategy. Systems. Hiring and developing
+              talent. Building tooling that protects the team. Whatever the
+              problem requires.
             </p>
 
             <p>
               Right now, I lead a team of 12 designers across 60+ brands at D2E
-              Labs. Market Defense is part of D2E. I hired many of those
-              designers. I mentor them. I fight for their growth. A big part of
-              my job is building a team culture where people feel safe to take
-              risks and do ambitious work. The other part is building the
-              systems and processes that make that possible at scale.
+              Labs. I hired many of those designers. I mentor them. I fight for
+              their growth. A big part of my job is building a team culture
+              where people feel safe to take risks and do ambitious work. The
+              other part is building the systems and processes that make that
+              possible at scale.
             </p>
 
             <p>
-              I&apos;ve been building AI-powered tools that actually solve real
-              problems. Not just prototypes or proofs of concept, but production
-              systems that teams rely on daily. Design Intel, internal workflow
-              automation, Claude-powered analysis tools. If it makes the team
-              faster or gives leadership better visibility, I&apos;m probably
-              building it.
+              I&apos;ve been building AI-powered tools that solve real
+              problems — production systems that teams rely on daily. Design
+              Intel, internal workflow automation, Claude-powered analysis
+              tools. If it makes the team faster or gives leadership better
+              visibility, I&apos;m probably building it.
             </p>
           </div>
 
@@ -79,11 +86,11 @@ export default function AboutPage() {
                 design brief ever could.
               </p>
               <p>
-                The combination of military discipline, creative industry hustle,
-                and nearly two decades of growing teams and shipping work. That
-                is what makes my approach different. I don&apos;t just make
-                things look good. I make things work. And I build teams that can
-                keep making things work after I leave the room.
+                Military discipline, creative industry hustle, and nearly two
+                decades of growing teams and shipping work — that combination
+                is what makes my approach different. I build things that work,
+                and I build teams that can keep them working after I leave the
+                room.
               </p>
             </div>
           </div>
@@ -99,25 +106,21 @@ export default function AboutPage() {
                   United States Marine Corps
                 </p>
                 <p className="text-lg font-semibold mb-3">
-                  Sergeant. Multiple deployments. Multiple MOS specializations.
+                  Sergeant. Multiple deployments. Multiple specializations.
                 </p>
                 <div className="space-y-3 text-muted leading-relaxed">
                   <p>
-                    Infantry Assaultman (0351), then retrained across multiple
-                    specializations including Combat Marksmen Coach (0933) /
-                    Combat Marksmen Instructor Trainer (0931) and Air Traffic
-                    Control Specialist (7257/7252).
-                    That range wasn&apos;t an accident. The Corps needed people
-                    who could adapt and lead in unfamiliar territory. I was one
-                    of those people.
+                    Started in infantry, then retrained across multiple
+                    specializations — from airfield systems to fire rescue. The
+                    Corps needed people who could adapt and lead in unfamiliar
+                    territory. Earned the Navy and Marine Corps Achievement
+                    Medal and held a DOD SECRET clearance.
                   </p>
                   <p>
-                    Earned the Navy and Marine Corps Achievement Medal. Held a
-                    DOD SECRET clearance. Led Marines in the field across multiple
-                    deployments. The leadership lessons from that period are still
-                    the foundation of everything I do. Take care of your people.
-                    Build systems that don&apos;t break. Stay calm when things go
-                    sideways.
+                    The leadership lessons from that period are still the
+                    foundation of everything I do. Take care of your people.
+                    Build systems that don&apos;t break. Stay calm when things
+                    go sideways.
                   </p>
                 </div>
               </div>
@@ -166,20 +169,20 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Certifications */}
+              {/* Certifications & Credentials */}
               <div className="border-l-2 border-border pl-6">
                 <p className="text-sm font-mono text-muted tracking-wide uppercase mb-2">
-                  Certifications
+                  Credentials
                 </p>
                 <p className="text-lg font-semibold mb-3">
-                  I keep learning. That part never stops.
+                  Beyond design leadership.
                 </p>
                 <div className="text-muted leading-relaxed">
                   <ul className="space-y-2">
-                    <li>Google UX Design Specialization (2024)</li>
-                    <li>Adobe Photoshop CC Advanced (2024)</li>
-                    <li>Meta Certified Digital Marketing Associate (2024)</li>
                     <li>FAA Control Tower Operator Permit (2012)</li>
+                    <li>Meta Certified Digital Marketing Associate (2024)</li>
+                    <li>Navy and Marine Corps Achievement Medal</li>
+                    <li>DOD SECRET Clearance (inactive)</li>
                   </ul>
                 </div>
               </div>
@@ -243,6 +246,32 @@ export default function AboutPage() {
                   {tool}
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="animate-in-delay-3 mt-16 pt-8 border-t border-border">
+            <p className="text-lg text-muted mb-6">
+              I&apos;m currently exploring design leadership roles. If you&apos;re
+              building a team that needs operational infrastructure to scale,
+              I&apos;d love to talk.
+            </p>
+            <div className="flex gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium rounded-full hover:bg-accent-hover transition-colors"
+              >
+                Get in touch
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </Link>
+              <Link
+                href="/work"
+                className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-full border border-border hover:border-accent hover:text-accent transition-colors"
+              >
+                View my work
+              </Link>
             </div>
           </div>
         </div>

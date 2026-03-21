@@ -67,7 +67,7 @@ export default function FigmaMigrationPage() {
             { value: "Simultaneous", label: "Multi-Designer Collaboration" },
           ].map((metric) => (
             <div key={metric.label}>
-              <p className="text-2xl md:text-3xl font-semibold">
+              <p className="text-2xl md:text-3xl font-semibold text-accent">
                 {metric.value}
               </p>
               <p className="text-sm text-muted mt-1">{metric.label}</p>
@@ -138,13 +138,23 @@ export default function FigmaMigrationPage() {
                 deadlines. No gaps in delivery. Clients never felt the change.
               </p>
               <p>
+                It wasn&apos;t frictionless. A few senior designers who&apos;d
+                built years of Illustrator and Photoshop workflows pushed back
+                hard in the first weeks. Their speed dropped before it recovered,
+                and I had to make the call to absorb that productivity dip
+                rather than rush them. I paired resistant designers with early
+                adopters on the same projects — that peer learning did more
+                than any training session I ran. By month two, the holdouts
+                were the ones evangelizing the multiplayer workflow to vendors.
+              </p>
+              <p>
                 I ran training sessions, built templates, created shared
                 libraries, and set up the team&apos;s Figma workspace to
-                mirror the way we actually work. Ecomm design is a fringe
-                case. The default Figma setup doesn&apos;t account for the
-                volume, the vendor complexity, or the approval chains we
-                deal with daily. So we adjusted it to fit our workflow
-                instead of the other way around.
+                mirror the way we actually work. Ecomm design at this scale
+                is a niche that Figma&apos;s defaults don&apos;t account for —
+                the volume, the vendor complexity, the approval chains we
+                deal with daily. So we adjusted the workspace to fit our
+                workflow instead of the other way around.
               </p>
             </div>
           </section>
@@ -214,17 +224,12 @@ export default function FigmaMigrationPage() {
                 team can step in without friction.
               </p>
               <p>
-                The 40% reduction in revision cycles meant faster delivery to
-                clients and higher throughput across the board. That operational
-                shift let the team take on more brands without growing
-                headcount, turning a workflow change into a real capacity gain.
-              </p>
-              <p>
-                This wasn&apos;t a tool migration. It was an operational
-                transformation. We went from a sequential, file-based workflow
-                to a real-time, multiplayer one. The team is faster, more
-                collaborative, and more flexible than it was before. And we
-                made the switch without dropping a single deliverable.
+                The 40% reduction in revision cycles — measured across six
+                months of delivery data comparing pre- and post-migration
+                turnaround times — meant faster delivery to clients and higher
+                throughput across the board. That operational shift let the team
+                take on more brands without growing headcount, turning a
+                workflow change into a real capacity gain.
               </p>
             </div>
           </section>
@@ -246,6 +251,22 @@ export default function FigmaMigrationPage() {
                 {tag}
               </span>
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <p className="text-muted">
+              Want to talk about change management or scaling design teams?
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium rounded-full hover:bg-accent-hover transition-colors shrink-0"
+            >
+              Get in touch
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>
