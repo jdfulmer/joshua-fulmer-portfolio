@@ -22,7 +22,7 @@ export default function WorkPage() {
           </h1>
           <p className="text-lg text-muted max-w-2xl mb-16">
             Each project represents a different dimension of leading design at
-            scale — from AI tooling to change management to community building.
+            scale, from AI tooling to change management to community building.
           </p>
         </div>
 

@@ -20,7 +20,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-lg text-muted leading-relaxed mb-12">
             Whether it&apos;s about design leadership, AI-powered tooling,
-            or just a good conversation — I&apos;m always open to connecting
+            or just a good conversation. I&apos;m always open to connecting
             with people who are building something worth building.
           </p>
 

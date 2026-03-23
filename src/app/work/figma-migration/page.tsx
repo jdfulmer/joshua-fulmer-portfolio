@@ -143,7 +143,7 @@ export default function FigmaMigrationPage() {
                 hard in the first weeks. Their speed dropped before it recovered,
                 and I had to make the call to absorb that productivity dip
                 rather than rush them. I paired resistant designers with early
-                adopters on the same projects — that peer learning did more
+                adopters on the same projects, and that peer learning did more
                 than any training session I ran. By month two, the holdouts
                 were the ones evangelizing the multiplayer workflow to vendors.
               </p>
@@ -151,8 +151,8 @@ export default function FigmaMigrationPage() {
                 I ran training sessions, built templates, created shared
                 libraries, and set up the team&apos;s Figma workspace to
                 mirror the way we actually work. Ecomm design at this scale
-                is a niche that Figma&apos;s defaults don&apos;t account for —
-                the volume, the vendor complexity, the approval chains we
+                is a niche that Figma&apos;s defaults don&apos;t account for.
+                The volume, the vendor complexity, the approval chains we
                 deal with daily. So we adjusted the workspace to fit our
                 workflow instead of the other way around.
               </p>
@@ -224,9 +224,9 @@ export default function FigmaMigrationPage() {
                 team can step in without friction.
               </p>
               <p>
-                The 40% reduction in revision cycles — measured across six
+                The 40% reduction in revision cycles, measured across six
                 months of delivery data comparing pre- and post-migration
-                turnaround times — meant faster delivery to clients and higher
+                turnaround times, meant faster delivery to clients and higher
                 throughput across the board. That operational shift let the team
                 take on more brands without growing headcount, turning a
                 workflow change into a real capacity gain.

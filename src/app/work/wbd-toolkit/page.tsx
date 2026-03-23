@@ -116,8 +116,8 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                I led the strategy and design for a complete replacement —
-                a new toolkit purpose-built for one thing: helping WBD
+                I led the strategy and design for a complete replacement.
+                A new toolkit purpose-built for one thing: helping WBD
                 licensees succeed on Amazon. I worked across WBD Consumer
                 Products leadership, their retail strategy team, and the
                 licensees themselves to define scope, align priorities, and
@@ -193,7 +193,7 @@ export default function WBDToolkitPage() {
             </h2>
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p>
-                Amazon changes constantly — advertising features, algorithm
+                Amazon changes constantly. Advertising features, algorithm
                 logic, fee structures. A static guide goes stale the moment
                 you publish it. I built the toolkit to stay current
                 automatically. The system cross-checks information against

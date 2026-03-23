@@ -138,7 +138,7 @@ export default function DesignIntelPage() {
                 Getting buy-in was the first challenge. I pitched leadership
                 and project management on the concept and worked with them to
                 define what visibility they actually needed. The dashboard was
-                shaped around those conversations — a tool that served the
+                shaped around those conversations. A tool that served the
                 people making resourcing decisions, not just the person pulling
                 the data.
               </p>
@@ -148,7 +148,7 @@ export default function DesignIntelPage() {
                 surveillance. I was transparent about what it tracked, what it
                 didn&apos;t, and why. Designers see their own data. Nothing is
                 hidden. The tool exists to protect them, not monitor them. That
-                framing mattered — adoption came from trust, not mandate.
+                framing mattered. Adoption came from trust, not mandate.
               </p>
               <p>
                 I designed it to feel like something designers would actually
