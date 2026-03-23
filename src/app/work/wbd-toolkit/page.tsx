@@ -49,7 +49,7 @@ export default function WBDToolkitPage() {
         {/* Hero Visual */}
         <div className="animate-in-delay-1 mb-10 rounded-2xl overflow-hidden border border-border">
           <Image
-            src="/images/wbd-toolkit-hero.svg"
+            src="/images/wbd-toolkit-hero.png"
             alt="WBD Licensee Toolkit interface showing the 5-step progression pathway, content areas, and dynamic update system for Amazon retail"
             width={1920}
             height={1080}

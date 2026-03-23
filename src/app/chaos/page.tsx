@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Chaos",
-  description: "The messy middle. Where ideas live before they become something.",
+  description: "An interactive, non-linear way to explore my career and life, built for brains that don't think in straight lines.",
 };
 
 export default function ChaosPage() {
@@ -14,12 +14,13 @@ export default function ChaosPage() {
             Chaos
           </p>
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
-            The messy middle.
+            Welcome to the chaos.
           </h1>
           <p className="text-lg text-muted max-w-2xl mb-10">
-            Where ideas live before they become something. This is the
-            whiteboard, the sticky notes, the half-formed thoughts that
-            eventually turn into real work.
+            Not everyone processes information the same way, and a linear
+            resume doesn't work for every brain. This is a living, interactive
+            map of my career, interests, and life outside of work. Zoom in,
+            click around, and explore at your own pace.
           </p>
         </div>
 

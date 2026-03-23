@@ -26,12 +26,12 @@ export default function ContactPage() {
 
           <div className="space-y-6 animate-in-delay-1">
             <a
-              href="mailto:hello@joshuafulmer.com"
+              href="mailto:j.d.fulmer@gmail.com"
               className="group flex items-center justify-between border border-border rounded-2xl p-6 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
             >
               <div>
                 <p className="font-medium mb-1">Email</p>
-                <p className="text-sm text-muted">hello@joshuafulmer.com</p>
+                <p className="text-sm text-muted">j.d.fulmer@gmail.com</p>
               </div>
               <svg
                 width="20"

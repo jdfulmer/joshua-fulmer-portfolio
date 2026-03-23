@@ -49,7 +49,7 @@ export default function FigmaMigrationPage() {
         {/* Hero Visual */}
         <div className="animate-in-delay-1 mb-10 rounded-2xl overflow-hidden border border-border">
           <Image
-            src="/images/figma-migration-hero.svg"
+            src="/images/figma-migration-hero.png"
             alt="Figma Migration visualization showing the transition from sequential Adobe file-passing to multiplayer Figma collaboration"
             width={1920}
             height={1080}

@@ -51,7 +51,7 @@ export default function SendItSocietyPage() {
         {/* Hero Visual */}
         <div className="animate-in-delay-1 mb-10 rounded-2xl overflow-hidden border border-border">
           <Image
-            src="/images/send-it-society-hero.svg"
+            src="/images/send-it-society-hero.png"
             alt="Send It Society illustration showing mountain bikers riding trails through Pacific Northwest forest at Galbraith Mountain"
             width={1920}
             height={1080}
