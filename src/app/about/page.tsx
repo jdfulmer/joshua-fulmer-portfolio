@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Design Leader, USMC Veteran, Builder",
+  title: "About | Design Leader, USMC Veteran, Builder",
   description:
     "18 years of design leadership, from the Marines to managing 12 designers across 60+ brands at D2E Labs.",
 };
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
             <p>
               I&apos;ve been building AI-powered tools that solve real
-              problems — production systems that teams rely on daily. Design
+              problems. Production systems that teams rely on daily. Design
               Intel, internal workflow automation, Claude-powered analysis
               tools. If it makes the team faster or gives leadership better
               visibility, I&apos;m probably building it.
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div className="space-y-6 text-lg text-muted leading-relaxed">
               <p>
                 I served in the United States Marine Corps. That experience
-                shaped everything about how I lead people, solve problems, and
+                had a big impact on how I lead people, solve problems, and
                 get things done when the stakes matter. You learn fast what real
                 accountability looks like when people are counting on you. No
                 shortcuts. No excuses.
@@ -87,7 +87,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Military discipline, creative industry hustle, and nearly two
-                decades of growing teams and shipping work — that combination
+                decades of growing teams and shipping work. That combination
                 is what makes my approach different. I build things that work,
                 and I build teams that can keep them working after I leave the
                 room.
@@ -106,15 +106,15 @@ export default function AboutPage() {
                   United States Marine Corps
                 </p>
                 <p className="text-lg font-semibold mb-3">
-                  Sergeant. Multiple deployments. Multiple specializations.
+                  Sergeant. Two combat deployments. Instructor trainer. Air traffic controller.
                 </p>
                 <div className="space-y-3 text-muted leading-relaxed">
                   <p>
-                    Started in infantry, then retrained across multiple
-                    specializations — from airfield systems to fire rescue. The
-                    Corps needed people who could adapt and lead in unfamiliar
-                    territory. Earned the Navy and Marine Corps Achievement
-                    Medal and held a DOD SECRET clearance.
+                    Started in infantry with two combat deployments and earned
+                    my instructor trainer certification. Then retrained into air
+                    traffic control, where I served as the key controller for a
+                    Marine Expeditionary Unit. Earned the Navy and Marine Corps
+                    Achievement Medal and held a DOD SECRET clearance.
                   </p>
                   <p>
                     The leadership lessons from that period are still the
