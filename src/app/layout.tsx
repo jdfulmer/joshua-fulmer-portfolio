@@ -50,7 +50,7 @@ export default function RootLayout({
                 LinkedIn
               </a>
               <a
-                href="mailto:hello@joshuafulmer.com"
+                href="mailto:j.d.fulmer@gmail.com"
                 className="hover:text-accent transition-colors"
               >
                 Email
