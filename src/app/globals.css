@@ -11,17 +11,15 @@
   --highlight: #c7d2fe;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0c0a09;
-    --foreground: #fafaf9;
-    --muted: #a8a29e;
-    --accent: #818cf8;
-    --accent-hover: #6366f1;
-    --border: #292524;
-    --surface: #1c1917;
-    --highlight: #312e81;
-  }
+.dark {
+  --background: #0c0a09;
+  --foreground: #fafaf9;
+  --muted: #a8a29e;
+  --accent: #818cf8;
+  --accent-hover: #6366f1;
+  --border: #292524;
+  --surface: #1c1917;
+  --highlight: #312e81;
 }
 
 @theme inline {

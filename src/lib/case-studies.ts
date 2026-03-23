@@ -20,7 +20,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "How we turned a static file-passing workflow into real-time multiplayer design and cut revision cycles by 40%",
     description:
       "Migrated a 12-designer team from Adobe Creative Suite to Figma while keeping work shipping across 60+ brands. Transformed a sequential, file-based workflow into real-time multiplayer collaboration and rebuilt the entire vendor approval pipeline from email chains and PDF markups to in-context Figma comments.",
-    role: "Design Lead",
+    role: "Lead",
     year: "Dec 2024 - Nov 2025",
     category: "Case Study",
     metrics: [
@@ -76,7 +76,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "A from-scratch Amazon resource guide that keeps Hasbro, Mattel, LEGO, and every other WBD licensee selling smarter",
     description:
       "WBD's licensees were on their own when it came to Amazon. No single source of truth. No best practices. No alignment with WBD's retail strategy. We built a comprehensive, dynamic toolkit from scratch covering 6 core content areas with a 5-step progression pathway. It stays current automatically, cross-checking Amazon updates so licensees never work from outdated information.",
-    role: "Design Lead",
+    role: "Architect",
     year: "Jan 2025 - Present",
     category: "Case Study",
     metrics: [

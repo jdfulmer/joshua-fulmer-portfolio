@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { href: "/work", label: "Work" },
@@ -53,9 +54,13 @@ export function Navigation() {
               )}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile toggle */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+        </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-muted hover:text-foreground transition-colors"
