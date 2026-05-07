@@ -249,6 +249,64 @@ export default function AboutPage() {
             </div>
           </div>
 
+          <div className="animate-in-delay-3 mt-12">
+            <h2 className="text-sm font-mono text-muted tracking-wide uppercase mb-6">
+              Seen On
+            </h2>
+            <ul className="divide-y divide-border border-y border-border">
+              {[
+                {
+                  title: "Current State of AI Content With Josh Fulmer",
+                  partner: "BWG Connect",
+                  href: "https://www.youtube.com/watch?v=hfLcUUD9Waw",
+                },
+                {
+                  title:
+                    "Vanilla Rising: Top Brands Fueling the Sweet Scent Trend on Amazon in the US",
+                  partner: "Beauty Matters",
+                  href: "https://beautymatter.com/articles/vanilla-rising-top-brands-fueling-the-sweet-scent-trend-on-amazon-in-the-us",
+                },
+                {
+                  title: "Amazon Vendor | Mastering the Art of Licensing",
+                  partner: "MerchantSpring",
+                  href: "https://www.youtube.com/watch?v=C6TBfM8xrM4",
+                },
+                {
+                  title: "Leveraging AI to Win on Amazon",
+                  partner: "Next Up In Digital",
+                  href: "https://www.youtube.com/watch?v=Lz4_tNcOn8U&t=124s",
+                },
+              ].map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex flex-col gap-1 py-5 transition-colors hover:text-accent"
+                  >
+                    <span className="text-sm font-mono text-muted tracking-wide uppercase transition-colors group-hover:text-accent">
+                      {item.partner}
+                    </span>
+                    <span className="text-lg font-medium inline-flex items-center gap-2">
+                      {item.title}
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        className="text-muted transition-colors group-hover:text-accent"
+                      >
+                        <path d="M6 3l5 5-5 5M3.5 3h.01" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* CTA */}
           <div className="animate-in-delay-3 mt-16 pt-8 border-t border-border">
             <p className="text-lg text-muted mb-6">
