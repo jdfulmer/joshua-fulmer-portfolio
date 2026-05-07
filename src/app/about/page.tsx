@@ -264,7 +264,7 @@ export default function AboutPage() {
                   title:
                     "Vanilla Rising: Top Brands Fueling the Sweet Scent Trend on Amazon in the US",
                   partner: "Beauty Matters",
-                  href: "https://beautymatter.com/articles/vanilla-rising-top-brands-fueling-the-sweet-scent-trend-on-amazon-in-the-us",
+                  href: "https://beautymatter.com/articles/vanilla-rising-top-brands-fueling-the-sweet-scent-trend-on-amazon-in-the-us#:~:text=%E2%80%9CStorytelling%20has%20evolved,awareness%20to%20purchase.%22",
                 },
                 {
                   title: "Amazon Vendor | Mastering the Art of Licensing",
