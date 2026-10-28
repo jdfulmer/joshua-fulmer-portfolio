@@ -37,15 +37,16 @@ export const BYLINE = "Josh Fulmer";
 export const TAGLINE = "Learning myself out loud";
 
 /** Label on the featured card. Update per episode. */
-export const EPISODE_LABEL = "Ep. 2 out now";
+export const EPISODE_LABEL = "Ep. 02 out now";
 
 /** Release cadence, shown on the featured card. */
 export const CADENCE = "New episodes weekly";
 
 /**
- * Sky photo for the page background. The current file is the clean sky
- * band cut from the top of the channel banner. Swap it for any photo
- * (about 1600px wide, under 200KB). Set to null to use the CSS gradient.
+ * Sky photo for the page background, 1080x1920 portrait. The current
+ * file is built from the top edge of the banner so the two meet without
+ * a seam. Swap in a rendered sky of the same size. Set to null to use
+ * the CSS gradient instead.
  */
 export const SKY_IMAGE: string | null = "/images/links/sky.jpg";
 
@@ -65,12 +66,12 @@ export const TIKTOK_URL = "https://www.tiktok.com/@ffffumbles";
 export const BLOG_URL = "/work";
 
 /**
- * Header image: the YouTube channel banner with the small labels cleaned
- * off so episode and cadence text can be updated here instead.
- * Keep it 16:9. Replace the file when the banner changes.
+ * Header image: the YouTube channel banner, used exactly as exported.
+ * The labels (name, handle, tagline, cadence, episode) are part of the
+ * image, so re-export it when they change. Keep it 16:9.
  */
-export const BANNER_SRC = "/images/links/banner.jpg";
-export const BANNER_SIZE = { width: 1600, height: 900 } as const;
+export const BANNER_SRC = "/images/links/banner.webp";
+export const BANNER_SIZE = { width: 2000, height: 1125 } as const;
 
 /** Square photo, used by the Open Graph image. */
 export const AVATAR_SRC = "/images/links/avatar.jpg";
@@ -81,7 +82,7 @@ export const AVATAR_SRC = "/images/links/avatar.jpg";
  */
 const FALLBACK_VIDEO_ID = "Ut1dONTmiIA";
 export const FALLBACK_VIDEO = {
-  title: "Fumbled Life, Ep. 2",
+  title: "Fumbled Life, Ep. 02",
   url: `https://www.youtube.com/watch?v=${FALLBACK_VIDEO_ID}`,
   thumbnail: `https://i.ytimg.com/vi/${FALLBACK_VIDEO_ID}/hqdefault.jpg`,
 };
