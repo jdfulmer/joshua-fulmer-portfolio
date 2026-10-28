@@ -8,7 +8,15 @@ import { LinkIcon } from "./LinkIcon";
  * already resolved, so there is no loading state and no layout shift.
  * The thumbnail box is always 16:9 whether or not a thumbnail exists.
  */
-export function FeaturedVideo({ link, video }: { link: BioLink; video: LatestVideo }) {
+export function FeaturedVideo({
+  link,
+  video,
+  kicker = "Latest on YouTube",
+}: {
+  link: BioLink;
+  video: LatestVideo;
+  kicker?: string;
+}) {
   return (
     <a
       href={video.url}
@@ -45,7 +53,7 @@ export function FeaturedVideo({ link, video }: { link: BioLink; video: LatestVid
       <span className="flex items-center gap-3 px-4 py-3.5">
         <span className="flex min-w-0 flex-1 flex-col">
           <span className="lb-label" style={{ color: "var(--lb-card-muted)" }}>
-            Latest on YouTube
+            {kicker}
           </span>
           <span className="line-clamp-2 text-base font-semibold leading-snug">
             {video.title}
