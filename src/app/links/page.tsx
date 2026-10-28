@@ -3,14 +3,24 @@ import type { Metadata } from "next";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { FeaturedVideo } from "@/components/links/FeaturedVideo";
 import { LinkButton } from "@/components/links/LinkButton";
-import { MarkerArrow, MarkerSparkle, MarkerUnderline } from "@/components/links/Doodles";
-import { AVATAR_SRC, LINKS, SITE_URL, SKY_IMAGE, TAGLINE } from "@/lib/links.config";
+import { MarkerArrow } from "@/components/links/Doodles";
+import {
+  AVATAR_SRC,
+  BYLINE,
+  CADENCE,
+  EPISODE_LABEL,
+  LINKS,
+  SHOW_NAME,
+  SITE_URL,
+  SKY_IMAGE,
+  TAGLINE,
+  TIKTOK_HANDLE,
+} from "@/lib/links.config";
 import { getLatestVideo } from "@/lib/youtube";
 import { UtmCampaign } from "./UtmCampaign";
 
-const TITLE = "Joshua Fulmer | Links";
-const DESCRIPTION =
-  "Latest YouTube episode, TikTok, the blog, Grid & Gutter consulting, and Send It Society rides. All in one place.";
+const TITLE = `${SHOW_NAME.hero} ${SHOW_NAME.aside} | Joshua Fulmer`;
+const DESCRIPTION = `${TAGLINE}. Latest episode, YouTube, TikTok, Grid & Gutter consulting, and Send It Society rides.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -50,7 +60,7 @@ export default async function LinksPage() {
             priority
             quality={60}
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-top"
           />
         )}
       </div>
@@ -58,41 +68,47 @@ export default async function LinksPage() {
 
       <UtmCampaign />
 
-      <div className="absolute right-4 top-4 z-10">
+      <div className="absolute right-4 top-4 z-20">
         <span className="lb-toggle inline-flex rounded-full p-0.5">
           <ThemeToggle />
         </span>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col px-4 pb-10 pt-14 sm:pt-16">
-        {/* Header */}
-        <header className="relative mb-8 flex flex-col items-center text-center">
-          <MarkerSparkle className="absolute -left-1 top-2 h-8 w-8 sm:left-2" />
-          <div className="lb-avatar relative mb-5 h-28 w-28 overflow-hidden rounded-full">
-            <Image
-              src={AVATAR_SRC}
-              alt="Joshua Fulmer"
-              width={112}
-              height={112}
-              priority
-              sizes="112px"
-              className="h-full w-full object-cover"
-            />
+      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col px-4 pb-10 pt-16 sm:pt-20">
+        {/* Header, styled after the channel banner */}
+        <header className="relative mb-10">
+          <div className="lb-label flex items-center justify-between px-1">
+            <span>{BYLINE}</span>
+            <span>{TIKTOK_HANDLE}</span>
           </div>
-          <h1 className="flex flex-col items-center">
-            <span className="lb-display relative text-6xl sm:text-7xl">
-              Joshua
-              <MarkerUnderline className="absolute -bottom-2 left-1/2 h-4 w-[115%] -translate-x-1/2" />
+
+          <h1 className="relative mt-3 flex flex-col items-center">
+            <span className="lb-display lb-hero relative z-0 text-[5.75rem] sm:text-[6.5rem]">
+              {SHOW_NAME.hero}
             </span>
-            <span
-              className="lb-marker mt-3 -rotate-3 text-4xl sm:text-5xl"
-              style={{ color: "var(--lb-accent)" }}
-            >
-              Fulmer
+            {/* Photo overlaps the hero word, as in the banner */}
+            <span className="lb-avatar absolute left-1/2 top-1/2 z-10 h-32 w-32 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
+              <Image
+                src={AVATAR_SRC}
+                alt="Joshua Fulmer"
+                width={128}
+                height={128}
+                priority
+                sizes="128px"
+                className="h-full w-full object-cover"
+              />
+            </span>
+            <span className="lb-marker lb-aside absolute -bottom-5 right-3 z-20 -rotate-6 text-5xl sm:right-5 sm:text-6xl">
+              {SHOW_NAME.aside}
             </span>
           </h1>
-          <p className="mt-4 max-w-xs text-base" style={{ color: "var(--lb-muted)" }}>
-            {TAGLINE}
+
+          <div className="lb-label mt-8 flex items-start justify-between gap-4 px-1">
+            <span>{TAGLINE}</span>
+            <span className="shrink-0 text-right">{EPISODE_LABEL}</span>
+          </div>
+          <p className="lb-label mt-2 px-1 text-center" style={{ color: "var(--lb-muted)" }}>
+            {CADENCE}
           </p>
         </header>
 
@@ -102,7 +118,7 @@ export default async function LinksPage() {
             <span
               className="lb-marker absolute -top-7 right-2 z-10 flex items-end gap-1 text-lg"
               aria-hidden="true"
-              style={{ color: "var(--lb-ink)" }}
+              style={{ color: "var(--lb-text)" }}
             >
               watch this
               <MarkerArrow className="-mb-3 h-9 w-9 -rotate-12" />
@@ -122,10 +138,8 @@ export default async function LinksPage() {
           </ul>
         </nav>
 
-        <footer className="mt-10 text-center text-sm" style={{ color: "var(--lb-muted)" }}>
-          <p>
-            Joshua Fulmer &copy; {new Date().getFullYear()} &middot; Bellingham, WA
-          </p>
+        <footer className="lb-label mt-10 text-center" style={{ color: "var(--lb-muted)" }}>
+          <p>Joshua Fulmer &copy; {new Date().getFullYear()}</p>
         </footer>
       </div>
     </>

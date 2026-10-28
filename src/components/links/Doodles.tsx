@@ -26,7 +26,7 @@ export function MarkerArrow({ className }: { className?: string }) {
       className={className}
       aria-hidden="true"
       fill="none"
-      stroke="var(--lb-ink)"
+      stroke="currentColor"
       strokeWidth="3"
       strokeLinecap="round"
       strokeLinejoin="round"
