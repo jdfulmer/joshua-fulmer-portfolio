@@ -3,13 +3,12 @@ import type { Metadata } from "next";
 import { FeaturedVideo } from "@/components/links/FeaturedVideo";
 import { LinkButton } from "@/components/links/LinkButton";
 import {
-  BANNER_SIZE,
-  BANNER_SRC,
   CADENCE,
+  HERO_CARD_OFFSET,
+  HERO_IMAGE,
   LINKS,
   SHOW_NAME,
   SITE_URL,
-  SKY_IMAGE,
   TAGLINE,
 } from "@/lib/links.config";
 import { getLatestVideo } from "@/lib/youtube";
@@ -46,52 +45,38 @@ export default async function LinksPage() {
 
   return (
     <>
-      {/* Background */}
-      <div className="lb-sky" aria-hidden="true">
-        {SKY_IMAGE && (
+      <div className="lb-sky" aria-hidden="true" />
+      <UtmCampaign />
+
+      <div className="relative mx-auto flex w-full max-w-[480px] flex-1 flex-col pb-10">
+        {/* Hero render: title and photo are part of this image */}
+        <div className="lb-hero" aria-hidden="true">
           <Image
-            src={SKY_IMAGE}
+            src={HERO_IMAGE}
             alt=""
             fill
             priority
-            quality={60}
-            sizes="100vw"
+            quality={75}
+            sizes="(max-width: 480px) 100vw, 480px"
             className="object-cover object-top"
           />
-        )}
-      </div>
-      <div className="lb-overlay" aria-hidden="true" />
+        </div>
 
-      <UtmCampaign />
+        <h1 className="sr-only">
+          {SHOW_NAME.hero} {SHOW_NAME.aside}. {TAGLINE}.
+        </h1>
 
-      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col pb-10 pt-0 sm:pt-10">
-        {/* Header: the channel banner, used as is */}
-        <header className="mb-0">
-          <h1 className="sr-only">
-            {SHOW_NAME.hero} {SHOW_NAME.aside}. {TAGLINE}.
-          </h1>
-          <div className="lb-banner relative overflow-hidden sm:rounded-2xl">
-            <Image
-              src={BANNER_SRC}
-              alt={`${SHOW_NAME.hero} ${SHOW_NAME.aside}. Joshua Fulmer in a ball cap and a long grey beard in front of an overcast sky.`}
-              width={BANNER_SIZE.width}
-              height={BANNER_SIZE.height}
-              priority
-              sizes="(max-width: 480px) 100vw, 480px"
-              className="block h-auto w-full"
-            />
-          </div>
-        </header>
-
-        {/* Featured card, pulled up so the body runs into the first frame */}
-        <div className="px-4">
+        {/* Content starts on the shirt line so the photo runs into the card */}
+        <div
+          className="px-4"
+          style={{ paddingTop: `calc(min(100vw, 480px) * ${HERO_CARD_OFFSET})` }}
+        >
           {featured && (
-            <section className="relative z-10 -mt-12 sm:-mt-14" aria-label="Latest episode">
+            <section className="relative z-10" aria-label="Latest episode">
               <FeaturedVideo link={featured} video={video} kicker={CADENCE} />
             </section>
           )}
 
-          {/* Links */}
           <nav aria-label="Links" className="mt-5">
             <ul className="flex flex-col gap-3">
               {rest.map((link) => (
