@@ -5,14 +5,12 @@ import { LinkButton } from "@/components/links/LinkButton";
 import {
   BANNER_SIZE,
   BANNER_SRC,
-  BYLINE,
   CADENCE,
   LINKS,
   SHOW_NAME,
   SITE_URL,
   SKY_IMAGE,
   TAGLINE,
-  TIKTOK_HANDLE,
 } from "@/lib/links.config";
 import { getLatestVideo } from "@/lib/youtube";
 import { UtmCampaign } from "./UtmCampaign";
@@ -66,13 +64,9 @@ export default async function LinksPage() {
 
       <UtmCampaign />
 
-      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col pb-10 pt-6 sm:pt-10">
-        {/* Header: byline row, then the channel banner itself */}
+      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col pb-10 pt-0 sm:pt-10">
+        {/* Header: the channel banner, used as is */}
         <header className="mb-0">
-          <div className="lb-label flex items-center justify-between px-5 pb-3">
-            <span>{BYLINE}</span>
-            <span>{TIKTOK_HANDLE}</span>
-          </div>
           <h1 className="sr-only">
             {SHOW_NAME.hero} {SHOW_NAME.aside}. {TAGLINE}.
           </h1>
@@ -96,10 +90,6 @@ export default async function LinksPage() {
               <FeaturedVideo link={featured} video={video} kicker={CADENCE} />
             </section>
           )}
-
-          <p className="lb-label mt-5 text-center" style={{ color: "var(--lb-muted)" }}>
-            {TAGLINE}
-          </p>
 
           {/* Links */}
           <nav aria-label="Links" className="mt-5">
