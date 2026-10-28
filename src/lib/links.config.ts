@@ -43,11 +43,11 @@ export const EPISODE_LABEL = "Ep. 00 out now";
 export const CADENCE = "[Your cadence]";
 
 /**
- * Sky photo for the page background. Drop a file at
- * public/images/links/sky.jpg (about 1200px wide, under 200KB) and set
- * this to "/images/links/sky.jpg". While null, a CSS gradient sky is used.
+ * Sky photo for the page background. The current file is the clean sky
+ * band cut from the top of the channel banner. Swap it for any photo
+ * (about 1600px wide, under 200KB). Set to null to use the CSS gradient.
  */
-export const SKY_IMAGE: string | null = null;
+export const SKY_IMAGE: string | null = "/images/links/sky.jpg";
 
 /* ------------------------------------------------------------------ */
 /* Fixed values                                                        */
@@ -64,6 +64,10 @@ export const TIKTOK_URL = "https://www.tiktok.com/@ffffumbles";
  */
 export const BLOG_URL = "/work";
 
+/**
+ * Header photo. avatar.jpg is the face from the channel banner.
+ * avatar-selfie.jpg is the headshot used elsewhere on the site.
+ */
 export const AVATAR_SRC = "/images/links/avatar.jpg";
 
 /**

@@ -60,7 +60,7 @@ export default async function LinksPage() {
             priority
             quality={60}
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-top"
           />
         )}
       </div>

@@ -47,12 +47,12 @@
   --lb-cloud: rgba(201, 206, 211, 0.1);
   --lb-overlay: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.35) 55%,
-    rgba(0, 0, 0, 0.55) 100%
+    rgba(10, 12, 14, 0.62) 0%,
+    rgba(10, 12, 14, 0.74) 55%,
+    rgba(10, 12, 14, 0.84) 100%
   );
   --lb-text: #ffffff;
-  --lb-muted: var(--lb-sky);
+  --lb-muted: #d9dee3;
   --lb-card: rgba(43, 48, 54, 0.86);
   --lb-card-hover: rgba(52, 58, 65, 0.98);
   --lb-card-border: rgba(255, 255, 255, 0.1);
