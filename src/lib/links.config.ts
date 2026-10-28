@@ -167,7 +167,7 @@ export const LINKS: BioLink[] = [
     sublabel: "Grid & Gutter. AI and UX consulting",
     url: GRID_AND_GUTTER_URL,
     icon: "briefcase",
-    enabled: true,
+    enabled: false,
   },
   {
     id: "send-it-society",
