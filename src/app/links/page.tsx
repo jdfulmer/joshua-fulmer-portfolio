@@ -1,14 +1,12 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { FeaturedVideo } from "@/components/links/FeaturedVideo";
 import { LinkButton } from "@/components/links/LinkButton";
-import { MarkerArrow } from "@/components/links/Doodles";
 import {
-  AVATAR_SRC,
+  BANNER_SIZE,
+  BANNER_SRC,
   BYLINE,
   CADENCE,
-  EPISODE_LABEL,
   LINKS,
   SHOW_NAME,
   SITE_URL,
@@ -20,7 +18,7 @@ import { getLatestVideo } from "@/lib/youtube";
 import { UtmCampaign } from "./UtmCampaign";
 
 const TITLE = `${SHOW_NAME.hero} ${SHOW_NAME.aside} | Joshua Fulmer`;
-const DESCRIPTION = `${TAGLINE}. Latest episode, YouTube, TikTok, Grid & Gutter consulting, and Send It Society rides.`;
+const DESCRIPTION = `${TAGLINE}. ${CADENCE}. YouTube, TikTok, Grid & Gutter consulting, and Send It Society rides.`;
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -68,79 +66,56 @@ export default async function LinksPage() {
 
       <UtmCampaign />
 
-      <div className="absolute right-4 top-4 z-20">
-        <span className="lb-toggle inline-flex rounded-full p-0.5">
-          <ThemeToggle />
-        </span>
-      </div>
-
-      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col px-4 pb-10 pt-16 sm:pt-20">
-        {/* Header, styled after the channel banner */}
-        <header className="relative mb-10">
-          <div className="lb-label flex items-center justify-between px-1">
+      <div className="mx-auto flex w-full max-w-[480px] flex-1 flex-col pb-10 pt-6 sm:pt-10">
+        {/* Header: byline row, then the channel banner itself */}
+        <header className="mb-0">
+          <div className="lb-label flex items-center justify-between px-5 pb-3">
             <span>{BYLINE}</span>
             <span>{TIKTOK_HANDLE}</span>
           </div>
-
-          <h1 className="relative mt-3 flex flex-col items-center">
-            <span className="lb-display lb-hero relative z-0 text-[5.75rem] sm:text-[6.5rem]">
-              {SHOW_NAME.hero}
-            </span>
-            {/* Photo overlaps the hero word, as in the banner */}
-            <span className="lb-avatar absolute left-1/2 top-1/2 z-10 h-32 w-32 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
-              <Image
-                src={AVATAR_SRC}
-                alt="Joshua Fulmer"
-                width={128}
-                height={128}
-                priority
-                sizes="128px"
-                className="h-full w-full object-cover"
-              />
-            </span>
-            <span className="lb-marker lb-aside absolute -bottom-5 right-3 z-20 -rotate-6 text-5xl sm:right-5 sm:text-6xl">
-              {SHOW_NAME.aside}
-            </span>
+          <h1 className="sr-only">
+            {SHOW_NAME.hero} {SHOW_NAME.aside}. {TAGLINE}.
           </h1>
-
-          <div className="lb-label mt-8 flex items-start justify-between gap-4 px-1">
-            <span>{TAGLINE}</span>
-            <span className="shrink-0 text-right">{EPISODE_LABEL}</span>
+          <div className="lb-banner relative overflow-hidden sm:rounded-2xl">
+            <Image
+              src={BANNER_SRC}
+              alt={`${SHOW_NAME.hero} ${SHOW_NAME.aside}. Joshua Fulmer in a ball cap and a long grey beard in front of an overcast sky.`}
+              width={BANNER_SIZE.width}
+              height={BANNER_SIZE.height}
+              priority
+              sizes="(max-width: 480px) 100vw, 480px"
+              className="block h-auto w-full"
+            />
           </div>
-          <p className="lb-label mt-2 px-1 text-center" style={{ color: "var(--lb-muted)" }}>
-            {CADENCE}
-          </p>
         </header>
 
-        {/* Featured card */}
-        {featured && (
-          <section className="relative mb-5" aria-label="Latest video">
-            <span
-              className="lb-marker absolute -top-7 right-2 z-10 flex items-end gap-1 text-lg"
-              aria-hidden="true"
-              style={{ color: "var(--lb-text)" }}
-            >
-              watch this
-              <MarkerArrow className="-mb-3 h-9 w-9 -rotate-12" />
-            </span>
-            <FeaturedVideo link={featured} video={video} />
-          </section>
-        )}
+        {/* Featured card, pulled up so the body runs into the first frame */}
+        <div className="px-4">
+          {featured && (
+            <section className="relative z-10 -mt-12 sm:-mt-14" aria-label="Latest episode">
+              <FeaturedVideo link={featured} video={video} kicker={CADENCE} />
+            </section>
+          )}
 
-        {/* Links */}
-        <nav aria-label="Links">
-          <ul className="flex flex-col gap-3">
-            {rest.map((link) => (
-              <li key={link.id}>
-                <LinkButton link={link} />
-              </li>
-            ))}
-          </ul>
-        </nav>
+          <p className="lb-label mt-5 text-center" style={{ color: "var(--lb-muted)" }}>
+            {TAGLINE}
+          </p>
 
-        <footer className="lb-label mt-10 text-center" style={{ color: "var(--lb-muted)" }}>
-          <p>Joshua Fulmer &copy; {new Date().getFullYear()}</p>
-        </footer>
+          {/* Links */}
+          <nav aria-label="Links" className="mt-5">
+            <ul className="flex flex-col gap-3">
+              {rest.map((link) => (
+                <li key={link.id}>
+                  <LinkButton link={link} />
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <footer className="lb-label mt-10 text-center" style={{ color: "var(--lb-muted)" }}>
+            <p>Joshua Fulmer &copy; {new Date().getFullYear()}</p>
+          </footer>
+        </div>
       </div>
     </>
   );

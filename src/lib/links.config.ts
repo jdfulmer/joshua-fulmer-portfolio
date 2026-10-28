@@ -36,11 +36,11 @@ export const BYLINE = "Josh Fulmer";
 /** One-line tagline under the title. */
 export const TAGLINE = "Learning myself out loud";
 
-/** Label on the featured card and in the header. Update per episode. */
-export const EPISODE_LABEL = "Ep. 00 out now";
+/** Label on the featured card. Update per episode. */
+export const EPISODE_LABEL = "Ep. 2 out now";
 
-/** Release cadence. TODO: fill in, for example "New episodes weekly". */
-export const CADENCE = "[Your cadence]";
+/** Release cadence, shown on the featured card. */
+export const CADENCE = "New episodes weekly";
 
 /**
  * Sky photo for the page background. The current file is the clean sky
@@ -65,9 +65,14 @@ export const TIKTOK_URL = "https://www.tiktok.com/@ffffumbles";
 export const BLOG_URL = "/work";
 
 /**
- * Header photo. avatar.jpg is the face from the channel banner.
- * avatar-selfie.jpg is the headshot used elsewhere on the site.
+ * Header image: the YouTube channel banner with the small labels cleaned
+ * off so episode and cadence text can be updated here instead.
+ * Keep it 16:9. Replace the file when the banner changes.
  */
+export const BANNER_SRC = "/images/links/banner.jpg";
+export const BANNER_SIZE = { width: 1600, height: 900 } as const;
+
+/** Square photo, used by the Open Graph image. */
 export const AVATAR_SRC = "/images/links/avatar.jpg";
 
 /**
@@ -76,7 +81,7 @@ export const AVATAR_SRC = "/images/links/avatar.jpg";
  */
 const FALLBACK_VIDEO_ID = "Ut1dONTmiIA";
 export const FALLBACK_VIDEO = {
-  title: "Fumbled Life, Ep. 00",
+  title: "Fumbled Life, Ep. 2",
   url: `https://www.youtube.com/watch?v=${FALLBACK_VIDEO_ID}`,
   thumbnail: `https://i.ytimg.com/vi/${FALLBACK_VIDEO_ID}/hqdefault.jpg`,
 };
