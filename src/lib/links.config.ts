@@ -43,12 +43,20 @@ export const EPISODE_LABEL = "Ep. 02 out now";
 export const CADENCE = "New episodes weekly";
 
 /**
- * Sky photo for the page background, 1080x1920 portrait. The current
- * file is built from the top edge of the banner so the two meet without
- * a seam. Swap in a rendered sky of the same size. Set to null to use
- * the CSS gradient instead.
+ * Hero image: 1080x1920 portrait render of the channel banner on sky.
+ * It is pinned to the top of the page column at full width, so the
+ * title and photo are part of the image. The page background below it
+ * is a flat color matched to the image's bottom edge (see links.css).
+ * Re-export it when the labels change.
  */
-export const SKY_IMAGE: string | null = "/images/links/sky.jpg";
+export const HERO_IMAGE = "/images/links/hero.jpg";
+export const HERO_SIZE = { width: 1080, height: 1920 } as const;
+
+/**
+ * Where the featured card's top edge lands, as a fraction of the column
+ * width. 0.53 puts it on the shirt line so the photo runs into the card.
+ */
+export const HERO_CARD_OFFSET = 0.53;
 
 /* ------------------------------------------------------------------ */
 /* Fixed values                                                        */
@@ -64,14 +72,6 @@ export const TIKTOK_URL = "https://www.tiktok.com/@ffffumbles";
  * Change it to the blog index once the blog exists.
  */
 export const BLOG_URL = "/work";
-
-/**
- * Header image: the YouTube channel banner, used exactly as exported.
- * The labels (name, handle, tagline, cadence, episode) are part of the
- * image, so re-export it when they change. Keep it 16:9.
- */
-export const BANNER_SRC = "/images/links/banner.webp";
-export const BANNER_SIZE = { width: 2000, height: 1125 } as const;
 
 /** Square photo, used by the Open Graph image. */
 export const AVATAR_SRC = "/images/links/avatar.jpg";
