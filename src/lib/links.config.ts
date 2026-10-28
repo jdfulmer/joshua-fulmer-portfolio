@@ -27,8 +27,20 @@ export const SEND_IT_SOCIETY_URL = "/work/send-it-society";
 /** Contact email for the mailto link. TODO: confirm. */
 export const CONTACT_EMAIL = "j.d.fulmer@gmail.com";
 
-/** One-line tagline under the name. TODO: write the real one. */
-export const TAGLINE = "Design leader. Mountain biker. Builds things in Bellingham, WA.";
+/** Show name, split so the two words can be styled separately. */
+export const SHOW_NAME = { hero: "Fumbled", aside: "Life" } as const;
+
+/** Small tracked label above the title. */
+export const BYLINE = "Josh Fulmer";
+
+/** One-line tagline under the title. */
+export const TAGLINE = "Learning myself out loud";
+
+/** Label on the featured card and in the header. Update per episode. */
+export const EPISODE_LABEL = "Ep. 00 out now";
+
+/** Release cadence. TODO: fill in, for example "New episodes weekly". */
+export const CADENCE = "[Your cadence]";
 
 /**
  * Sky photo for the page background. Drop a file at
@@ -54,10 +66,15 @@ export const BLOG_URL = "/work";
 
 export const AVATAR_SRC = "/images/links/avatar.jpg";
 
-/** Shown when the YouTube RSS fetch fails or no channel id is set. */
+/**
+ * Shown when the YouTube RSS fetch fails or no channel id is set.
+ * Update the id (and title) when a new episode goes up.
+ */
+const FALLBACK_VIDEO_ID = "Ut1dONTmiIA";
 export const FALLBACK_VIDEO = {
-  title: "Latest episode on YouTube",
-  url: `${YOUTUBE_CHANNEL_URL}/videos`,
+  title: "Fumbled Life, Ep. 00",
+  url: `https://www.youtube.com/watch?v=${FALLBACK_VIDEO_ID}`,
+  thumbnail: `https://i.ytimg.com/vi/${FALLBACK_VIDEO_ID}/hqdefault.jpg`,
 };
 
 /** UTM params appended to every internal (joshuafulmer.com) link. */
@@ -96,7 +113,7 @@ export const LINKS: BioLink[] = [
   {
     id: "latest-video",
     label: FALLBACK_VIDEO.title,
-    sublabel: "New episode",
+    sublabel: EPISODE_LABEL,
     url: FALLBACK_VIDEO.url,
     icon: "play",
     featured: true,
@@ -124,7 +141,7 @@ export const LINKS: BioLink[] = [
     sublabel: "Case studies and writing",
     url: BLOG_URL,
     icon: "pen",
-    enabled: true,
+    enabled: false,
   },
   {
     id: "home",
@@ -156,7 +173,7 @@ export const LINKS: BioLink[] = [
     sublabel: CONTACT_EMAIL,
     url: `mailto:${CONTACT_EMAIL}`,
     icon: "mail",
-    enabled: true,
+    enabled: false,
   },
 ];
 

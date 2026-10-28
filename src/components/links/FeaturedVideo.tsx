@@ -15,7 +15,7 @@ export function FeaturedVideo({ link, video }: { link: BioLink; video: LatestVid
       data-link-id={link.id}
       className="lb-card group relative block overflow-hidden rounded-3xl"
     >
-      <span className="lb-tape lb-marker absolute left-3 top-3 z-10 rounded-sm px-2.5 py-1 text-sm">
+      <span className="lb-tape lb-label absolute left-3 top-3 z-10 rounded-sm px-2.5 py-1.5">
         {link.sublabel ?? "New episode"}
       </span>
 
@@ -36,7 +36,7 @@ export function FeaturedVideo({ link, video }: { link: BioLink; video: LatestVid
           className="absolute inset-0 flex items-center justify-center"
           aria-hidden="true"
         >
-          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-[#121c33] shadow-lg transition-transform duration-150 group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
+          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-[#15191d] shadow-lg transition-transform duration-150 group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
             <LinkIcon name="play" size={30} />
           </span>
         </span>
@@ -44,7 +44,7 @@ export function FeaturedVideo({ link, video }: { link: BioLink; video: LatestVid
 
       <span className="flex items-center gap-3 px-4 py-3.5">
         <span className="flex min-w-0 flex-1 flex-col">
-          <span className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--lb-card-muted)" }}>
+          <span className="lb-label" style={{ color: "var(--lb-card-muted)" }}>
             Latest on YouTube
           </span>
           <span className="line-clamp-2 text-base font-semibold leading-snug">

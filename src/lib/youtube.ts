@@ -3,7 +3,7 @@ import { FALLBACK_VIDEO, YOUTUBE_CHANNEL_ID } from "@/lib/links.config";
 export interface LatestVideo {
   title: string;
   url: string;
-  /** Absolute thumbnail URL, or null when the fallback card should show. */
+  /** Absolute thumbnail URL, or null to show the gradient placeholder. */
   thumbnail: string | null;
   published?: string;
 }
@@ -32,7 +32,7 @@ function pick(xml: string, tag: string): string | null {
  * failure (network, parse, empty feed) falls back to the static card.
  */
 export async function getLatestVideo(): Promise<LatestVideo> {
-  const fallback: LatestVideo = { ...FALLBACK_VIDEO, thumbnail: null };
+  const fallback: LatestVideo = { ...FALLBACK_VIDEO };
   if (!YOUTUBE_CHANNEL_ID) return fallback;
 
   try {
