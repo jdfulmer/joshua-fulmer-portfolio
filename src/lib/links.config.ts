@@ -37,7 +37,7 @@ export const BYLINE = "Josh Fulmer";
 export const TAGLINE = "Learning myself out loud";
 
 /** Label on the featured card. Update per episode. */
-export const EPISODE_LABEL = "Ep. 02 out now";
+export const EPISODE_LABEL = "Ep. 04 out now";
 
 /** Release cadence, shown on the featured card. */
 export const CADENCE = "New episodes weekly";
@@ -80,9 +80,9 @@ export const AVATAR_SRC = "/images/links/avatar.jpg";
  * Shown when the YouTube RSS fetch fails or no channel id is set.
  * Update the id (and title) when a new episode goes up.
  */
-const FALLBACK_VIDEO_ID = "Ut1dONTmiIA";
+const FALLBACK_VIDEO_ID = "3_YB-EcqY-w";
 export const FALLBACK_VIDEO = {
-  title: "Fumbled Life, Ep. 02",
+  title: "Fumbled Life, Ep. 04",
   url: `https://www.youtube.com/watch?v=${FALLBACK_VIDEO_ID}`,
   thumbnail: `https://i.ytimg.com/vi/${FALLBACK_VIDEO_ID}/hqdefault.jpg`,
 };
